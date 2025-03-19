@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>outncenter</title>
+    </head>
+
+    <body>
+        <!--Navigation bar that sticks when scrolling down-->
+        <nav class="sticky-navbar" id="navbar">
+            <ul>
+                <li class="nav-text">
+                    <a href="./index.html">outncenter</a>
+                </li>
+                <li>
+                    <span class="menu-icon" id="menuBtn">☰</span>
+                </li>
+            </ul>
+        </nav>
+
+         <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" id="closeBtn">×</span>
+        <a href="./corporate.html"><h2>Corporate Information</h2></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+        <!-- Main Content (For Scrolling) -->
+        <header class="content">
+            <h1>Scroll Down to See the Navbar</h1>
+            <p>Keep scrolling down to trigger the sticky navbar.</p>
+        </header>
+
+
+        <!--Sidebar that folds open from the right once hoverred over the stripes icon-->
+       
+
+        <main>
+            <h1>This is the corporate page</h1>
+            <p>This is a paragraph.</p>
+        </main>
+
+        <script>
+            window.addEventListener("scroll", function() {
+                let navbar = document.getElementById("navbar");
+                if (window.scrollY > 100) { // Adjust trigger point if needed
+                    navbar.classList.add("active");
+                } else {
+                    navbar.classList.remove("active");
+                }
+            });
+
+             // Select elements
+        let sidebar = document.getElementById("sidebar");
+        let menuBtn = document.getElementById("menuBtn");
+        let closeBtn = document.getElementById("closeBtn");
+
+        // Open sidebar when menu button is clicked
+        menuBtn.addEventListener("click", function() {
+            sidebar.classList.add("active");
+        });
+
+        // Close sidebar when close button is clicked
+        closeBtn.addEventListener("click", function() {
+            sidebar.classList.remove("active");
+        });
+
+        // Close sidebar if user clicks outside of it
+        document.addEventListener("click", function(event) {
+            if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+                sidebar.classList.remove("active");
+            }
+        });
+        </script>
+
+    </body>
+
+    <footer class="navfooter">
+        <p>Footer</p>
+    </footer>
+
+</html>

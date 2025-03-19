@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+  /* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+
+nav > ul > li {
+    list-style-type: none;
+    display: inline;
+}
+
+.nav-text {
+    padding-right: 565px;
+    padding-left: 20px;
+}
+  
+  /* Placeholder Content to Enable Scrolling */
+  .content {
+    height: 150vh; /* Making the page scrollable */
+    padding: 20px;
+    background: #f4f4f4;
+  }
+
+
+  /* Hidden Navbar */
+  .sticky-navbar {
+    position: fixed;
+    top: -60px; /* Initially hidden */
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: top 0.2s ease-in-out;
+    display: flex;
+    justify-content: flex-end; /* Aligns icon to the right */
+  }
+
+  
+  /* When Active (Visible) */
+  .sticky-navbar.active {
+    top: 0;
+  }
+
+
+/* Main Content */
+  main {
+    margin: 10px;
+  }
+
+
+  /* Footer */
+  footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  .sticky-navbar .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding-right: 35px;
+  }
+  
+  /* Sidebar Menu */
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    background: #222;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: -600px; /* Initially hidden */
+    transition: right 0.3s ease-in-out;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* When Sidebar is Active */
+  .sidebar.active {
+    right: 0;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  /* Sidebar Menu Links */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+  
