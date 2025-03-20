@@ -1,3 +1,21 @@
+/* Use this file to use your own styles*/
+
+/* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=WindSong:wght@400;500&display=swap');
+
+colour pallette 
+{
+color: #740318; 
+color: #b93d22;
+color: #fdb92e;
+color: #b3298d;
+color: #5f2abb;
+color: #D0B3FA;
+color: #117f84; 
+}
+
 * {
     margin: 0;
     padding: 0;
