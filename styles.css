@@ -1,0 +1,117 @@
+/* import declaration for google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* font guide outfit
+font-weight: 300; (light for body text)
+font-weight: 500; (medium for bold in body text)
+font-weight: 600; (semibold for headings)*/
+
+main {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h2, h3, h4, h5 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 7vw;
+}
+.outfit-semibold {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+.outfit-medium {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+}
+
+
+/*closing button*/
+@media (max-width: 576px) {
+    .btn-close {
+        margin-right: 13% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-close {
+        padding-right: 65% !important;
+    }
+}
+
+
+/* TransNavbar stays transparent initially */
+#transNavbar {
+    background-color: transparent !important; /* Initially transparent */
+    position: fixed; /* Fixed at the top when scrolling */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background image only */
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+/* Scroll navbar (white background on scroll) */
+#scrollnavbar {
+    background-color: white;
+    position: fixed; /* Keep it at the top */
+    top: -100%; /* Initially hidden */
+    width: 100%;
+    z-index: 2000; /* Make sure it's on top of everything */
+    transition: top 0.3s ease, background-color 0.3s ease-in-out; /* Smooth transition for showing and background color */
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+/* ScrollNavbar appears when scrolled */
+#scrollnavbar.show {
+    top: 0; /* Position it at the top when visible */
+}
+
+/* Optional: You can also add a shadow for better visibility */
+#scrollnavbar.show {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for a shadow effect */
+}
+
+/* Optional: Add smooth effect for transNavbar's background color change when scrolling */
+#scrollnavbar.show + #transNavbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Change to a semi-transparent white when scroll navbar is visible */
+}
+
+/* makes the sidebar button pretyy*/
+.icon-style {
+    border: none;
+    box-shadow: none;
+    background: none;
+    color: #222;
+}
+
+.icon-style:hover {
+    color: #111;
+}
+
+.icon-style:focus {
+    outline: none; /* Removes the focus outline */
+    box-shadow: none; /* Removes the focus box-shadow */
+}
+
+footer {
+    background-color: blue;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 15%;
+    color: black;
+}
