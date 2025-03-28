@@ -30,6 +30,44 @@ font-weight: 600; (semibold for headings)*/
 	width: 700px;
   }
 
+.logo-about-page {
+	width: 100%; 
+	width: 200px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+	
+}
+
+.padding-of-values-about-page {
+	padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+	width: 30%;
+    
+}
+
+.padding-of-mission-about-page {
+	padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 70%;
+}
+
+.full-width-section {
+      width: 100%;
+      background-color: #D0B3FA; /* Change this to any color */
+      padding: 50px 0; /* Adds spacing inside the section */
+	padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+   }
+
+
 
 
 /* BLOG page css starts here*/
