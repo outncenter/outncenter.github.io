@@ -6,6 +6,78 @@ font-weight: 500; (medium for bold in body text)
 font-weight: 600; (semibold for headings)*/
 
 /* ABOUT page css starts here*/
+.about-font-size {
+	font-size: 70px; 
+}
+
+.container-about-page {
+	width: 92%;
+	margin: auto;
+	height: 100%;
+	border: 2px solid #C92F0E; 
+}
+.subheadings-about-page {
+	font-weight: 800;
+	font-size: 30px; 
+	padding-left: 0%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+.color-block-about-page {
+    width: 1200px;  
+    padding: 10px; 
+    background-color: #740318; 
+  }
+
+.full-width-container {
+    width: 100%; 
+	width: 700px;
+  }
+
+.logo-about-page {
+	width: 100%; 
+	width: 200px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+	
+}
+
+.padding-of-values-about-page {
+	padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+	background-color: #B93D22;
+	width: 30%;
+	margin: 0%;
+	height: 100%; 
+    
+}
+
+.padding-of-mission-about-page {
+	padding-left: 8%;
+	background-color: #B93D22;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 70%;
+	margin: 0%;
+	height: 100%; 
+    
+}
+
+.main-margin-about-page {
+	margin: 0%;
+	height: 100%;
+}
+
+
+
 
 
 /* BLOG page css starts here*/
@@ -150,4 +222,5 @@ footer {
     bottom: 0;
     margin-top: 15%;
     color: black;
+}.subheadings-about-page {
 }
