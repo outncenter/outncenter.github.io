@@ -22,7 +22,7 @@ font-weight: 600; (semibold for headings)*/
 .color-block-about-page {
     width: 1200px;  
     padding: 10px; 
-    background-color: #B3298D; 
+    background-color: #740318; 
   }
 
 .full-width-container {
@@ -59,7 +59,7 @@ font-weight: 600; (semibold for headings)*/
 
 .full-width-section {
       width: 100%;
-      background-color: #D0B3FA; /* Change this to any color */
+      background-color: #740318; /* Change this to any color */
       padding: 50px 0; /* Adds spacing inside the section */
 	padding-left: 8%;
     padding-right: 8%;
