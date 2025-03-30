@@ -18,7 +18,7 @@ font-weight: 600; (semibold for headings)*/
 }
 .logo-about-page {
 	width: 350px; 
-    padding-left: 4%;
+    padding-left: 0%;
     padding-right: 4%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -58,6 +58,7 @@ font-weight: 600; (semibold for headings)*/
     align-items: center; 
 	justify-content: space-between;
 }
+
 
 /* Everything for the mission part on the about page*/
 .mission-about-page {
