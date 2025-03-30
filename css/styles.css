@@ -32,6 +32,19 @@ html, body {
 	float: right;
 }
 
+.gradient-about-page {
+	width: 300px; 
+    padding-left: 0%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: block;
+	
+}
+
+.image-gradient {
+	float: right;
+}
 /*font size for about page*/
 .about-font-size {
 	font-size: 100px; 
@@ -88,7 +101,7 @@ html, body {
 .column-about-page-meet-the-team {
   float: left;
   width: 50%;
-  width: 320px;
+  width: 300px;
   margin-bottom: 2px;
   margin-left: 1px; 
   margin-top: 1px; 
