@@ -6,7 +6,9 @@ font-weight: 500; (medium for bold in body text)
 font-weight: 600; (semibold for headings)*/
 
 /* ABOUT page css starts here*/
-
+html, body {
+    overflow-x: hidden;
+}
 /*the logo on the about page*/
 
 .subheadings-about-page {
@@ -109,20 +111,25 @@ font-weight: 600; (semibold for headings)*/
   display: table;
 }
 
-
 .images-about-page-carousel-first {
 	width: 100%;
-	width: 1250px; 
+	max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .images-about-page-carousel-second {
 	width: 100%;
-	width: 1250px; 
+	max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .images-about-page-carousel-third {
 	width: 100%;
-	width: 1250px; 
+	max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
