@@ -110,7 +110,20 @@ font-weight: 600; (semibold for headings)*/
 }
 
 
+.images-about-page-carousel-first {
+	width: 100%;
+	width: 1250px; 
+}
 
+.images-about-page-carousel-second {
+	width: 100%;
+	width: 1250px; 
+}
+
+.images-about-page-carousel-third {
+	width: 100%;
+	width: 1250px; 
+}
 
 
 /* BLOG page css starts here*/
