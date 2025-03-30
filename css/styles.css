@@ -19,7 +19,7 @@ html, body {
     width: 100%;
 }
 .logo-about-page {
-	width: 110px; 
+	width: 200px; 
     padding-left: 0%;
     padding-right: 1%;
     padding-top: 1%;
@@ -87,8 +87,8 @@ html, body {
 }
 .column-about-page-meet-the-team {
   float: left;
-  width: 50%;
-  width: 200px;
+  width: 20%;
+  width: 300px;
   margin-bottom: 2px;
   margin-left: 1px; 
   margin-top: 1px; 
