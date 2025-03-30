@@ -19,9 +19,9 @@ html, body {
     width: 100%;
 }
 .logo-about-page {
-	width: 350px; 
+	width: 210px; 
     padding-left: 0%;
-    padding-right: 4%;
+    padding-right: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
     display: block;
@@ -31,6 +31,7 @@ html, body {
 .image-logo {
 	float: right;
 }
+
 /*font size for about page*/
 .about-font-size {
 	font-size: 100px; 
@@ -156,6 +157,7 @@ html, body {
 	font-weight: 200;
 	margin-top: 0%;
 }
+
 
 /* TICKETS page css starts here*/
 
@@ -286,3 +288,5 @@ footer {
     color: black;
 } 
 
+.main-background-color {
+}
