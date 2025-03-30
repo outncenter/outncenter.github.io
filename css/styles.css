@@ -8,6 +8,7 @@ font-weight: 600; (semibold for headings)*/
 /* ABOUT page css starts here*/
 
 /*the logo on the about page*/
+
 .subheadings-about-page {
 	padding-left: 0%;
     padding-right: 8%;
@@ -16,12 +17,17 @@ font-weight: 600; (semibold for headings)*/
     width: 100%;
 }
 .logo-about-page {
-	width: 200px; 
+	width: 350px; 
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 1%;
     padding-bottom: 1%;
     display: block;
+	
+}
+
+.image-logo {
+	float: right;
 	
 }
 /*font size for about page*/
