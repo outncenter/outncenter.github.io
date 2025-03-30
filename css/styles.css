@@ -82,6 +82,19 @@ font-weight: 600; (semibold for headings)*/
 
 /* BLOG page css starts here*/
 
+.blogtitle {
+	font-family: "Outfit", "san-serif";
+	font-size: 15px;
+	font-weight: 500;
+	margin-top: 2%;
+}
+
+.date {
+	font-family: "Outfit", "san-serif";
+	font-size: 12px;
+	font-weight: 200;
+	margin-top: 0%;
+}
 
 /* TICKETS page css starts here*/
 
