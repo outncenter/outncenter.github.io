@@ -73,6 +73,9 @@ html, body {
 }
 
 /* Everything for the meet the team part on the about page*/
+.text-within-card-about-page {
+  line-height: 0.8;
+}
 
 .meet-the-team-about-page {
 	font-size: 50px;
@@ -85,10 +88,13 @@ html, body {
 .column-about-page-meet-the-team {
   float: left;
   width: 50%;
-  width: 300px;
-  margin-bottom: 8px;
+  width: 310px;
+  margin-bottom: 2px;
+  margin-left: 1px; 
+  margin-top: 1px; 
+  margin-right: 1px;
   padding: 6px;
-  padding-left: 3%; 
+  padding-left: 1%; 
 }
 
 /* Display the columns below each other instead of side by side on small screens */
