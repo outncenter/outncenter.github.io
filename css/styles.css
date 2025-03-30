@@ -6,74 +6,89 @@ font-weight: 500; (medium for bold in body text)
 font-weight: 600; (semibold for headings)*/
 
 /* ABOUT page css starts here*/
-.about-font-size {
-	font-size: 70px; 
-}
 
-.container-about-page {
-	width: 92%;
-	margin: auto;
-	height: 100%;
-	border: 2px solid #C92F0E; 
-}
-.subheadings-about-page {
-	font-weight: 800;
-	font-size: 30px; 
-	padding-left: 0%;
-    padding-right: 8%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    width: 100%;
-}
-
-.color-block-about-page {
-    width: 1200px;  
-    padding: 10px; 
-    background-color: #740318; 
-  }
-
-.full-width-container {
-    width: 100%; 
-	width: 700px;
-  }
-
+/*the logo on the about page*/
 .logo-about-page {
-	width: 100%; 
-	width: 200px;
+	width: 200px; 
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 1%;
     padding-bottom: 1%;
+    display: block;
+	
+}
+/*font size for about page*/
+.about-font-size {
+	font-size: 100px; 
 	
 }
 
-.padding-of-values-about-page {
-	padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-	background-color: #B93D22;
-	width: 30%;
-	margin: 0%;
-	height: 100%; 
-    
+/*Main about page style*/
+.main-about-page {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+} 
+
+/* Everything for the vision part on the about page*/
+.vision-about-page {
+	font-size: 50px;
+	align-items: center;
+    justify-content: space-between; 
 }
 
-.padding-of-mission-about-page {
-	padding-left: 8%;
-	background-color: #B93D22;
-    padding-right: 8%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    width: 70%;
-	margin: 0%;
-	height: 100%; 
-    
+.container-vision-about-page {
+	display: flex;
+    align-items: center; 
+	justify-content: space-between;
 }
 
-.main-margin-about-page {
-	margin: 0%;
-	height: 100%;
+/* Everything for the mission part on the about page*/
+.mission-about-page {
+	font-size: 50px;
+}
+
+/* Everything for the values part on the about page*/
+.values-about-page {
+	font-size: 50px;
+}
+
+/* Everything for the meet the team part on the about page*/
+
+.meet-the-team-about-page {
+	font-size: 50px;
+}
+.column-about-page-meet-the-team {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .second-column-about-page-meet-the-team {
+	display: block;  
+    width: 100%; 
+	}
+} 
+
+.card {
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+} 
+/* Some left and right padding inside the container */
+.container-meet-the-team-about-page {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container-about-page-meet-the-team::after, .row::after {
+  content: "";
+  clear: both; 
+  display: table;
 }
 
 
@@ -113,7 +128,7 @@ font-weight: 600; (semibold for headings)*/
 
 
 /*BASE LAYOUT CSS STARTS HERE*/
-main {
+.main {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
     margin-left: 8%;
@@ -213,8 +228,8 @@ h2 {
 
 footer {
     background-color: blue;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
     width: 100%;
@@ -222,5 +237,5 @@ footer {
     bottom: 0;
     margin-top: 15%;
     color: black;
-}.subheadings-about-page {
-}
+} 
+
