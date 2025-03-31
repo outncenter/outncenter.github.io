@@ -11,13 +11,41 @@ font-weight: 600; (semibold for headings)*/
 }
 
 .container-color {
-	background-color: #D0B3FA; 
-	margin: 0px !important; 
-	width: 100vw;  
-    height: 100vh;
-    padding: 50px 0;
+	background-color: #D0B3FA;
+    min-height: 100%;
+    display: flex;
+    align-items: center; 
+    position: relative;
+    left: 0;
+	max-width: 100% !important;
+    width: 100vw !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
 	
 }
+
+.full-width-container {
+  width: 100vw; /* Full viewport width */
+  background-color: #f5f5f5; /* Add your desired background color */
+  max-width: 1200px; /* Adjust based on your layout needs */
+  margin: 0 auto; /* Center the container */
+  padding: 0 15px;
+}
+
+
+.row {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px; 
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust based on your layout needs */
+}
+
+
 .subheadings-about-page {
 	font-weight: 800;
 	font-size: 30px; 
