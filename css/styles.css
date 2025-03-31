@@ -10,11 +10,13 @@ font-weight: 600; (semibold for headings)*/
 	font-size: 70px; 
 }
 
-.container-about-page {
-	width: 92%;
-	margin: auto;
-	height: 100%;
-	border: 2px solid #C92F0E; 
+.container-color {
+	background-color: #D0B3FA; 
+	margin: 0px !important; 
+	width: 100vw;  
+    height: 100vh;
+    padding: 50px 0;
+	
 }
 .subheadings-about-page {
 	font-weight: 800;
@@ -160,6 +162,7 @@ font-weight: 600; (semibold for headings)*/
 	margin-top: 0%;
 }
 
+
 /* TICKETS page css starts here*/
 
 
@@ -274,6 +277,25 @@ h2 {
     outline: none; /* Removes the focus outline */
     box-shadow: none; /* Removes the focus box-shadow */
 }
+
+footer {
+    background-color: blue;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 300%;
+    color: white;
+} 
+
+.main-background-color {
+    margin-top: 0%;
+    color: black;
+}
+
 
 footer {
     background-color: blue;
