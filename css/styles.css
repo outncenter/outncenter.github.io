@@ -10,7 +10,6 @@ html, body {
     padding: 0;
     width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-<<<<<<< Updated upstream
 }
 
 /* ABOUT page css starts here*/
@@ -26,7 +25,6 @@ html, body {
 
 .main-about-page {
     margin-bottom: 50% !important;
-=======
 }
 
 /* ABOUT page css starts here*/
@@ -34,31 +32,15 @@ html, body {
 	font-size: 70px; 
 }
 
-.container-color {
->>>>>>> Stashed changes
-    background-color: #D0B3FA;
-    min-height: 100%;
-    display: flex;
-    align-items: center; 
-    position: relative;
-    width: 100vw; /* Ensure it spans full width */
-    max-width: 100% !important; /* Override constraints */
-    padding: 0 !important; /* Remove default container padding */
-    margin: 0 !important;
-}
+
 
 .full-width-container {
   width: 100vw; /* Full viewport width */
-  background-color: #f5f5f5; /* Add your desired background color */
   max-width: 1200px; /* Adjust based on your layout needs */
   margin: 0 auto; /* Center the container */
   padding: 0 15px;
 }
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 .row-about-page {
     margin: 0;
 }
@@ -80,10 +62,6 @@ html, body {
     width: 100%;
 }
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 /*font size for about page*/
 .about-font-size {
 	font-size: 100px; 
@@ -342,7 +320,6 @@ h5 {
     color: black;
 }
 
-<<<<<<< Updated upstream
 footer {
     background-color: blue;
     padding-left: 8%;
@@ -356,8 +333,6 @@ footer {
     color: white;
 } 
 
-=======
->>>>>>> Stashed changes
 .main-background-color {
     margin-top: 0%;
     color: black;
