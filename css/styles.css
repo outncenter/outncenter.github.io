@@ -13,15 +13,18 @@ html, body {
 }
 
 /* ABOUT page css starts here*/
-.about-font-size {
-	font-size: 70px; 
+.about-page-font-size-body {
+	font-weight: 300;
+	
 }
 
-<<<<<<< Updated upstream
+.about-font-size {
+	font-size: 70px; 
+	font-weight: 500;
+}
+
 .main-about-page {
     margin-bottom: 50% !important;
-=======
-.container-color {
     background-color: #D0B3FA;
     min-height: 100%;
     display: flex;
@@ -31,13 +34,7 @@ html, body {
     max-width: 100% !important; /* Override constraints */
     padding: 0 !important; /* Remove default container padding */
     margin: 0 !important;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
-
-
 
 .full-width-container {
   width: 100vw; /* Full viewport width */
@@ -46,7 +43,6 @@ html, body {
   margin: 0 auto; /* Center the container */
   padding: 0 15px;
 }
-
 
 .row-about-page {
     margin: 0;
@@ -69,12 +65,6 @@ html, body {
     width: 100%;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-
 /*font size for about page*/
 .about-font-size {
 	font-size: 100px; 
@@ -90,7 +80,6 @@ html, body {
     margin-bottom: 2%;
 } 
 
->>>>>>> Stashed changes
 /* Everything for the vision part on the about page*/
 .vision-about-page {
 	font-size: 50px;
@@ -334,8 +323,6 @@ h5 {
     color: black;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 footer {
     background-color: blue;
     padding-left: 8%;
@@ -349,10 +336,6 @@ footer {
     color: white;
 } 
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 .main-background-color {
     margin-top: 0%;
     color: black;
