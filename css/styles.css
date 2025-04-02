@@ -31,6 +31,9 @@ html, body {
     max-width: 100% !important; /* Override constraints */
     padding: 0 !important; /* Remove default container padding */
     margin: 0 !important;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 
@@ -67,7 +70,10 @@ html, body {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 /*font size for about page*/
 .about-font-size {
@@ -329,6 +335,7 @@ h5 {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 footer {
     background-color: blue;
     padding-left: 8%;
@@ -342,6 +349,8 @@ footer {
     color: white;
 } 
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 .main-background-color {
