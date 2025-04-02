@@ -10,7 +10,11 @@ font-weight: 600; (semibold for headings)*/
 	font-size: 70px; 
 }
 
-.container-color {
+.main-about-page {
+    margin-bottom: 50% !important;
+}
+
+.about-container-color {
 	background-color: #D0B3FA;
     min-height: 100%;
     display: flex;
@@ -21,30 +25,7 @@ font-weight: 600; (semibold for headings)*/
     width: 100vw !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin: 0 !important;
-	
 }
-
-.full-width-container {
-  width: 100vw; /* Full viewport width */
-  background-color: #f5f5f5; /* Add your desired background color */
-  max-width: 1200px; /* Adjust based on your layout needs */
-  margin: 0 auto; /* Center the container */
-  padding: 0 15px;
-}
-
-
-.row {
-    margin: 0;
-}
-
-.container {
-    width: 100%;
-    padding: 0 15px; 
-    margin: 0 auto;
-    max-width: 1200px; /* Adjust based on your layout needs */
-}
-
 
 .subheadings-about-page {
 	font-weight: 800;
@@ -62,20 +43,6 @@ font-weight: 600; (semibold for headings)*/
     background-color: #740318; 
   }
 
-/*font size for about page*/
-.about-font-size {
-	font-size: 100px; 
-}
-
-/*Main about page style*/
-.main-about-page {
-    font-family: "Outfit", sans-serif;
-    font-weight: 300;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-} 
 
 /* Everything for the vision part on the about page*/
 .vision-about-page {
@@ -112,6 +79,7 @@ font-weight: 600; (semibold for headings)*/
 	margin: 0; 
     padding: 0;	 
 }
+
 .column-about-page-meet-the-team {
   float: left;
   width: 20%;
@@ -126,7 +94,7 @@ font-weight: 600; (semibold for headings)*/
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
-  .second-column-about-page-meet-the-team {
+.second-column-about-page-meet-the-team {
 	display: block;  
 	}
 }
@@ -167,11 +135,6 @@ font-weight: 600; (semibold for headings)*/
 	margin: 0%;
 	height: 100%; 
     
-}
-
-.main-margin-about-page {
-	margin: 0%;
-	height: 100%;
 }
 
 /* BLOG page css starts here*/
@@ -225,6 +188,19 @@ h2, h3, h4, h5 {
 h2 {
     font-size: 7vw;
 }
+
+h3 {
+    font-size: 6vw;
+}
+
+h4 {
+    font-size: 4vw;
+}
+
+h5 {
+    font-size: 2vw;
+}
+
 .outfit-semibold {
     font-family: "Outfit", sans-serif;
     font-weight: 600;
@@ -305,19 +281,6 @@ h2 {
     outline: none; /* Removes the focus outline */
     box-shadow: none; /* Removes the focus box-shadow */
 }
-
-footer {
-    background-color: blue;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    margin-top: 300%;
-    color: white;
-} 
 
 .main-background-color {
     margin-top: 0%;
