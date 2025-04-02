@@ -17,8 +17,21 @@ html, body {
 	font-size: 70px; 
 }
 
+<<<<<<< Updated upstream
 .main-about-page {
     margin-bottom: 50% !important;
+=======
+.container-color {
+    background-color: #D0B3FA;
+    min-height: 100%;
+    display: flex;
+    align-items: center; 
+    position: relative;
+    width: 100vw; /* Ensure it spans full width */
+    max-width: 100% !important; /* Override constraints */
+    padding: 0 !important; /* Remove default container padding */
+    margin: 0 !important;
+>>>>>>> Stashed changes
 }
 
 
@@ -53,6 +66,25 @@ html, body {
     width: 100%;
 }
 
+<<<<<<< Updated upstream
+=======
+
+/*font size for about page*/
+.about-font-size {
+	font-size: 100px; 
+}
+
+/*Main about page style*/
+.main-about-page {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+} 
+
+>>>>>>> Stashed changes
 /* Everything for the vision part on the about page*/
 .vision-about-page {
 	font-size: 50px;
@@ -296,6 +328,7 @@ h5 {
     color: black;
 }
 
+<<<<<<< Updated upstream
 footer {
     background-color: blue;
     padding-left: 8%;
@@ -309,6 +342,8 @@ footer {
     color: white;
 } 
 
+=======
+>>>>>>> Stashed changes
 .main-background-color {
     margin-top: 0%;
     color: black;
