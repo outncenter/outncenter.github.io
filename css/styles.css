@@ -161,6 +161,9 @@ html, body {
     
 }
 
+.heading-five-cards-meet-the-team {
+	font-size: 25px; 
+}
 /* BLOG page css starts here*/
 
 .blogtitle {
@@ -342,4 +345,6 @@ footer {
 }
 
 .about-the-team-font-size {
+}
+.heading-five-cards-meet-the-team {
 }
