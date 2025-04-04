@@ -185,7 +185,33 @@ html, body {
 
 
 /* CORPORATE page css starts here*/
+.corporate-font-size {
+	font-size: 70px; 
+	font-weight: 600;
+}
 
+.content-part-corporate-page {
+	font-size: 50px;
+	align-items: center;
+    justify-content: space-between; 
+	font-weight: 600; 
+}
+
+.subheadings-content-part-corporate-page {
+	font-size: 35px;
+	align-items: center;
+    justify-content: space-between; 
+	font-weight: 500; 
+}
+
+.logo-corporate-page {
+	width: 100%; 
+	width: 500px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+}
 
 /* FAVOURITES page css starts here*/
 
