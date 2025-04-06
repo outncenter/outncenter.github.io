@@ -255,6 +255,11 @@ h5 {
     padding-right: 7%;
 }
 
+.nocarouselnav {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
 /* Scroll navbar (white background on scroll) */
 #scrollnavbar {
     background-color: white;
