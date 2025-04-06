@@ -39,7 +39,7 @@
         </button>
       </div>
       <div class="d-flex justfify-content-center">
-        <a class="navbar-brand outfit-semibold brandname-nav-margin" href="index.html">outncenter</a>
+        <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style" href="index.html">outncenter</a>
       </div>
       <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
@@ -48,26 +48,23 @@
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
         aria-labelledby="offcanvasScrollNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h5>
+          <h4 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h4>
           <button type="button" class="btn-close close-button" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
             <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
             <li class="nav-item"><a class="nav-link" href="tickets.html">tickets</a></li>
-            <li class="nav-item"><a class="nav-link" href="getrailed.html">getrailed</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                 corporate
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="corporate.html">Action</a></li>
-                <li><a class="dropdown-item" href="corporate.html">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="corporate.html">Something else here</a></li>
+                <li><a class="dropdown-item" href="corporate.html">Content</a></li>
+                <li><a class="dropdown-item" href="corporate.html">Management</a></li>
+                <li><a class="dropdown-item" href="corporate.html">Production</a></li>
+                <li><a class="dropdown-item" href="corporate.html">Marketing</a></li>
               </ul>
             </li>
           </ul>
@@ -78,11 +75,11 @@
   <!--end down-scrollnavbar-->
 
   <!-- Carousel and its navigation-->
-  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    <nav class="navbar" id="transNavbar">
+  <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+    <nav class="navbar bg-black" style="padding-left: 7%; padding-right: 7%;">
       <div class="container-fluid">
         <div class="justify-content-start">
-          <button class="icon-style">
+          <button class="icon-style icon-white">
             <a href="profile.html" class="text-decoration-none text-reset">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -92,7 +89,7 @@
               </svg>
             </a>
           </button>
-          <button class="icon-style">
+          <button class="icon-style icon-white">
             <a href="favourites.html" class="text-decoration-none text-reset">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
                 viewBox="0 0 16 16">
@@ -103,16 +100,16 @@
           </button>
         </div>
         <div class="d-flex justfify-content-center">
-          <a class="navbar-brand outfit-semibold brandname-nav-margin" href="index.html">outncenter</a>
+          <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style icon-white" href="index.html">outncenter</a>
         </div>
         <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon navbar-dark"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
           aria-labelledby="offcanvasScrollNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h5>
+            <h4 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h4>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
           </div>
           <div class="offcanvas-body">
@@ -126,12 +123,10 @@
                   corporate
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="corporate.html">Action</a></li>
-                  <li><a class="dropdown-item" href="corporate.html">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="corporate.html">Something else here</a></li>
+                  <li><a class="dropdown-item" href="corporate.html">Content</a></li>
+                  <li><a class="dropdown-item" href="corporate.html">Management</a></li>
+                  <li><a class="dropdown-item" href="corporate.html">Production</a></li>
+                  <li><a class="dropdown-item" href="corporate.html">Marketing</a></li>
                 </ul>
               </li>
             </ul>
@@ -139,517 +134,542 @@
         </div>
       </div>
     </nav>
+  <!--end of navigations-->
 
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2">
-      </button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="images/pink_carousel.webp" class="d-block w-100" alt="pink advertisement">
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="./images/teal_carousel.png" class="d-block w-100" alt="teal advertisement">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/orange_carousel.png" class="d-block w-100" alt="orange advertisement">
-      </div>
-    </div>
-  </div>
-<!--end of navigations-->
-
-<!--main for your content and text starts here-->
+  <!--main for your content and text starts here-->
   <main>
     <!--container for about-->
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h2 class="corporate-font-size">Corporate</h2>
-          <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3D6AYv6rV3NXE&ved=2ahUKEwjbgIjQk6aMAxUy-gIHHfFJBcAQz40FegQIEhAI&usg=AOvVaw1VGYu_HLv_gFhdyYI-6nxX?go=1" target="_blank" style=" color: black">
-			</a>
+          <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3D6AYv6rV3NXE&ved=2ahUKEwjbgIjQk6aMAxUy-gIHHfFJBcAQz40FegQIEhAI&usg=AOvVaw1VGYu_HLv_gFhdyYI-6nxX?go=1"
+            target="_blank" style=" color: black">
+          </a>
         </div>
       </div>
-	<!-- add table of contents here -->
-    <!--you can delete the huge logo at the bottom if you want. its there to keep the page able to scroll for the footer-->
+      <!-- add table of contents here -->
+      <!--you can delete the huge logo at the bottom if you want. its there to keep the page able to scroll for the footer-->
       <div class="row">
         <div class="col-12">
           <img src="images/onc_nl_bs3.svg" alt="outncenter" class="img-fluid large-logo justify-content-end">
         </div>
       </div>
     </div>
-	
-  <!--start of content here -->
-  <!--content part of the course-->
-  <!--start of title of the container--> 
-	 <div class="container">
-       <div class="row">
-         <h3 class= "content-part-corporate-page">Content</h3>
-		  </div>
-		  </div>
-	<!--end of title of the container--> 
-	  
-	<!--start of brand name and logo part-->
-         <div class="container">
-           <div class="row d-flex align-items-center">
-             <div class="col-12 col-md-6 col-xl-4">
-               <h3 class="subheadings-content-part-corporate-page">Brand Name</h3>
-		       <p>The brand name is <strong>OutnCenter</strong>. It is a play on Front Center but using Out instead of Front for LGBTQ+ visibility.</p>
-			   <h3 class="subheadings-content-part-corporate-page">Logo</h3>
-	          <div class="col-12 col-md-6 col-xl-4 text-center">
-            <img src="images/logo-out-n-center/logo-vertical-out-n-center.jpeg" alt="outncenter" class="img-fluid logo-corporate-page">
+
+    <!--start of content here -->
+    <!--content part of the course-->
+    <!--start of title of the container-->
+    <div class="container">
+      <div class="row">
+        <h3 class="content-part-corporate-page">Content</h3>
+      </div>
+    </div>
+    <!--end of title of the container-->
+
+    <!--start of brand name and logo part-->
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-md-6 col-xl-4">
+          <h3 class="subheadings-content-part-corporate-page">Brand Name</h3>
+          <p>The brand name is <strong>OutnCenter</strong>. It is a play on Front Center but using Out instead of Front
+            for LGBTQ+ visibility.</p>
+          <h3 class="subheadings-content-part-corporate-page">Logo</h3>
+          <div class="col-12 col-md-6 col-xl-4 text-center">
+            <img src="images/logo-out-n-center/logo-vertical-out-n-center.jpeg" alt="outncenter"
+              class="img-fluid logo-corporate-page">
           </div>
         </div>
       </div>
-     </div>
-	<!--end of brand name and logo part-->
-	  
-	<!--start of brand vision-->
-	 <h3 class="subheadings-content-part-corporate-page">Brand vision</h3>
-	 <p>In the world of theatre where LGBTQ+ characters are often misrepresented, we believe in shining spotlight on authentic storytelling. Because everyone at centre stage deserves to be out and proud.</p>
-	<!--end of brand vision--> 
-	  
-	<!--start of brand values-->
+    </div>
+    <!--end of brand name and logo part-->
+
+    <!--start of brand vision-->
+    <h3 class="subheadings-content-part-corporate-page">Brand vision</h3>
+    <p>In the world of theatre where LGBTQ+ characters are often misrepresented, we believe in shining spotlight on
+      authentic storytelling. Because everyone at centre stage deserves to be out and proud.</p>
+    <!--end of brand vision-->
+
+    <!--start of brand values-->
     <div class="col-12 col-md-6 col-xl-4">
       <h3 class="subheadings-content-part-corporate-page">Values</h3>
-          <ul>
-            <li><strong>Authenticity</strong> - We are committed to authenticity, and proudly celebrating Lgbtq+ voices in theatre.</li>
-            <li> <strong>Learning</strong> - Engaging with our brand means always discovering something new.</li>
-            <li><strong>Inclusivity</strong>- We welcome all who support and engage with Lgbtq+ theatre.</li>
-          </ul>
-        </div>
-      <!--end of brand values-->
-	    
-	  <!--start of brand persona-->
-	    <h3 class="subheadings-content-part-corporate-page">Brand Persona</h3>
-	    <img src="images/corporate-page-images/brand persona-image/brand-persona.jpg" alt="brand persona" class="img-fluid">
-	    <!--end of brand persona-->
-	    
-	    <!--start of visual identity-->
-	    <h3 class="subheadings-content-part-corporate-page">Visual Identity</h3>
-	    <p> Add picture of moodboard and some explanation</p>
-	 <!--end of visual identity-->
-	  
-	 <!--start of supporting visuals-->
-	    <h3 class="subheadings-content-part-corporate-page">Supporting Visuals</h3>
-	    <p>Add supporting visuals</p>
-	 <!--end of supporting visuals-->
-     <!--end container for content-->
-	 
-	 <!--start container for management-->
-	 <!--start of title of the container--> 
-	  <div class="container">
-        <div class="row">
-          <h3 class= "content-part-corporate-page">Management</h3>
-		   </div>
-		   </div>
-	 <!--end of title of the container--> 
-	 <!--start of lean canvas one-->
-             <div class="col-12 col-md-6 col-xl-4">
-               <h3 class="subheadings-content-part-corporate-page">Lean Canvas One</h3>
-				 <!--end of title of lean canvas--> 
-				 
-			    <p>add table here</p>
-				 
-	 <!--start of problem part--> 
-				<p><strong>Problem</strong></p>
-				 <ul>
-			       <li>All the information is at different places which makes it very unorganized.</li>
-				   <li>There is a lot of misinterpretation in theatre about the Lgbtq+ community.</li>
-				   <li>They want to read articles about misrepresentation but it is hard to find reliable sources and to find interesting articles.</li>
-				   <li>They want to easily find out about different queer plays that are playing in their area.</li>
-				 </ul>
-     <!--end of problem part--> 
-				 
-	 <!--start of solution part--> 
-			<p><strong>Solution</strong></p>
-			   <ul> 
-					<li>A website where you can see all the shows playing with dates, theatres and reviews aout a show where you can immediately buy a ticket to a show. It is easy, accessible and organized.</li>
-				    <li>A platform where individuals can engage in discussions about different topics in theatre.</li>
-					<li>A platform where individuals can easily find reliable articles that are discussing topics such as misrepresentation of the Lgbtq+ community in theatre.</li>
-			   </ul>
-	 <!--end of solution part--> 
-				 
-	 <!--start of customer segments part--> 
-			   <p><strong>Customer Segments</strong></p>
-				 <ul>
-				  <li>Adults 20 to 35 years old</li>
-				  <li>Based in Europe</li>
-			      <li>Attend the theatre 2/3 times per year</li>
-				  <li>Enjoy a mix of performances and are often seeking productions that challenge societal norms</li>
-				  <li>Favour theatre productions that are progressive and inclusive of diverse identities, experiences and stories</li>
-				  <li>Follow theatre companies, actors online especially those who champion lgbtq+ narratives and themes</li>
-				  <li>Engage with theatre-related content online</li>
-				  <li>They are part of the lgbtq+ community or are allies</li>
-				 </ul>
-	 <!--end of customer segments part--> 
-				 
-	 <!--start  of value proposition part--> 
-			     <p><strong>Value Proposition</strong></p>
-				   <p>We stand out as an online platform that is dedicated to create a safe space for theater lovers to actively explore, discuss and celebrate Lgbtq+ representation in theater. We focus entirely on amplifying queer voices, fostering critical conversations and making representation more accessibler and visible.</p>
-				 <ul>
-				  <li>A website as an online platform</li>
-				  <li> Safe space for the community</li>
-				  <li>Creating a fun and safe space for the theater community to discuss and discover new plays and to raise awareness about current representation issues </li>
-				 </ul>
-	 <!--end of value proposition part--> 
-				 
-	 <!--start  of channels part--> 
-			     <p><strong>Channels</strong></p>
-				   <ul>
-				     <li>Social media: TikTok, Instagram, YouTube</li>
-				     <li>Advertising at theaters </li>
-				   </ul>
-	 <!--end of channels part--> 
-				 
-	 <!--start  of unfair advantage part--> 
-			      <p><strong>Unfair Advantage</strong></p>
-				    <ul>
-				     <li>Specialized content towards lgbtq+ theatre lovers</li>
-					 <li>Accessible and easy booking integration, you can easily book tickets and find new plays and ways to travel towards the theater all in one place </li>
-					 <li>A Seamless Blend of Education and Entertainment </li>
-				    </ul>
-	 <!--end of unfair advantage part--> 
-				 
-	 <!--start of key metrics part--> 
-			      <p><strong>Key Metrics</strong></p>
-				    <ul>
-				      <li>The key activities are key performance indicators for social media to ensure that engagements on social media can be measured </li>
-					  <li>Tickets sold for events through our website will be monitored to see the success of the ticket selling system</li>
-					  <li> Amount of blog readers</li>
-					  <li>Furthermore, it will be monitored how many times people will click on the website by measuring the website’s click through rate</li>
-				    </ul>
-	<!--end  of key metrics part--> 
-				 
-	<!--start of cost structure part--> 
-			      <p><strong>Cost Structure</strong></p>
-	<!--start of fixed costs part--> 
-			       <p><strong>Fixed Costs</strong></p>
-				     <ul>
-					  <li><strong>Hosting</strong> - The cost of keeping the website live and accessible </li>
-                      <li><strong>People</strong> – Salaries to employees and contributors </li>
-					  <li><strong>Ticket</strong> <strong>management system</strong> – The system is developed/licensed for a fixed fee rather than per transaction</li>
-				    </ul>
-    <!--end of fixed costs part--> 
-				 
-    <!--start of  variable costs part--> 
-			      <p><strong>Variable Costs</strong></p>
-				    <ul>
-				      <li><strong>Customer acquisition costs</strong> – All the  expenses related to sales, marketing, and other activities aimed at attracting and converting potential customers into paying ones </li>
-					  <li><strong>Distributing costs</strong> – Costs will be made for the distribution of the brand and website </li>
-					  <li><strong>Marketing</strong> <strong>costs</strong> – The costs that go towards the marketing campaign to promote the brand</li>
-				   </ul>
-   <!--end of variable costs part--> 
-   <!--end of cost structure part-->
-				 
-   <!--start of  revenue streams part--> 
-			      <p><strong>Revenue Streams</strong></p>
-				    <ul>
-				      <li><strong>Advertisement based</strong> - on our website advertisment space is sold and from this income is generated </li>
-			          <li><strong>Freemium</strong> <strong>Revenue</strong> <strong>Model</strong> (Subscription option for 2,99 euro/month) - In order to read certain articles individuals will be asked to pay a certain subscription as well to buy certain tickets to plays</li> 
-					  <li><strong>Advertising</strong></li>
-					  <li><strong>Affiliate</strong> <strong>marketing</strong> – Theatre events and shows</li>
-				    </ul>
-   <!--end of revenue streams part--> 
-		         </div>
-		
-   <!--start of lean canvas two-->
-                 <div class="col-12 col-md-6 col-xl-4">
-                   <h3 class="subheadings-content-part-corporate-page">Lean Canvas Two</h3>
-   <!--end of title of lean canvas-->  
-			     <p>Add table here</p>
-   <!--add content here--> 
-			    </div>
-   <!--start of value proposition canvas-->
-               <div class="col-12 col-md-6 col-xl-4">
-                 <h3 class="subheadings-content-part-corporate-page">Value Proposition canvas</h3>
-   <!--end of title of value proposition canvas-->  
-			       <p>Add table here and information</p>
-				 <img src= "images/corporate-page-images/value-proposition-canvas.jpg" alt="value proposition canvas" class="img-fluid">  <p> upload better quality later!!!</p>
-   <!--add content here--> 	
-	          </div>
-	  
-   <!--start of problem interview conclusions-->
-              <div class="col-12 col-md-6 col-xl-4">
-                 <h3 class="subheadings-content-part-corporate-page">Problem Interview Conclusions</h3>
-   <!--end of title of problem interview conclusions-->  
-			      <p>Based on the interviews that were done with theatre actors and theatre lovers the following results were found:</p>
-				    <p><strong>Theatre</strong> <strong>actors</strong></p>
-			        <ul> 
-		              <il>Need better access to auditions, industry connections, and mentors</il>
-				      <il>Struggle with financial stability; balance acting with side jobs</il>
-				      <il>Desire a supportive community, particularly one that celebrates diversity and inclusivity</il>
-					  <il>Want rehearsal spaces that nurture growth, creativity, and failure without judgment</il>
-					  <il>Desire more lgbtq+ representation in theatre</il>
-				 	  <il>Need career planning tools and sustainable income strategies.</il>
-				    </ul>
-				   <p> <strong> Theatre</strong> <strong>lovers</strong></p>
-				    <ul>
-			          <il>Struggle to discover shows and are looking for a centralized platform with all the information about shows</il>
-					  <il>Prefer musicals, high production value, and immersive storytelling.</il>
-					  <il>Have a desire for more inclusive storytelling </il>
-					  <il>Are frustrated by superficial themes and stereotypical characters in theatre especially lgbtq+ characters</il>
-					  <il>Rely on word-of-mouth, social media, and email marketing for show discovery </il>
-					  <il>Enjoy behind-the-scenes content like cast interviews and rehearsals </il>
-					  <il>Go to the theatre 2–3 times per year especially when they are traveling </il>
-				      <il>Want better ticketing systems</il>
-					  <il>Seek a platform that connects them with others who share their passion for inclusive theatre</il>
-			        </ul>
-				 
-			     <p> <strong> I</strong><strong><strong>n</strong> <strong>conclusion</strong>.... </strong></p>	 
-				 <p> add content here</p>
-               </div>
-   <!--start of solution interview conclusions-->
-             <div class="col-12 col-md-6 col-xl-4">
-               <h3 class="subheadings-content-part-corporate-page">Solution Interview Conclusions</h3>
-   <!--end of title of solution interview conclusions-->  
-			    <p>Add information</p>
-   <!--add content here--> 	
-	             </div>
-   <!--start of services-->
-                <div class="col-12 col-md-6 col-xl-4">
-                 <h3 class="subheadings-content-part-corporate-page">Services</h3>
-	<!--end of title of services-->  
-			      <p>Add information, not sure if this ones necessary check this!</p> 
-	  <!--add content here--> 	
-	           </div>
-	<!--start of justification of management-->
-                <div class="col-12 col-md-6 col-xl-4">
-                  <h3 class="subheadings-content-part-corporate-page">Justification </h3>
-	<!--end of title of justification of management-->  
-			         <p>Add information</p>
-	<!--add content here--> 	
-	             </div>
-    <!--start of title of the container--> 
-	           <div class="container">
-             <div class="row">
-           <h3 class= "content-part-corporate-page">Marketing</h3>
-		    <p> add content here</p>
-		     </div>
-		      </div>
-	<!--end of title of the container--> 
-	<!--start of our brand-->
-                <div class="col-12 col-md-6 col-xl-4">
-                  <h3 class="subheadings-content-part-corporate-page">Our Brand</h3>
-				    <p> Out n Center is an inclusive theatre brand that strives for more realistic Lgbtq+ representation in theatre. </p>
-				     <p>Our platform provides informative articles about Lgbtq+ representation awareness and insightful interviews with professionals from the industry. Moreover, we provide a ticketing service where visitors can gain information about new plays and immediately are directed to theatre pages for tickets.</p>
-			      </div>
-	<!--end of title of our brand--> 
-	<!--start of target audience-->
-                <div class="col-12 col-md-6 col-xl-4">
-               <h3 class="subheadings-content-part-corporate-page">Target audience</h3>
-		      <p> The target audience consists of young to middle-aged adults who are either part of the Lgbtq+ community or allies. They are passionate about theatre and view it as a space for artistic expression, storytelling, and representation. Their interests extend beyond casual theatre-going—they actively engage with theatre culture, both online and in person. They are highly engaged, digitally savvy and eager to support theatre that aligns with their values. They are passionate and seek entertainment and meaningful representation in the arts.</p>
-			     <p> <strong> Key  Characteristics</strong></p>
-				   <ul>
-				    <li>20-35 years old </li>
-				    <li>Primarily based in Europe, with a strong presence in urban areas where theatre culture thrives. </li>
-				    <li>Lgbtq+ individuals and allies who support inclusive and diverse narratives in the arts. </li>
-					<li>Interests and values: Inclusivity, creativity, storytelling, activism, and cultural engagement. They often seek out stories that reflect diverse experiences, particularly those related to the Lgbtq+ community. </li>
-					<li>Attend the theatre 2/3 times per year. </li>
-					<li>Enjoy a mix of performances and are often seeking productions that challenge societal norms. </li>
-					<li>Favour theatre productions that are progressive and inclusive of diverse identities, experiences and stories. </li>
-					<li>Follow theatre companies, actors online especially those who champion Lgbtq+ narratives and themes. </li>
-					<li>Engage with theatre-related content online. </li>
-					<li>Active on platforms like Instagram, TikTok, YouTube. </li>
-					<li>Use social media to discover new plays. </li>
-					<li>Find new theatre experiences through word of mouth and social media. </li>
-				   </ul>
-		         </div>
-	
-	<!--end of title of target audience--> 
-				 
-	<!--start of our brand-->
-                 <div class="col-12 col-md-6 col-xl-4">
-                <h3 class="subheadings-content-part-corporate-page">Communication Objectives</h3>
-		       <p> <strong> Reach Objectives</strong></p>
-		     <ul> 
-		      <li> Reach 1000 views on Tiktok on the first post. </li>
-		      <li>Gain 100 followers on Instagram within the first 2 weeks of the marketing campaign.</li>
-		     </ul>
-		       <p><strong>Affect</strong> <strong>Objective</strong></p>
-	            <ul>
-		         <li>It aims to give people meaningful knowledge and to inspire them to strive for accurate representation. (needs to be changed) </li>
-		        </ul>
-		   
-		   <p><strong>Response objective</strong></p>
-		   <ul>
-		    <li>Achieve a 20% CTR to boost website traffic.</li>
-	     </ul>
-	    </div>
-		
-	<!--end of title of our brand--> 
-	<!--start of marketing campaign-->
-  
-       <div class="col-12 col-md-6 col-xl-4">
-        <h3 class="subheadings-content-part-corporate-page">Marketing campaign</h3> 
-	     <p> <strong> Context</strong> <strong>of</strong> <strong>the</strong> <strong>campaign</strong></p>
-		   <p><strong>Campaign</strong> <strong>objective</strong></p>
-		   <p>This campaign aims to foster a more accepting environment for Lgbtq+ characters in theatre, film, and television by advocating for authentic representation.</p>
-	     <p>Misrepresentation, whether through stereotypes, one-dimensional portrayals, or tokenism, does not just fail the community, it actively harms it. Our goal is to raise awareness about the impact of problematic representation and encourage creators to craft Lgbtq+ characters that feel real, complex, and human.</p>
-		   <p> <strong> Key</strong> <strong>Message </strong></p>
-		   <p> To communicate why authentic representation matters,  a series of strong, concise statements will be de developing that will highlight both the importance of real representation and the harm of poor representation.</p>
-	     <ul>
-		   <li>Lgbtq+ characters deserve depth, not stereotypes. </li>
-		   <li>Sexuality isn’t a personality! </li>
-		   <li>Representation shapes reality. When we reduce characters, we reduce people. </li>
-		   <li>Visibility should empower, not diminish. Authenticity matters.</li>
-		   </ul>
-		   <p> <strong> Call</strong> <strong>to</strong> <strong>Action</strong></p>
-	     <p>The call to action is to  redefine Lgbtq+ representation in theatre. Share, discuss, and demand stories that reflect the full depth of human experience, because real representation changes lives. (might need to be adjusted)</p>
-	    </div>
-	<!--end of title of marketing campaign--> 
+      <ul>
+        <li><strong>Authenticity</strong> - We are committed to authenticity, and proudly celebrating Lgbtq+ voices in
+          theatre.</li>
+        <li> <strong>Learning</strong> - Engaging with our brand means always discovering something new.</li>
+        <li><strong>Inclusivity</strong>- We welcome all who support and engage with Lgbtq+ theatre.</li>
+      </ul>
+    </div>
+    <!--end of brand values-->
+
+    <!--start of brand persona-->
+    <h3 class="subheadings-content-part-corporate-page">Brand Persona</h3>
+    <img src="images/corporate-page-images/brand persona-image/brand-persona.jpg" alt="brand persona" class="img-fluid">
+    <!--end of brand persona-->
+
+    <!--start of visual identity-->
+    <h3 class="subheadings-content-part-corporate-page">Visual Identity</h3>
+    <p> Add picture of moodboard and some explanation</p>
+    <!--end of visual identity-->
+
+    <!--start of supporting visuals-->
+    <h3 class="subheadings-content-part-corporate-page">Supporting Visuals</h3>
+    <p>Add supporting visuals</p>
+    <!--end of supporting visuals-->
+    <!--end container for content-->
+
+    <!--start container for management-->
+    <!--start of title of the container-->
+    <div class="container">
+      <div class="row">
+        <h3 class="content-part-corporate-page">Management</h3>
+      </div>
+    </div>
+    <!--end of title of the container-->
+    <!--start of lean canvas one-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Lean Canvas One</h3>
+      <!--end of title of lean canvas-->
+
+      <p>add table here</p>
+
+      <!--start of problem part-->
+      <p><strong>Problem</strong></p>
+      <ul>
+        <li>All the information is at different places which makes it very unorganized.</li>
+        <li>There is a lot of misinterpretation in theatre about the Lgbtq+ community.</li>
+        <li>They want to read articles about misrepresentation but it is hard to find reliable sources and to find
+          interesting articles.</li>
+        <li>They want to easily find out about different queer plays that are playing in their area.</li>
+      </ul>
+      <!--end of problem part-->
+
+      <!--start of solution part-->
+      <p><strong>Solution</strong></p>
+      <ul>
+        <li>A website where you can see all the shows playing with dates, theatres and reviews aout a show where you can
+          immediately buy a ticket to a show. It is easy, accessible and organized.</li>
+        <li>A platform where individuals can engage in discussions about different topics in theatre.</li>
+        <li>A platform where individuals can easily find reliable articles that are discussing topics such as
+          misrepresentation of the Lgbtq+ community in theatre.</li>
+      </ul>
+      <!--end of solution part-->
+
+      <!--start of customer segments part-->
+      <p><strong>Customer Segments</strong></p>
+      <ul>
+        <li>Adults 20 to 35 years old</li>
+        <li>Based in Europe</li>
+        <li>Attend the theatre 2/3 times per year</li>
+        <li>Enjoy a mix of performances and are often seeking productions that challenge societal norms</li>
+        <li>Favour theatre productions that are progressive and inclusive of diverse identities, experiences and stories
+        </li>
+        <li>Follow theatre companies, actors online especially those who champion lgbtq+ narratives and themes</li>
+        <li>Engage with theatre-related content online</li>
+        <li>They are part of the lgbtq+ community or are allies</li>
+      </ul>
+      <!--end of customer segments part-->
+
+      <!--start  of value proposition part-->
+      <p><strong>Value Proposition</strong></p>
+      <p>We stand out as an online platform that is dedicated to create a safe space for theater lovers to actively
+        explore, discuss and celebrate Lgbtq+ representation in theater. We focus entirely on amplifying queer voices,
+        fostering critical conversations and making representation more accessibler and visible.</p>
+      <ul>
+        <li>A website as an online platform</li>
+        <li> Safe space for the community</li>
+        <li>Creating a fun and safe space for the theater community to discuss and discover new plays and to raise
+          awareness about current representation issues </li>
+      </ul>
+      <!--end of value proposition part-->
+
+      <!--start  of channels part-->
+      <p><strong>Channels</strong></p>
+      <ul>
+        <li>Social media: TikTok, Instagram, YouTube</li>
+        <li>Advertising at theaters </li>
+      </ul>
+      <!--end of channels part-->
+
+      <!--start  of unfair advantage part-->
+      <p><strong>Unfair Advantage</strong></p>
+      <ul>
+        <li>Specialized content towards lgbtq+ theatre lovers</li>
+        <li>Accessible and easy booking integration, you can easily book tickets and find new plays and ways to travel
+          towards the theater all in one place </li>
+        <li>A Seamless Blend of Education and Entertainment </li>
+      </ul>
+      <!--end of unfair advantage part-->
+
+      <!--start of key metrics part-->
+      <p><strong>Key Metrics</strong></p>
+      <ul>
+        <li>The key activities are key performance indicators for social media to ensure that engagements on social
+          media can be measured </li>
+        <li>Tickets sold for events through our website will be monitored to see the success of the ticket selling
+          system</li>
+        <li> Amount of blog readers</li>
+        <li>Furthermore, it will be monitored how many times people will click on the website by measuring the website’s
+          click through rate</li>
+      </ul>
+      <!--end  of key metrics part-->
+
+      <!--start of cost structure part-->
+      <p><strong>Cost Structure</strong></p>
+      <!--start of fixed costs part-->
+      <p><strong>Fixed Costs</strong></p>
+      <ul>
+        <li><strong>Hosting</strong> - The cost of keeping the website live and accessible </li>
+        <li><strong>People</strong> – Salaries to employees and contributors </li>
+        <li><strong>Ticket</strong> <strong>management system</strong> – The system is developed/licensed for a fixed
+          fee rather than per transaction</li>
+      </ul>
+      <!--end of fixed costs part-->
+
+      <!--start of  variable costs part-->
+      <p><strong>Variable Costs</strong></p>
+      <ul>
+        <li><strong>Customer acquisition costs</strong> – All the expenses related to sales, marketing, and other
+          activities aimed at attracting and converting potential customers into paying ones </li>
+        <li><strong>Distributing costs</strong> – Costs will be made for the distribution of the brand and website </li>
+        <li><strong>Marketing</strong> <strong>costs</strong> – The costs that go towards the marketing campaign to
+          promote the brand</li>
+      </ul>
+      <!--end of variable costs part-->
+      <!--end of cost structure part-->
+
+      <!--start of  revenue streams part-->
+      <p><strong>Revenue Streams</strong></p>
+      <ul>
+        <li><strong>Advertisement based</strong> - on our website advertisment space is sold and from this income is
+          generated </li>
+        <li><strong>Freemium</strong> <strong>Revenue</strong> <strong>Model</strong> (Subscription option for 2,99
+          euro/month) - In order to read certain articles individuals will be asked to pay a certain subscription as
+          well to buy certain tickets to plays</li>
+        <li><strong>Advertising</strong></li>
+        <li><strong>Affiliate</strong> <strong>marketing</strong> – Theatre events and shows</li>
+      </ul>
+      <!--end of revenue streams part-->
+    </div>
+
+    <!--start of lean canvas two-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Lean Canvas Two</h3>
+      <!--end of title of lean canvas-->
+      <p>Add table here</p>
+      <!--add content here-->
+    </div>
+    <!--start of value proposition canvas-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Value Proposition canvas</h3>
+      <!--end of title of value proposition canvas-->
+      <p>Add table here and information</p>
+      <img src="images/corporate-page-images/value-proposition-canvas.jpg" alt="value proposition canvas"
+        class="img-fluid">
+      <p> upload better quality later!!!</p>
+      <!--add content here-->
+    </div>
+
+    <!--start of problem interview conclusions-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Problem Interview Conclusions</h3>
+      <!--end of title of problem interview conclusions-->
+      <p>Based on the interviews that were done with theatre actors and theatre lovers the following results were found:
+      </p>
+      <p><strong>Theatre</strong> <strong>actors</strong></p>
+      <ul>
+        <il>Need better access to auditions, industry connections, and mentors</il>
+        <il>Struggle with financial stability; balance acting with side jobs</il>
+        <il>Desire a supportive community, particularly one that celebrates diversity and inclusivity</il>
+        <il>Want rehearsal spaces that nurture growth, creativity, and failure without judgment</il>
+        <il>Desire more lgbtq+ representation in theatre</il>
+        <il>Need career planning tools and sustainable income strategies.</il>
+      </ul>
+      <p> <strong> Theatre</strong> <strong>lovers</strong></p>
+      <ul>
+        <il>Struggle to discover shows and are looking for a centralized platform with all the information about shows
+        </il>
+        <il>Prefer musicals, high production value, and immersive storytelling.</il>
+        <il>Have a desire for more inclusive storytelling </il>
+        <il>Are frustrated by superficial themes and stereotypical characters in theatre especially lgbtq+ characters
+        </il>
+        <il>Rely on word-of-mouth, social media, and email marketing for show discovery </il>
+        <il>Enjoy behind-the-scenes content like cast interviews and rehearsals </il>
+        <il>Go to the theatre 2–3 times per year especially when they are traveling </il>
+        <il>Want better ticketing systems</il>
+        <il>Seek a platform that connects them with others who share their passion for inclusive theatre</il>
+      </ul>
+
+      <p> <strong> I</strong><strong><strong>n</strong> <strong>conclusion</strong>.... </strong></p>
+      <p> add content here</p>
+    </div>
+    <!--start of solution interview conclusions-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Solution Interview Conclusions</h3>
+      <!--end of title of solution interview conclusions-->
+      <p>Add information</p>
+      <!--add content here-->
+    </div>
+    <!--start of services-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Services</h3>
+      <!--end of title of services-->
+      <p>Add information, not sure if this ones necessary check this!</p>
+      <!--add content here-->
+    </div>
+    <!--start of justification of management-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Justification </h3>
+      <!--end of title of justification of management-->
+      <p>Add information</p>
+      <!--add content here-->
+    </div>
+    <!--start of title of the container-->
+    <div class="container">
+      <div class="row">
+        <h3 class="content-part-corporate-page">Marketing</h3>
+        <p> add content here</p>
+      </div>
+    </div>
+    <!--end of title of the container-->
+    <!--start of our brand-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Our Brand</h3>
+      <p> Out n Center is an inclusive theatre brand that strives for more realistic Lgbtq+ representation in theatre.
+      </p>
+      <p>Our platform provides informative articles about Lgbtq+ representation awareness and insightful interviews with
+        professionals from the industry. Moreover, we provide a ticketing service where visitors can gain information
+        about new plays and immediately are directed to theatre pages for tickets.</p>
+    </div>
+    <!--end of title of our brand-->
+    <!--start of target audience-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Target audience</h3>
+      <p> The target audience consists of young to middle-aged adults who are either part of the Lgbtq+ community or
+        allies. They are passionate about theatre and view it as a space for artistic expression, storytelling, and
+        representation. Their interests extend beyond casual theatre-going—they actively engage with theatre culture,
+        both online and in person. They are highly engaged, digitally savvy and eager to support theatre that aligns
+        with their values. They are passionate and seek entertainment and meaningful representation in the arts.</p>
+      <p> <strong> Key Characteristics</strong></p>
+      <ul>
+        <li>20-35 years old </li>
+        <li>Primarily based in Europe, with a strong presence in urban areas where theatre culture thrives. </li>
+        <li>Lgbtq+ individuals and allies who support inclusive and diverse narratives in the arts. </li>
+        <li>Interests and values: Inclusivity, creativity, storytelling, activism, and cultural engagement. They often
+          seek out stories that reflect diverse experiences, particularly those related to the Lgbtq+ community. </li>
+        <li>Attend the theatre 2/3 times per year. </li>
+        <li>Enjoy a mix of performances and are often seeking productions that challenge societal norms. </li>
+        <li>Favour theatre productions that are progressive and inclusive of diverse identities, experiences and
+          stories. </li>
+        <li>Follow theatre companies, actors online especially those who champion Lgbtq+ narratives and themes. </li>
+        <li>Engage with theatre-related content online. </li>
+        <li>Active on platforms like Instagram, TikTok, YouTube. </li>
+        <li>Use social media to discover new plays. </li>
+        <li>Find new theatre experiences through word of mouth and social media. </li>
+      </ul>
+    </div>
+
+    <!--end of title of target audience-->
+
+    <!--start of our brand-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Communication Objectives</h3>
+      <p> <strong> Reach Objectives</strong></p>
+      <ul>
+        <li> Reach 1000 views on Tiktok on the first post. </li>
+        <li>Gain 100 followers on Instagram within the first 2 weeks of the marketing campaign.</li>
+      </ul>
+      <p><strong>Affect</strong> <strong>Objective</strong></p>
+      <ul>
+        <li>It aims to give people meaningful knowledge and to inspire them to strive for accurate representation.
+          (needs to be changed) </li>
+      </ul>
+
+      <p><strong>Response objective</strong></p>
+      <ul>
+        <li>Achieve a 20% CTR to boost website traffic.</li>
+      </ul>
+    </div>
+
+    <!--end of title of our brand-->
+    <!--start of marketing campaign-->
+
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Marketing campaign</h3>
+      <p> <strong> Context</strong> <strong>of</strong> <strong>the</strong> <strong>campaign</strong></p>
+      <p><strong>Campaign</strong> <strong>objective</strong></p>
+      <p>This campaign aims to foster a more accepting environment for Lgbtq+ characters in theatre, film, and
+        television by advocating for authentic representation.</p>
+      <p>Misrepresentation, whether through stereotypes, one-dimensional portrayals, or tokenism, does not just fail the
+        community, it actively harms it. Our goal is to raise awareness about the impact of problematic representation
+        and encourage creators to craft Lgbtq+ characters that feel real, complex, and human.</p>
+      <p> <strong> Key</strong> <strong>Message </strong></p>
+      <p> To communicate why authentic representation matters, a series of strong, concise statements will be de
+        developing that will highlight both the importance of real representation and the harm of poor representation.
+      </p>
+      <ul>
+        <li>Lgbtq+ characters deserve depth, not stereotypes. </li>
+        <li>Sexuality isn’t a personality! </li>
+        <li>Representation shapes reality. When we reduce characters, we reduce people. </li>
+        <li>Visibility should empower, not diminish. Authenticity matters.</li>
+      </ul>
+      <p> <strong> Call</strong> <strong>to</strong> <strong>Action</strong></p>
+      <p>The call to action is to redefine Lgbtq+ representation in theatre. Share, discuss, and demand stories that
+        reflect the full depth of human experience, because real representation changes lives. (might need to be
+        adjusted)</p>
+    </div>
+    <!--end of title of marketing campaign-->
     <!--start of promotional activities-->
-       <div class="col-12 col-md-6 col-xl-4">
-        <h3 class="subheadings-content-part-corporate-page">Promotional activities</h3>
-		   <p> add content here</p>
-		    </div>
-	<!--end of promotional activities-->
-	<!--start of content calendar--> 
-        <div class="col-12 col-md-6 col-xl-4">
-        <h3 class="subheadings-content-part-corporate-page">Content Calendar</h3>
-		   <p> add content here</p>
-		    </div>
-	<!--end of content calendar-->  
-	  <!--start of Learning Points--> 
-        <div class="col-12 col-md-6 col-xl-4">
-        <h3 class="subheadings-content-part-corporate-page">Learning Points</h3>
-		   <p> add content here</p>
-		    </div>
-	<!--end of Learning Points--> 
-	  <!--start of Future Planning--> 
-        <div class="col-12 col-md-6 col-xl-4">
-        <h3 class="subheadings-content-part-corporate-page">Future Planning</h3>
-		   <p> add content here</p>
-		    </div>
-		
-	<!--end of Future Planning--> 
-<!--start of the container--> 
-	 <div class="container">
-       <div class="row">
-         <h3 class= "content-part-corporate-page">Production</h3>
-		   <p> add content here</p>
-		  </div>
-		  </div>
-	<!--end of the container--> 
-	  
-	  <!--start of design choices--> 
-		<div class="row d-flex align-items-center">
-        <div class="col-12 col-md-6 col-xl-4">
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Promotional activities</h3>
+      <p> add content here</p>
+    </div>
+    <!--end of promotional activities-->
+    <!--start of content calendar-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Content Calendar</h3>
+      <p> add content here</p>
+    </div>
+    <!--end of content calendar-->
+    <!--start of Learning Points-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Learning Points</h3>
+      <p> add content here</p>
+    </div>
+    <!--end of Learning Points-->
+    <!--start of Future Planning-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Future Planning</h3>
+      <p> add content here</p>
+    </div>
+
+    <!--end of Future Planning-->
+    <!--start of the container-->
+    <div class="container">
+      <div class="row">
+        <h3 class="content-part-corporate-page">Production</h3>
+        <p> add content here</p>
+      </div>
+    </div>
+    <!--end of the container-->
+
+    <!--start of design choices-->
+    <div class="row d-flex align-items-center">
+      <div class="col-12 col-md-6 col-xl-4">
         <h3 class="subheadings-content-part-corporate-page">Design Choices</h3>
-		   <p> add content here</p>
-		    </div>
-		  </div>
-	  <!--end of design choices--> 
-	  
-	  <!--start ofJustification of Design Choices--> 
-        <div class="col-12 col-md-6 col-xl-4">
-        <h3 class="subheadings-content-part-corporate-page">Justification of Design Choices</h3>
-		   <p> add content here</p>
-		    </div>
-	  <!--end of Justification of Design Choices--> 
-	  
-	  <!--start of Testing Protocol--> 
-        <div class="col-12 col-md-6 col-xl-4">
-        <h3 class="subheadings-content-part-corporate-page">Testing Protocol</h3>
-		   <p> add content here</p>
-		    </div>
-	  <!--end of Testing Protocol--> 
-	  
-	  <!--start of Findings--> 
-        <div class="col-12 col-md-6 col-xl-4">
-        <h3 class="subheadings-content-part-corporate-page">Findings</h3>
-		   <p> add content here</p>
-		    </div>
-	  <!--end of Findings--> 
-	  
-	  <!--start of Improvements--> 
-        <div class="col-12 col-md-6 col-xl-4">
-        <h3 class="subheadings-content-part-corporate-page">Improvements</h3>
-		   <p> add content here</p>
-		    </div>
-	  <!--end of Improvements--> 
-	  
-	  
-	  
-	<!--start of appendix-->
-	 <div class="container">
-       <div class="row">
-         <h3 class= "content-part-corporate-page">Appendix</h3>
-		   <p> add content here</p>
-		 </div>
-	   </div>
-	<!--end of title of the container--> 
-	  
-			
-	   <!--start production appendix--> 
-	   <p><strong>Management</strong></p>
-	     <ul> 
-			    <li>Problem Interviews</li>
-			    <li>Solution Interviews</li>
-			    <li>Demo</li>
-		 </ul>
-	   <!--end management appendix-->  
-	   <!--start production appendix--> 
-				<p><strong>Production</strong></p>
-			   <ul> 
-			    <li>Test Protocol</li>
-			    <li>Website Prototype</li>
-			   </ul>
-	  <!--end production appendix-->  
-	  <!--add content here--> 	
-           
-	<!--end appendix-->  
-	  
+        <p> add content here</p>
+      </div>
+    </div>
+    <!--end of design choices-->
+
+    <!--start ofJustification of Design Choices-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Justification of Design Choices</h3>
+      <p> add content here</p>
+    </div>
+    <!--end of Justification of Design Choices-->
+
+    <!--start of Testing Protocol-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Testing Protocol</h3>
+      <p> add content here</p>
+    </div>
+    <!--end of Testing Protocol-->
+
+    <!--start of Findings-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Findings</h3>
+      <p> add content here</p>
+    </div>
+    <!--end of Findings-->
+
+    <!--start of Improvements-->
+    <div class="col-12 col-md-6 col-xl-4">
+      <h3 class="subheadings-content-part-corporate-page">Improvements</h3>
+      <p> add content here</p>
+    </div>
+    <!--end of Improvements-->
+
+
+
+    <!--start of appendix-->
+    <div class="container">
+      <div class="row">
+        <h3 class="content-part-corporate-page">Appendix</h3>
+        <p> add content here</p>
+      </div>
+    </div>
+    <!--end of title of the container-->
+
+
+    <!--start production appendix-->
+    <p><strong>Management</strong></p>
+    <ul>
+      <li>Problem Interviews</li>
+      <li>Solution Interviews</li>
+      <li>Demo</li>
+    </ul>
+    <!--end management appendix-->
+    <!--start production appendix-->
+    <p><strong>Production</strong></p>
+    <ul>
+      <li>Test Protocol</li>
+      <li>Website Prototype</li>
+    </ul>
+    <!--end production appendix-->
+    <!--add content here-->
+
+    <!--end appendix-->
+
   </main>
   <!--main for your content stops here-->
 
-<!--footer navigation starts here-->
-   <footer class="bg-blue text-white py-4">
+  <!--footer navigation starts here-->
+  <footer class="bg-blue text-white py-4">
     <div class="container">
-        <div class="row">
-            <!-- Brand Logo & Name -->
-            <div class="col-md-4 text-center text-md-start">
-                <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 50px;">
-                <h5 class="mt-2">outncenter</h5>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="col-md-4 text-center footer2">
-                <h5>Contact</h5>
-                <p><a href="mailto:outncenter@gmail.com" style="text-decoration: none;  color: white;">outncenter@gmail.com</a></p>
-                <p>Phone: +31 6 20 87 45 1</p>
-                <p>Address: 12 Grote Markt, Breda</p>
-            </div>
-
-            <!-- Explore (Navigation Links) -->
-            <div class="col-md-4 text-center text-md-end">
-                <h5>Explore</h5>
-                <ul class="list-unstyled footer2">
-                    <li><a href="index.html" style="text-decoration: none;  color: white;">Home Page</a></li>
-                    <li><a href="about.html" style="text-decoration: none;  color: white;">About</a></li>
-                    <li><a href="blog.html" style="text-decoration: none;  color: white;">Blog</a></li>
-                    <li><a href="profile.html" style="text-decoration: none;  color: white;">Profile</a></li>
-					<li><a href="corporate.html" style="text-decoration: none;  color: white;">Corporate</a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <!-- Brand Logo & Name -->
+        <div class="col-md-4 text-center text-md-start">
+          <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 50px;">
+          <h5 class="mt-2">outncenter</h5>
         </div>
-		<div class="text-center mt-3">
-            <a href="https://www.tiktok.com/@outncenter._?_t=ZN-8vDfVe41V8o&_r=1" target="_blank" class="text-white me-3">
-                <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
-            </a>
-            <a href="https://www.instagram.com/outncenter._?igsh=bTAydDhpemxuNXJs" target="_blank" class="text-white">
-                <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-            </a>
+
+        <!-- Contact Information -->
+        <div class="col-md-4 text-center footer2">
+          <h5>Contact</h5>
+          <p><a href="mailto:outncenter@gmail.com"
+              style="text-decoration: none;  color: white;">outncenter@gmail.com</a></p>
+          <p>Phone: +31 6 20 87 45 1</p>
+          <p>Address: 12 Grote Markt, Breda</p>
         </div>
-        <hr class="my-3 border-light">
-        <p class="text-center footer2 mb-0">© 2025 outncenter. All Rights Reserved.</p>
+
+        <!-- Explore (Navigation Links) -->
+        <div class="col-md-4 text-center text-md-end">
+          <h5>Explore</h5>
+          <ul class="list-unstyled footer2">
+            <li><a href="index.html" style="text-decoration: none;  color: white;">Home Page</a></li>
+            <li><a href="about.html" style="text-decoration: none;  color: white;">About</a></li>
+            <li><a href="blog.html" style="text-decoration: none;  color: white;">Blog</a></li>
+            <li><a href="profile.html" style="text-decoration: none;  color: white;">Profile</a></li>
+            <li><a href="corporate.html" style="text-decoration: none;  color: white;">Corporate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <a href="https://www.tiktok.com/@outncenter._?_t=ZN-8vDfVe41V8o&_r=1" target="_blank" class="text-white me-3">
+          <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.instagram.com/outncenter._?igsh=bTAydDhpemxuNXJs" target="_blank" class="text-white">
+          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
+      <hr class="my-3 border-light">
+      <p class="text-center footer2 mb-0">© 2025 outncenter. All Rights Reserved.</p>
     </div>
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-</footer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  </footer>
   <!--footer ends here-->
-<!--your script starts here-->
+  <!--your script starts here-->
   <script>
   </script>
   <!--your script ends here-->

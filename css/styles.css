@@ -12,26 +12,12 @@ html, body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* ABOUT page css starts here*/
-.about-page-font-size-body {
-	font-weight: 300;
-	
-}
-
-.about-font-size {
-	font-size: 70px; 
-	font-weight: 500;
-}
 
 .main-about-page {
     margin-bottom: 50% !important;
 }
 
 /* ABOUT page css starts here*/
-.about-font-size {
-	font-size: 70px; 
-}
-
 
 .full-width-container {
   width: 100vw; /* Full viewport width */
@@ -49,7 +35,6 @@ html, body {
 }
 
 .subheadings-about-page {
-	font-size: 30px; 
 	padding-left: 0%;
     padding-right: 8%;
     padding-top: 2%;
@@ -57,16 +42,9 @@ html, body {
     width: 100%;
 }
 
-/*font size for about page*/
-.about-font-size {
-	font-size: 100px; 
-	font-weight: 600; 
-}
-
 
 /* Everything for the vision part on the about page*/
 .vision-about-page {
-	font-size: 50px;
 	align-items: center;
     justify-content: space-between; 
 }
@@ -77,24 +55,12 @@ html, body {
 	justify-content: space-between;
 }
 
-
-/* Everything for the mission part on the about page*/
-.mission-about-page {
-	font-size: 50px;
-}
-
-/* Everything for the values part on the about page*/
-.values-about-page {
-	font-size: 50px;
-}
-
 /* Everything for the meet the team part on the about page*/
 .text-within-card-about-page {
   line-height: 0.8;
 }
 
 .meet-the-team-about-page {
-	font-size: 50px;
 	line-height: 1.1; 
 	margin: 0; 
     padding: 0;	 
@@ -112,10 +78,6 @@ html, body {
   padding-left: 1%; 
 }
 
-.about-the-team-font-size {
-	font-weight: 600;
-	font-size: 25px;
-}
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
 .second-column-about-page-meet-the-team {
@@ -158,12 +120,12 @@ html, body {
     width: 70%;
 	margin: 0%;
 	height: 100%; 
-    
 }
 
 .heading-five-cards-meet-the-team {
 	font-size: 25px; 
 }
+
 /* BLOG page css starts here*/
 
 .blogtitle {
@@ -240,11 +202,11 @@ h2 {
 }
 
 h3 {
-    font-size: 6vw;
+    font-size: 4vw;
 }
 
 h4 {
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 h5 {
@@ -259,6 +221,11 @@ h5 {
 .outfit-medium {
     font-family: "Outfit", sans-serif;
     font-weight: 500;
+}
+
+.no-link-style {
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -320,12 +287,17 @@ h5 {
     border: none;
     box-shadow: none;
     background: none;
-    color: #222;
+}
+
+.icon-white {
+    color: white;
 }
 
 .icon-style:hover {
-    color: #111;
+    color: grey;
 }
+
+
 
 .icon-style:focus {
     outline: none; /* Removes the focus outline */
@@ -338,7 +310,7 @@ h5 {
 }
 
 footer {
-    background-color: blue;
+    background-color: black;
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 2%;

@@ -39,7 +39,7 @@
         </button>
       </div>
       <div class="d-flex justfify-content-center">
-        <a class="navbar-brand outfit-semibold brandname-nav-margin" href="index.html">outncenter</a>
+        <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style" href="index.html">outncenter</a>
       </div>
       <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
@@ -48,26 +48,23 @@
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
         aria-labelledby="offcanvasScrollNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h5>
+          <h4 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h4>
           <button type="button" class="btn-close close-button" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
             <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
             <li class="nav-item"><a class="nav-link" href="tickets.html">tickets</a></li>
-            <li class="nav-item"><a class="nav-link" href="getrailed.html">getrailed</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                 corporate
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="corporate.html">Action</a></li>
-                <li><a class="dropdown-item" href="corporate.html">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="corporate.html">Something else here</a></li>
+                <li><a class="dropdown-item" href="corporate.html">Content</a></li>
+                <li><a class="dropdown-item" href="corporate.html">Management</a></li>
+                <li><a class="dropdown-item" href="corporate.html">Production</a></li>
+                <li><a class="dropdown-item" href="corporate.html">Marketing</a></li>
               </ul>
             </li>
           </ul>
@@ -78,11 +75,11 @@
   <!--end down-scrollnavbar-->
 
   <!-- Carousel and its navigation-->
-  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
     <nav class="navbar" id="transNavbar">
       <div class="container-fluid">
         <div class="justify-content-start">
-          <button class="icon-style">
+          <button class="icon-style icon-white">
             <a href="profile.html" class="text-decoration-none text-reset">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -92,7 +89,7 @@
               </svg>
             </a>
           </button>
-          <button class="icon-style">
+          <button class="icon-style icon-white">
             <a href="favourites.html" class="text-decoration-none text-reset">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
                 viewBox="0 0 16 16">
@@ -103,16 +100,16 @@
           </button>
         </div>
         <div class="d-flex justfify-content-center">
-          <a class="navbar-brand outfit-semibold brandname-nav-margin" href="index.html">outncenter</a>
+          <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style icon-white" href="index.html">outncenter</a>
         </div>
         <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon navbar-dark"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
           aria-labelledby="offcanvasScrollNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h5>
+            <h4 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h4>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
           </div>
           <div class="offcanvas-body">
@@ -126,12 +123,10 @@
                   corporate
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="corporate.html">Action</a></li>
-                  <li><a class="dropdown-item" href="corporate.html">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="corporate.html">Something else here</a></li>
+                  <li><a class="dropdown-item" href="corporate.html">Content</a></li>
+                  <li><a class="dropdown-item" href="corporate.html">Management</a></li>
+                  <li><a class="dropdown-item" href="corporate.html">Production</a></li>
+                  <li><a class="dropdown-item" href="corporate.html">Marketing</a></li>
                 </ul>
               </li>
             </ul>
@@ -165,39 +160,167 @@
   <main>
     <!--container for about-->
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2>tickets</h2>
-          <p>no tickets yet</p>
-          </p>
-        </div>
-      </div>
-        <!--you can delete the huge logo at the bottom if you want. its there to keep the page able to scroll for the footer-->
-      <div class="row">
-        <div class="col-12">
-          <img src="images/onc_nl_bs3.svg" alt="outncenter" class="img-fluid large-logo justify-content-end">
+      <div class="card mb-3">
+        <div class="row g-0 d-flex">
+          <!-- Image Column -->
+          <div class="col-4">
+            <img src="./images/theatre_shows/ticket-vertical-eclipse-hearts.png" class="img-fluid rounded-start" alt="eclipse-hearts">
+          </div>
+          <!-- Content Column -->
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    
+    <!--more cards here-->
+    <div class="container">
+      <div class="card mb-3">
+        <div class="row g-0 d-flex">
+          <!-- Image Column -->
+          <div class="col-4">
+            <img src="./images/theatre_shows/ticket-vertical-eclipse-hearts.png" class="img-fluid rounded-start" alt="eclipse-hearts">
+          </div>
+          <!-- Content Column -->
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card mb-3">
+        <div class="row g-0 d-flex">
+          <!-- Image Column -->
+          <div class="col-4">
+            <img src="./images/theatre_shows/ticket-vertical-eclipse-hearts.png" class="img-fluid rounded-start" alt="eclipse-hearts">
+          </div>
+          <!-- Content Column -->
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card mb-3">
+        <div class="row g-0 d-flex">
+          <!-- Image Column -->
+          <div class="col-4">
+            <img src="./images/theatre_shows/ticket-vertical-eclipse-hearts.png" class="img-fluid rounded-start" alt="eclipse-hearts">
+          </div>
+          <!-- Content Column -->
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card mb-3">
+        <div class="row g-0 d-flex">
+          <!-- Image Column -->
+          <div class="col-4">
+            <img src="./images/theatre_shows/ticket-vertical-eclipse-hearts.png" class="img-fluid rounded-start" alt="eclipse-hearts">
+          </div>
+          <!-- Content Column -->
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card mb-3">
+        <div class="row g-0 d-flex">
+          <!-- Image Column -->
+          <div class="col-4">
+            <img src="./images/theatre_shows/ticket-vertical-eclipse-hearts.png" class="img-fluid rounded-start" alt="eclipse-hearts">
+          </div>
+          <!-- Content Column -->
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--end container for about-->
   </main>
   <!--main for your content stops here-->
 
   <!--footer navigation starts here-->
-  <footer>
+  <footer class="bg-blue text-white py-4">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h5>outncenter</h5>
+        <div class="row">
+            <!-- Brand Logo & Name -->
+            <div class="col-md-4 text-center text-md-start">
+                <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 50px;">
+                <h5 class="mt-2">outncenter</h5>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-4 text-center footer2">
+                <h5>Contact</h5>
+                <p><a href="mailto:outncenter@gmail.com" style="text-decoration: none;  color: white;">outncenter@gmail.com</a></p>
+                <p>Phone: +31 6 20 87 45 1</p>
+                <p>Address: 12 Grote Markt, Breda</p>
+            </div>
+
+            <!-- Explore (Navigation Links) -->
+            <div class="col-md-4 text-center text-md-end">
+                <h5>Explore</h5>
+                <ul class="list-unstyled footer2">
+                    <li><a href="index.html" style="text-decoration: none;  color: white;">Home Page</a></li>
+                    <li><a href="about.html" style="text-decoration: none;  color: white;">About</a></li>
+                    <li><a href="blog.html" style="text-decoration: none;  color: white;">Blog</a></li>
+                    <li><a href="profile.html" style="text-decoration: none;  color: white;">Profile</a></li>
+					<li><a href="corporate.html" style="text-decoration: none;  color: white;">Corporate</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          <img src="images/onc_nl_bs3.svg" alt="outncenter" class="large-logo justify-content-start">
+		<div class="text-center mt-3">
+            <a href="https://www.tiktok.com/@outncenter._?_t=ZN-8vDfVe41V8o&_r=1" target="_blank" class="text-white me-3">
+                <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
+            </a>
+            <a href="https://www.instagram.com/outncenter._?igsh=bTAydDhpemxuNXJs" target="_blank" class="text-white">
+                <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+            </a>
         </div>
-      </div>
+        <hr class="my-3 border-light">
+        <p class="text-center footer2 mb-0">© 2025 outncenter. All Rights Reserved.</p>
     </div>
-  </footer>
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</footer>
   <!--footer ends here-->
 
   <!--your script starts here-->
