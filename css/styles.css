@@ -168,31 +168,13 @@ html, body {
 
 .logo-corporate-page {
 	width: 100%; 
-	width: 300px;
+	width: 500px;
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 1%;
     padding-bottom: 0%;
 }
 
-.brand-persona-width {
-	width: 100%;
-	width: 400px;
-   
-	
-}
- .row-corporate-page {
-      margin-top: 30px;
-    }
-
-.paragraph-width-corporate-page {
-	width: 100%;
-}
-
-.container-corporate-page {
-      width: 90%;
-      margin: 0 auto;
-      padding: 20px;
 /* FAVOURITES page css starts here*/
 
 
