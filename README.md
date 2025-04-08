@@ -13,8 +13,11 @@ Click on [<https://outncenter.github.io/>] to see what the website looks like wh
 - Photo by <a href="https://unsplash.com/@jocallen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jocelyn Allen</a> on <a href="https://unsplash.com/photos/a-large-crowd-of-people-in-a-large-building-fqucC7zHXwg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 - Photo by Aleks Magnusson: https://www.pexels.com/photo/three-jugglers-with-smiling-faces-3071456/
 - Photo by <a href="https://unsplash.com/@visionary_imaging?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew Reyes</a> on <a href="https://unsplash.com/photos/2-women-wearing-silver-necklace-oddhoHY8W4g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-- Photo by cottonbro studio: https://www.pexels.com/photo/woman-standing-behind-red-curtain-6899776/    
-      
+- Photo by cottonbro studio: https://www.pexels.com/photo/woman-standing-behind-red-curtain-6899776/
+- Photo by Erike Fusiki: https://www.pexels.com/photo/silhouette-of-man-standing-under-starry-night-8150315/
+- Photo by Edgar Okioga: https://www.pexels.com/photo/photo-of-person-sitting-in-front-of-piano-1185212/
+-  Photo by cottonbro studio: https://www.pexels.com/photo/close-up-shot-of-a-paper-6830360/
+- Photo by cottonbro studio: https://www.pexels.com/photo/crop-photo-of-woman-standing-behind-a-curtain-6899775/
   
 
 ## UX Patterns Credits
