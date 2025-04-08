@@ -168,7 +168,7 @@ html, body {
 
 .logo-corporate-page {
 	width: 100%; 
-	width: 300px;
+	width: 500px;
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 1%;
@@ -178,15 +178,9 @@ html, body {
 .brand-persona-width {
 	width: 100%;
 	width: 400px;
-   
 	
 }
  
-
-.paragraph-width-corporate-page {
-	width: 100%;
-}
-
 /* FAVOURITES page css starts here*/
 
 
