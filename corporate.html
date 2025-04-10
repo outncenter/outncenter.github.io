@@ -12,15 +12,114 @@
   <!--stylesheet for website layout-->
   <link href="css/styles.css" rel="stylesheet">
   <!--add your own styles.css for your main's layout. Use bootstrap grids!-->
+	
+	<style>
+    /* Sidebar settings */
+    .sidebar {
+      position: fixed;
+      top: 56px;
+      left: 0;
+      width: 250px;
+      height: 73vh;
+      background-color: #343a40;
+      color: white;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.4rem 0.8rem;
+    }
+
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+
+    .subpoint {
+      font-size: 0.7rem;
+      padding-left: 1.5rem;
+      opacity: 0.6;
+    }
+
+    /* Content area pushed to the right */
+    .content {
+      margin-left: 250px;
+      padding: 2rem;
+    }
+  </style>
 </head>
 
 <body>
   <!--DO NOT START YOUR CONTENT HERE. PUT IT IN <MAIN> THAT IS FURTHER DOWN IN THE CODE-->
   <!-- start down-ScrollNavbar -->
   <nav class="scrollnavbar navbar shadow" id="scrollnavbar">
+  <div class="container-fluid">
+    <div class="justify-content-start">
+      <button class="icon-style">
+        <a href="profile.html" class="text-decoration-none text-reset">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+          </svg>
+        </a>
+      </button>
+      <button class="icon-style">
+        <a href="favourites.html" class="text-decoration-none text-reset">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+            viewBox="0 0 16 16">
+            <path
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+          </svg>
+        </a>
+      </button>
+    </div>
+    <div class="d-flex justfify-content-center">
+      <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style" href="index.html">outncenter</a>
+    </div>
+    <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
+      aria-labelledby="offcanvasScrollNavbarLabel">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h4>
+        <button type="button" class="btn-close close-button" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
+          <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="tickets.html">tickets</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              corporate
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="corporate.html">Content</a></li>
+              <li><a class="dropdown-item" href="corporate.html">Management</a></li>
+              <li><a class="dropdown-item" href="corporate.html">Production</a></li>
+              <li><a class="dropdown-item" href="corporate.html">Marketing</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--end down-scrollnavbar-->
+
+<!-- Carousel and its navigation-->
+<div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+  <nav class="navbar bg-black" style="padding-left: 7%; padding-right: 7%;">
     <div class="container-fluid">
       <div class="justify-content-start">
-        <button class="icon-style">
+        <button class="icon-style icon-white">
           <a href="profile.html" class="text-decoration-none text-reset">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -30,7 +129,7 @@
             </svg>
           </a>
         </button>
-        <button class="icon-style">
+        <button class="icon-style icon-white">
           <a href="favourites.html" class="text-decoration-none text-reset">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
               viewBox="0 0 16 16">
@@ -41,22 +140,23 @@
         </button>
       </div>
       <div class="d-flex justfify-content-center">
-        <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style" href="index.html">outncenter</a>
+        <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style icon-white" href="index.html">outncenter</a>
       </div>
       <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon navbar-dark"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
         aria-labelledby="offcanvasScrollNavbarLabel">
         <div class="offcanvas-header">
           <h4 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h4>
-          <button type="button" class="btn-close close-button" data-bs-dismiss="offcanvas"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
             <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
             <li class="nav-item"><a class="nav-link" href="tickets.html">tickets</a></li>
+            <li class="nav-item"><a class="nav-link" href="getrailed.html">getrailed</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -74,89 +174,48 @@
       </div>
     </div>
   </nav>
-  <!--end down-scrollnavbar-->
-
-  <!-- Carousel and its navigation-->
-  <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel"> </div>
-    <nav class="navbar bg-black" style="padding-left: 7%; padding-right: 7%;">
-      <div class="container-fluid">
-        <div class="justify-content-start">
-          <button class="icon-style icon-white">
-            <a href="profile.html" class="text-decoration-none text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                <path fill-rule="evenodd"
-                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-              </svg>
-            </a>
-          </button>
-          <button class="icon-style icon-white">
-            <a href="favourites.html" class="text-decoration-none text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
-                viewBox="0 0 16 16">
-                <path
-                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-              </svg>
-            </a>
-          </button>
-        </div>
-	</div>
-        <div class="d-flex justfify-content-center">
-          <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style icon-white" href="index.html">outncenter</a>
-        </div>
-        <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
-          <span class="navbar-toggler-icon navbar-dark"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
-          aria-labelledby="offcanvasScrollNavbarLabel">
-          <div class="offcanvas-header">
-            <h4 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
-              <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
-              <li class="nav-item"><a class="nav-link" href="tickets.html">tickets</a></li>
-              <li class="nav-item"><a class="nav-link" href="getrailed.html">getrailed</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                  corporate
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="corporate.html">Content</a></li>
-                  <li><a class="dropdown-item" href="corporate.html">Management</a></li>
-                  <li><a class="dropdown-item" href="corporate.html">Production</a></li>
-                  <li><a class="dropdown-item" href="corporate.html">Marketing</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-		</div>
-    </nav>
   <!--end of navigations-->
 
   <!--main for your content and text starts here-->
   <main>
     <!--container for about-->
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="corporate-font-size">Corporate</h2>
-          <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3D6AYv6rV3NXE&ved=2ahUKEwjbgIjQk6aMAxUy-gIHHfFJBcAQz40FegQIEhAI&usg=AOvVaw1VGYu_HLv_gFhdyYI-6nxX?go=1"
-            target="_blank" style=" color: black">
-          </a>
-        </div>
-      </div>
+	  
+	<div class="container-fluid">
+    <div class="row">
+      
+      <!-- Left Navigation Menu -->
 		
-		<!-- start of general information-->
-		<div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h3>General Information</h3>
-			<p> This branded website is publicly available at 
+      <nav class="col-md-3 sidebar">
+        <a href="#General">General</a>
+
+        <a href="#Content">Content</a>
+
+        <a href="#Production">Production</a>
+		<a href="#sub1" class="subpoint">Design Elements</a>
+        <a href="#sub2" class="subpoint">Credits</a>
+		<a href="#sub2" class="subpoint">Testing Report</a>
+		  
+		<a href="#section2">Marketing</a>
+		<a href="#sub1" class="subpoint">Context of campaign and promotional activities</a>
+        <a href="#sub2" class="subpoint">Learning Points</a>
+		<a href="#sub2" class="subpoint">Future Planning</a>
+		<a href="#sub2" class="subpoint">Professionalism</a>
+		  
+		<a href="#section2">Management</a>
+		<a href="#sub2" class="subpoint">Lean Canvas</a>
+		  
+		<a href="#section2">Appendix</a>
+      </nav>
+
+      		<!-- Right Content Area -->
+		
+      <main class="col-md-9 content">
+        <h3 id="section1">Corporate Information</h3>
+
+		    <!--start of general here -->
+		  
+        <h4 id="section2">General Information</h4>
+        <p> This branded website is publicly available at 
 			 <a href = "https://outncenter.github.io/" target="_blank">  https://outncenter.github.io/
 			 </a>
 			</p>
@@ -168,20 +227,66 @@
 			  <li>Elena Beganović (233895)</li>
 			  <li>Mees de Wilde (234314)</li>
 			</ul>
-		 </div>
-      </div>
-		<!-- end of general information-->	
-			
-      <!-- add table of contents here -->
-      <!--you can delete the huge logo at the bottom if you want. its there to keep the page able to scroll for the footer-->
-      <div class="row">
-        <div class="col-12">
-          <img src="images/onc_nl_bs3.svg" alt="outncenter" class="img-fluid large-logo justify-content-end">
-        </div>
-      </div>
-    </div>
+		  
+		  <!--end of general here -->
+		  <!--start of content here -->
 
-    <!--start of content here -->
+		  <div class="container my-4">
+			<h4 class="mb-4">Content</h4>
+			<table class="table table-bordered">
+			  <thead>
+				<tr>
+				  <th>#</th>
+				  <th>Student ID</th>
+				  <th>Value</th>
+				  <th>Name and Link of Content</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td contenteditable="true">1</td>
+				  <td contenteditable="true">225911</td>
+				  <td contenteditable="true"></td>
+				  <td contenteditable="true"></td>
+				</tr>
+				<tr>
+				  <td contenteditable="true">2</td>
+				  <td contenteditable="true">232267</td>
+				  <td contenteditable="true"></td>
+				  <td contenteditable="true"></td>
+				</tr>
+				<tr>
+				  <td contenteditable="true">3</td>
+				  <td contenteditable="true">233895</td>
+				  <td contenteditable="true"></td>
+				  <td contenteditable="true"></td>
+				</tr>
+				<tr>
+				  <td contenteditable="true">4</td>
+				  <td contenteditable="true">234314</td>
+				  <td contenteditable="true"></td>
+				  <td contenteditable="true"></td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		  
+		  <!--end of content here -->
+
+        <h4 id="production">Production</h4>
+        <p>Final section content.</p>
+		
+		<h4 id="marketing">Marketing</h4>
+        <p>Final section content.</p>
+		  
+		<h4 id="management">Management</h4>
+        <p>Final section content.</p>
+		  
+		<h4 id="appendix">Appendix</h4>
+        <p>Final section content.</p>
+		 
+		   <!--start of content here -->
+		  
     <!--content part of the course-->
     <!--start of title of the container-->
     <div class="container">
@@ -786,8 +891,10 @@
 
     <!--end appendix-->
 
-  </main>
   <!--main for your content stops here-->
+	</div>
+</main>
+		
 
   <!--footer navigation starts here-->
   <footer class="bg-blue text-white py-4">
