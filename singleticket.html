@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>profile | outncenter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--stylesheet for website layout-->
+    <link href="css/styles.css" rel="stylesheet">
+    <!--add your own styles.css for your main's layout. Use bootstrap grids!-->
+</head>
+
+<body>
+    <!--DO NOT START YOUR CONTENT HERE. PUT IT IN <MAIN> THAT IS FURTHER DOWN IN THE CODE-->
+    <!-- start down-ScrollNavbar -->
+    <nav class="scrollnavbar navbar shadow" id="scrollnavbar">
+        <div class="container-fluid">
+          <div class="justify-content-start">
+            <button class="icon-style">
+              <a href="profile.html" class="text-decoration-none text-reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                </svg>
+              </a>
+            </button>
+            <button class="icon-style">
+              <a href="cart.html" class="text-decoration-none text-reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+              </a>
+            </button>
+          </div>
+          <div class="d-flex justfify-content-center">
+            <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style" href="index.html">outncenter</a>
+          </div>
+          <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
+            aria-labelledby="offcanvasScrollNavbarLabel">
+            <div class="offcanvas-header">
+              <h4 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h4>
+              <button type="button" class="btn-close close-button" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
+                <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="tickets.html">tickets</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="corporate.html">corporate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--end down-scrollnavbar-->
+    
+      <!-- Carousel and its navigation-->
+      <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+        <nav class="navbar bg-black" style="padding-left: 7%; padding-right: 7%;">
+          <div class="container-fluid">
+            <div class="justify-content-start">
+              <button class="icon-style icon-white">
+                <a href="profile.html" class="text-decoration-none text-reset">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                    <path fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                  </svg>
+                </a>
+              </button>
+              <button class="icon-style icon-white">
+                <a href="cart.html" class="text-decoration-none text-reset">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                  </svg>
+                </a>
+              </button>
+            </div>
+            <div class="d-flex justfify-content-center">
+              <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style icon-white" href="index.html">outncenter</a>
+            </div>
+            <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
+              <span class="navbar-toggler-icon navbar-dark"></span>
+            </button>
+          </div>
+        </nav>
+    <!--end of navigations-->
+        <!--end of navigations-->
+
+        <!--main for your content and text starts here-->
+        <main></main>
+        <!--main for your content stops here-->
+
+        <!--footer navigation starts here-->
+        <footer class="bg-blue text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Brand Logo & Name -->
+                    <div class="col-md-4 text-center text-md-start">
+                        <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 50px;">
+                        <h5 class="mt-2">outncenter</h5>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="col-md-4 text-center footer2">
+                        <h5>Contact</h5>
+                        <p><a href="mailto:outncenter@gmail.com"
+                                style="text-decoration: none;  color: white;">outncenter@gmail.com</a></p>
+                        <p>Phone: +31 6 20 87 45 1</p>
+                        <p>Address: 12 Grote Markt, Breda</p>
+                    </div>
+
+                    <!-- Explore (Navigation Links) -->
+                    <div class="col-md-4 text-center text-md-end">
+                        <h5>Explore</h5>
+                        <ul class="list-unstyled footer2">
+                            <li><a href="index.html" style="text-decoration: none;  color: white;">Home Page</a></li>
+                            <li><a href="about.html" style="text-decoration: none;  color: white;">About</a></li>
+                            <li><a href="blog.html" style="text-decoration: none;  color: white;">Blog</a></li>
+                            <li><a href="profile.html" style="text-decoration: none;  color: white;">Profile</a></li>
+                            <li><a href="corporate.html" style="text-decoration: none;  color: white;">Corporate</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="https://www.tiktok.com/@outncenter._?_t=ZN-8vDfVe41V8o&_r=1" target="_blank"
+                        class="text-white me-3">
+                        <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/outncenter._?igsh=bTAydDhpemxuNXJs" target="_blank"
+                        class="text-white">
+                        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
+                <hr class="my-3 border-light">
+                <p class="text-center footer2 mb-0">© 2025 outncenter. All Rights Reserved.</p>
+            </div>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+        </footer>
+        <!--footer ends here-->
+
+        <!--your script starts here-->
+        <script>
+        </script>
+        <!--your script ends here-->
+
+        <!--script for navigation starts here-->
+        <script>
+            // Get the scrollnavbar and transnavbar
+            const scrollnavbar = document.getElementById('scrollnavbar');
+            const transNavbar = document.getElementById('transNavbar');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+
+            // Scroll navbar behavior (white background when scrolling down)
+            let lastScrollTop = 0;
+            window.addEventListener("scroll", function () {
+                let currentScroll = window.scrollY;
+
+                if (currentScroll > lastScrollTop && currentScroll > 50) {
+                    // Show scrollnavbar with white background on scroll
+                    scrollnavbar.style.top = "0"; // Show scrollnavbar when scrolling down
+                    scrollnavbar.style.backgroundColor = "white"; // Set background to white
+                    scrollnavbar.style.position = "fixed"; // Make the navbar fixed at top
+                    scrollnavbar.style.width = "100%"; // Full width at top
+                    scrollnavbar.style.zIndex = "9999"; // Keep it on top
+                } else if (currentScroll < 50) {
+                    // Hide scrollnavbar when near top
+                    scrollnavbar.style.top = "-100%"; // Hide scrollnavbar
+                }
+
+                lastScrollTop = currentScroll;
+            });
+
+
+            // Function to update transNavbar background based on the active carousel item
+            function updateTransNavbarBackground() {
+                const activeItem = document.querySelector('.carousel-item.active');
+                const imageUrl = activeItem.querySelector('img').src; // Get image src from the active slide
+
+                // Set the background image for transNavbar based on carousel image
+                transNavbar.style.backgroundImage = `url(${imageUrl})`;
+            }
+
+            // Event listener to update transNavbar background when carousel changes
+            carousel.addEventListener('slid.bs.carousel', updateTransNavbarBackground);
+
+            // Initialize the navbar background when the page loads
+            updateTransNavbarBackground();
+        </script>
+
+        <!--popper javascript for pop-ups and keeping dropdowns in place-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <!--bootstrap javascript-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+
+        <!--put nothing between </script> and </body>-->
+
+</body>
+
+</html>
