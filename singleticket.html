@@ -10,6 +10,32 @@
     <!--stylesheet for website layout-->
     <link href="css/styles.css" rel="stylesheet">
     <!--add your own styles.css for your main's layout. Use bootstrap grids!-->
+	<style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .ticket-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .cart-box {
+      background-color: #f1f1f1;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body>
@@ -102,7 +128,111 @@
         <!--end of navigations-->
 
         <!--main for your content and text starts here-->
-        <main></main>
+        <main>
+			<div class="ticket-container">
+			  <!-- Carousel -->
+			  <div id="ticketCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="images/tickets-images/eclipse-hearts-without-text.jpg" class="d-block w-100" alt="Scene 1">
+				  </div>
+				  <div class="carousel-item">
+					<img src="images/tickets-images/eclipse-hearts-without-text.jpg" class="d-block w-100" alt="Scene 2">
+				  </div>
+				  <div class="carousel-item">
+					<img src="images/tickets-images/eclipse-hearts-without-text.jpg" class="d-block w-100" alt="Scene 3">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#ticketCarousel" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#ticketCarousel" data-bs-slide="next">
+				  <span class="carousel-control-next-icon"></span>
+				</button>
+			  </div>
+
+			  <!-- Title and Description -->
+			  <h4 class="mb-3">Eclipse Heart</h4>
+			  <p class="text-muted">
+				A Sappho inspired retelling. As her passion for a younger muse intensifies, the line between art and obsession begins to blur. Set in modern times, Eclipse Hearts follows a driven writer whose orderly life unravels in the wake of unreturned love.
+			  </p>
+
+			  <!-- Price Selection -->
+			  <div class="row mb-4">
+				<div class="col-md-6">
+				  <label for="seatSelect" class="form-label">Choose your seat type:</label>
+				  <select class="form-select" id="seatSelect">
+					<option value="standard" data-price="15">Standard – €15</option>
+					<option value="premium" data-price="25">Premium – €25</option>
+					<option value="vip" data-price="40">VIP – €40</option>
+				  </select>
+				</div>
+				<div class="col-md-6">
+				  <label for="quantity" class="form-label">Quantity:</label>
+				  <input type="number" class="form-control" id="quantity" min="1" value="1">
+				</div>
+			  </div>
+
+			  <!-- Add to Cart Button -->
+			  <div class="text-center mb-4">
+				<button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+			  </div>
+
+			  <!-- Cart Section -->
+			  <div class="cart-box">
+				<h5>🛒 Cart</h5>
+				<ul id="cartItems" class="list-group mb-3"></ul>
+				<strong>Total: €<span id="cartTotal">0</span></strong>
+			  </div>
+			</div>
+
+			<script>
+			  const cart = [];
+			  const prices = {
+				standard: 15,
+				premium: 25,
+				vip: 40
+			  };
+
+			  function addToCart() {
+				const seatType = document.getElementById('seatSelect').value;
+				const quantity = parseInt(document.getElementById('quantity').value);
+
+				if (quantity < 1) return;
+
+				const item = {
+				  type: seatType.charAt(0).toUpperCase() + seatType.slice(1),
+				  price: prices[seatType],
+				  qty: quantity
+				};
+
+				cart.push(item);
+				renderCart();
+			  }
+
+			  function renderCart() {
+				const cartList = document.getElementById('cartItems');
+				const totalBox = document.getElementById('cartTotal');
+				cartList.innerHTML = "";
+
+				let total = 0;
+				cart.forEach((item, index) => {
+				  const subtotal = item.price * item.qty;
+				  total += subtotal;
+
+				  const li = document.createElement("li");
+				  li.className = "list-group-item d-flex justify-content-between align-items-center";
+				  li.innerHTML = `${item.qty} × ${item.type} (€${item.price}) 
+								  <span>€${subtotal}</span>`;
+				  cartList.appendChild(li);
+				});
+
+				totalBox.textContent = total;
+			  }
+			</script>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		</main>
         <!--main for your content stops here-->
 
         <!--footer navigation starts here-->
