@@ -7,6 +7,13 @@
     <title>profile | outncenter</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	
+	<!-- Bootstrap CSS -->
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  	<!-- Flatpickr CSS -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	
     <!--stylesheet for website layout-->
     <link href="css/styles.css" rel="stylesheet">
     <!--add your own styles.css for your main's layout. Use bootstrap grids!-->
@@ -124,7 +131,8 @@
             </button>
           </div>
         </nav>
-    <!--end of navigations-->
+		  
+    	<!--end of navigations-->
         <!--end of navigations-->
 
         <!--main for your content and text starts here-->
@@ -156,8 +164,18 @@
 			  <p class="text-muted">
 				A Sappho inspired retelling. As her passion for a younger muse intensifies, the line between art and obsession begins to blur. Set in modern times, Eclipse Hearts follows a driven writer whose orderly life unravels in the wake of unreturned love.
 			  </p>
-
+			    <p class="card-text"><small class="text-body-secondary">Duration: 1 hour 45 minutes (no intermission)</small></p>
+			  
+			  <!-- Inline Calendar FIRST -->
+				
+				  <div class="mb-4">
+					<label class="form-label">Select a show date:</label>
+					<div id="calendar"></div>
+					<input type="hidden" id="selectedDate">
+				  </div>
+				
 			  <!-- Price Selection -->
+				
 			  <div class="row mb-4">
 				<div class="col-md-6">
 				  <label for="seatSelect" class="form-label">Choose your seat type:</label>
@@ -185,25 +203,35 @@
 				<strong>Total: €<span id="cartTotal">0</span></strong>
 			  </div>
 			</div>
+			
+		<!-- Bootstrap JS -->
+			
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Flatpickr JS -->
+			
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 			<script>
 			  const cart = [];
 			  const prices = {
-				standard: 15,
-				premium: 25,
-				vip: 40
+				premium: 40,
+				standard: 25,
+				balcony: 15
 			  };
 
 			  function addToCart() {
 				const seatType = document.getElementById('seatSelect').value;
 				const quantity = parseInt(document.getElementById('quantity').value);
+				const date = document.getElementById('selectedDate').value;
 
-				if (quantity < 1) return;
+				if (quantity < 1 || !date) return;
 
 				const item = {
 				  type: seatType.charAt(0).toUpperCase() + seatType.slice(1),
 				  price: prices[seatType],
-				  qty: quantity
+				  qty: quantity,
+				  date: date
 				};
 
 				cart.push(item);
@@ -211,31 +239,39 @@
 			  }
 
 			  function renderCart() {
-				const cartList = document.getElementById('cartItems');
-				const totalBox = document.getElementById('cartTotal');
-				cartList.innerHTML = "";
-
+				const list = document.getElementById('cartList');
+				list.innerHTML = '';
 				let total = 0;
-				cart.forEach((item, index) => {
-				  const subtotal = item.price * item.qty;
-				  total += subtotal;
 
-				  const li = document.createElement("li");
-				  li.className = "list-group-item d-flex justify-content-between align-items-center";
-				  li.innerHTML = `${item.qty} × ${item.type} (€${item.price}) 
-								  <span>€${subtotal}</span>`;
-				  cartList.appendChild(li);
+				cart.forEach(item => {
+				  const li = document.createElement('li');
+				  li.classList.add('list-group-item', 'd-flex', 'justify-content-between');
+				  const subtotal = item.qty * item.price;
+				  li.innerHTML = `${item.qty} × ${item.type} on ${item.date} <span>€${subtotal}</span>`;
+				  total += subtotal;
+				  list.appendChild(li);
 				});
 
-				totalBox.textContent = total;
+				document.getElementById('totalAmount').innerText = total;
 			  }
+
+			  // Initialize calendar (inline view)
+			  flatpickr("#calendar", {
+				inline: true,
+				defaultDate: "2025-04-01",
+				minDate: "2025-04-01",
+				maxDate: "2025-04-30",
+				dateFormat: "Y-m-d",
+				onChange: function(selectedDates, dateStr) {
+				  document.getElementById('selectedDate').value = dateStr;
+				}
+			  });
 			</script>
-
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 		</main>
+		  
         <!--main for your content stops here-->
-
         <!--footer navigation starts here-->
+		  
         <footer class="bg-blue text-white py-4">
             <div class="container">
                 <div class="row">
@@ -285,8 +321,6 @@
         <!--footer ends here-->
 
         <!--your script starts here-->
-        <script>
-        </script>
         <!--your script ends here-->
 
         <!--script for navigation starts here-->
@@ -344,6 +378,7 @@
 
         <!--put nothing between </script> and </body>-->
 
-</body>
+		</div>
+	</body>
 
 </html>
