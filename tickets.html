@@ -128,18 +128,32 @@
         </div>
         <div class="col-4 text-end">
 		  <div class="dropdown">
-			<button class="btn btn-outline-dark dropdown-toggle outfit-medium" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 2vw;">Filter</button>
-			<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="filterDropdown">
-			  <li><a class="dropdown-item" href="#">Tragedy</a></li>
-			  <li><a class="dropdown-item" href="#">Comdey</a></li>
-			  <li><a class="dropdown-item" href="#">Drama</a></li>
-			  <li><a class="dropdown-item" href="#">Musical Theater</a></li>
-			</ul>
+			<button class="btn btn-outline-dark dropdown-toggle outfit-medium" type="button" id="multiFilterDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 2vw;">Filter</button>
+			<div class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="multiFilterDropdown" style="min-width: 250px;">
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="filter1">
+				<label class="form-check-label" for="filter1">Tragedy</label>
+			  </div>
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="filter2">
+				<label class="form-check-label" for="filter2">Comdey</label>
+			  </div>
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="filter3">
+				<label class="form-check-label" for="filter3">Drama</label>
+			  </div>
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="filter4">
+				<label class="form-check-label" for="filter4">Musical Theater</label>
+			  </div>
+			  <hr>
+			  <button class="btn btn-dark btn-sm w-100 mt-2">Apply Filters</button>
+			</div>
 		  </div>
 		</div>
       </div>
     </div>
-    <br>
+   <br>
 
       <!-- Card 1 -->
        
