@@ -19,10 +19,3 @@ Click on [<https://outncenter.github.io/>] to see what the website looks like wh
 -  Photo by cottonbro studio: https://www.pexels.com/photo/close-up-shot-of-a-paper-6830360/
 - Photo by cottonbro studio: https://www.pexels.com/photo/crop-photo-of-woman-standing-behind-a-curtain-6899775/
   
-
-## UX Patterns Credits
-* All icons derived from Bootstrap: https://icons.getbootstrap.com
-
-
-## Template Credits
-*
