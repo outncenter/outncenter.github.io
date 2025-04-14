@@ -49,6 +49,41 @@
       margin-left: 250px;
       padding: 2rem;
     }
+	.shadow-img {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+
+  .shadow-img:hover {
+    transform: scale(1.02);
+  }
+  .ratio-4x5 {
+    position: relative;
+    width: 100%;
+    padding-top: 125%; /* 5 / 4 * 100 = 125% */
+  }
+  .ratio-4x5 > .carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+	.ratio-9x16 {
+      position: relative;
+      width: 100%;
+      padding-top: 177.78%; /* 16 / 9 * 100 = 177.78% for portrait video */
+    }
+    .ratio-9x16 iframe, .ratio-9x16 video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   </style>
 </head>
 
@@ -430,8 +465,332 @@
     <!--start of promotional activities-->
 		  
       		<h3 class="subheadings-content-part-corporate-page" id="marsub4">Professionalism</h3>
-      		<p>add instagram posts here</p>
+		  	<h3 class="subheadings-content-part-corporate-page">Images</h3>
+		 
+		  		 <!-- Instagram post 1 -->
 		  
+      		<div class="container py-4">
+			  <div class="row g-4">
+				<div class="col-6 col-md-3">
+				  <div class="ratio ratio-1x1">
+					<img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-one/first-instagram-post.jpeg" class="img-fluid rounded shadow-img" alt="Show 1">
+				  </div>
+				  <p class="text-center mt-2 fw-semibold">Instagram Post 1</p>
+				</div>
+				  
+				 <!-- Instagram post 2 -->
+				  
+				<div class="col-6 col-md-3">
+				  <div class="ratio ratio-1x1">
+					<div id="miniCarousel1" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+					  <div class="carousel-inner h-100">
+						<div class="carousel-item active h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-two/second-post-first-slide.jpeg"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 2 Slide 1">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-two/second-post-second-slide.jpeg"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 2 Slide 2">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-two/second-post-third-slide.jpeg"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 2 Slide 3">
+						</div>
+					  </div>
+
+					  <!-- Manual Controls -->
+					  <button class="carousel-control-prev" type="button" data-bs-target="#miniCarousel1" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#miniCarousel1" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				  </div>
+				  <p class="text-center mt-2 fw-semibold">Instagram Post 2</p>
+				</div>
+				  
+				   <!-- Instagram post 3 -->
+		  
+				<div class="col-6 col-md-3">
+				  <div class="ratio ratio-1x1">
+					<div id="miniCarousel2" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+					  <div class="carousel-inner h-100">
+						<div class="carousel-item active h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-three/first-slide-post-three.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 3 Slide 1">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-three/second-slide-post-three.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 3 Slide 2">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-three/third-slide-post-three.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 3 Slide 3">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-three/fourth-slide-post-three.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 3 Slide 4">
+						</div>
+					  </div>
+
+					  <!-- Manual Controls -->
+					  <button class="carousel-control-prev" type="button" data-bs-target="#miniCarousel2" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#miniCarousel2" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				  </div>
+				  <p class="text-center mt-2 fw-semibold">Instagram Post 3</p>
+				</div>
+				  
+				  <!-- Instagram post 4 -->
+				  
+				<div class="col-6 col-md-3">
+				  <div class="ratio ratio-1x1">
+					<div id="miniCarousel3" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+					  <div class="carousel-inner h-100">
+						<div class="carousel-item active h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-four/first-slide-post-four.png" class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 4 Slide 1">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-four/second-slide-post-four.png" class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 4 Slide 2">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-four/third-slide-post-four.png" class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 4 Slide 3">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-four/fourth-slide-post-four.png" class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 4 Slide 4">
+						</div>
+					  </div>
+						
+					<!-- Manual Controls -->
+						
+					  <button class="carousel-control-prev" type="button" data-bs-target="#miniCarousel3" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#miniCarousel3" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				  </div>
+				  <p class="text-center mt-2 fw-semibold">Instagram Post 4</p>
+				</div>
+			  </div>
+			</div>
+		  
+		    <!-- Instagram post 6 -->
+		  
+		  	<div class="container py-4">
+			  <div class="row g-4">
+				<div class="col-6 col-md-3">
+				  <div class="ratio ratio-1x1">
+					<div id="miniCarousel4" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+					  <div class="carousel-inner h-100">
+						<div class="carousel-item active h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-six/first-slide-post-six.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 6 Slide 1">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-six/second-slide-post-six.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 6 Slide 2">
+						</div>
+					  </div>
+
+					  <!-- Manual Controls -->
+					  <button class="carousel-control-prev" type="button" data-bs-target="#miniCarousel4" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#miniCarousel4" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				  </div>
+				  <p class="text-center mt-2 fw-semibold">Instagram Post 6</p>
+				</div>
+				  
+				<!-- Instagram post 7 -->
+		  
+				<div class="col-6 col-md-3">
+				  <div class="ratio ratio-4x5">
+					<div id="miniCarousel5" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+					  <div class="carousel-inner h-100">
+						<div class="carousel-item active h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-seven/first-slide-post-seven.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 7 Slide 1">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-seven/second-slide-post-seven.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 7 Slide 2">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-seven/third-slide-post-seven.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 7 Slide 3">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-seven/four-slide-post-seven.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 7 Slide 4">
+						</div>
+					  </div>
+
+					  <!-- Manual Controls -->
+					  <button class="carousel-control-prev" type="button" data-bs-target="#miniCarousel5" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#miniCarousel5" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				  </div>
+				  <p class="text-center mt-2 fw-semibold">Instagram Post 7</p>
+				</div>
+				  
+				<!-- Instagram post 9 -->
+				  
+				<div class="col-6 col-md-3">
+				  <div class="ratio ratio-1x1">
+					<div id="miniCarousel6" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+					  <div class="carousel-inner h-100">
+						<div class="carousel-item active h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-nine/first-slide-post-nine.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 9 Slide 1">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-nine/second-slide-post-nine.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 9 Slide 2">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-nine/third-slide-post-nine.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 9 Slide 3">
+						</div>
+					  </div>
+
+					  <!-- Manual Controls -->
+					  <button class="carousel-control-prev" type="button" data-bs-target="#miniCarousel6" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#miniCarousel6" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				  </div>
+				  <p class="text-center mt-2 fw-semibold">Instagram Post 9</p>
+				</div>
+		  
+		  		<!-- Instagram post 11 -->
+		  
+				<div class="col-6 col-md-3">
+				  <div class="ratio ratio-4x5">
+					<div id="miniCarousel7" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+					  <div class="carousel-inner h-100">
+						<div class="carousel-item active h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-eleven/first-slide-post-twelve.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 11 Slide 1">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-eleven/second-slide-post-twelve.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 11 Slide 2">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-eleven/third-slide-post-twelve.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 11 Slide 3">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-eleven/fourth-slide-post-twelve.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 11 Slide 4">
+						</div>
+					  </div>
+
+					  <!-- Manual Controls -->
+					  <button class="carousel-control-prev" type="button" data-bs-target="#miniCarousel7" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#miniCarousel7" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				  </div>
+				  <p class="text-center mt-2 fw-semibold">Instagram Post 11</p>
+				</div>
+				  
+				<!-- Instagram post 12 -->
+				  
+			  <div class="container py-4">
+			  	<div class="row g-4">
+				  <div class="col-6 col-md-3">
+				  <div class="ratio ratio-1x1">
+					<div id="miniCarousel8" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+					  <div class="carousel-inner h-100">
+						<div class="carousel-item active h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-twelve/13.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 12 Slide 1">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-twelve/14.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 12 Slide 2">
+						</div>
+						<div class="carousel-item h-100">
+						  <img src="images/corporate-page-images/marketing-promotional-activities/instagram-post-twelve/15.png"
+							class="d-block w-100 h-100 shadow-img object-fit-cover" alt="Instagram Post 12 Slide 3">
+						</div>
+					  </div>
+
+					  <!-- Manual Controls -->
+					  <button class="carousel-control-prev" type="button" data-bs-target="#miniCarousel8" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#miniCarousel8" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.3); border-radius: 50%;"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				  </div>
+				  <p class="text-center mt-2 fw-semibold">Instagram Post 12</p>
+				</div>
+					
+				<!--Video posts-->
+
+				<div class="container mt-5">
+				  <div class="row g-4">
+					<h3 class="subheadings-content-part-corporate-page">Video Posts</h3>
+					<div class="col-12 col-md-4">
+					  <div class="ratio-9x16">
+						<video src="videos/instagram-post-five/video-representation-actor.MP4" controls></video>
+					  </div>
+						<p class="text-center mt-2 fw-semibold">Instagram Post 5</p>
+					</div>
+					<div class="col-12 col-md-4">
+					  <div class="ratio-9x16">
+						<video src="videos/instagram-post-eight/video-representation-post-eight.MOV" controls></video>
+					  </div>
+						<p class="text-center mt-2 fw-semibold">Instagram Post 8</p>
+					</div>
+					<div class="col-12 col-md-4">
+					  <div class="ratio-9x16">
+						<video src="videos/instagram-post-ten/video-representation-post-ten.MOV" controls></video>
+					  </div>
+						<p class="text-center mt-2 fw-semibold">Instagram Post 10</p>
+					</div>
+				  </div>
+				</div>
+
 			
     <!--end of promotional activities-->
     <!--start of Learning Points-->
@@ -717,7 +1076,7 @@
   </footer>
   <!--footer ends here-->
   <!--your script starts here-->
-  <script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
   </script>
   <!--your script ends here-->
 
