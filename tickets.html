@@ -124,14 +124,19 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-8">
-          <a href="tickets.html" class="no-link-style"><h2>tickets</h2></a>
+          <a href="tickets.html" class="no-link-style"><h3>tickets</h3></a>
         </div>
-        <div class="col-2 text-end">
-          <a href="tickets.html" class="btn btn-outline-dark outfit-medium" style="font-size: 2vw;">filter</a>
-        </div>
-        <div class="col-2 text-end">
-          <a href="tickets.html" class="btn btn-outline-dark outfit-medium d-felx" style="font-size: 2vw;">select date</a>
-        </div>
+        <div class="col-4 text-end">
+		  <div class="dropdown">
+			<button class="btn btn-outline-dark dropdown-toggle outfit-medium" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 2vw;">Filter</button>
+			<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="filterDropdown">
+			  <li><a class="dropdown-item" href="#">Tragedy</a></li>
+			  <li><a class="dropdown-item" href="#">Comdey</a></li>
+			  <li><a class="dropdown-item" href="#">Drama</a></li>
+			  <li><a class="dropdown-item" href="#">Musical Theater</a></li>
+			</ul>
+		  </div>
+		</div>
       </div>
     </div>
     <br>
