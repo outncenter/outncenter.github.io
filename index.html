@@ -10,6 +10,22 @@
   <!--stylesheet for website layout-->
   <link href="css/styles.css" rel="stylesheet">
   <!--add your own styles.css for your main's layout. Use bootstrap grids!-->
+  <!---tickets clickable-->
+  <style>
+.card-link-wrapper {
+  position: relative;
+}
+
+.card-clickable-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Invisible link that covers the card */
+}
+
+  </style>
 </head>
 
 <body>
@@ -208,21 +224,32 @@
       <br>
     
       <div class="row gy-4 gx-4"> <!-- spacing between rows and columns -->
+
         <!-- Card 1 -->
         <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100">
+          <div class="card h-100 card-link-wrapper">
+            <!-- Invisible link layer -->
+		       <a href="singleticket.html" class="card-clickable-link"></a>
             <img src="images/tickets-images/eclipse-hearts-without-text.jpg" class="card-img-top" alt="eclipse-hearts-photo">
             <div class="card-body d-flex flex-column justify-content-between">
               <div>
                 <h4 class="card-title">Eclipse Hearts</h4>
                 <p>3 Apr - 3 May 2025</p>
                 <p class="card-text">Bound by desire, a woman faces the distructive power of unrequited love. A Sappho inspired retelling. 
-                  <a href="tickets.html" class="no-link-style icon-style">More...</a>
                 </p>
                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
               </div>
+              <div class="d-flex justify-content-end" style="z-index: 2;">
+                <button class="icon-style icon-white">
+                  <a href="cart.html" class="text-decoration-none text-reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                  </a>
+                </button>
+              </div>
               <!---pop-up login heart-->
-              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">
+              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" style="z-index: 2;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
                   viewBox="0 0 16 16">
                   <path
@@ -236,17 +263,20 @@
     
         <!-- Card 2 -->
         <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100">
+          <div class="card h-100 card-link-wrapper">
+            <!-- Invisible link layer -->
+		       <a href="singleticket.html" class="card-clickable-link"></a>
             <img src="images/tickets-images/romeo-and-romeo-without-text.jpg" class="card-img-top" alt="romeo-and-romeo-photo">
             <div class="card-body d-flex flex-column justify-content-between">
               <div>
                 <h4 class="card-title">Romeo and Romeo</h4>
                 <p>6 May - 6 June 2025</p>
-                <p class="card-text">...
+                <p class="card-text">
+                  Romeo and Romeo follows two young men torn between love and family loyalty in a world divided by conflict. Their journey challenges the boundaries of tradition and the power of forbidden love.
                 </p>
                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
               </div>
-              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">
+              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" style="z-index: 2;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
                   viewBox="0 0 16 16">
                   <path
@@ -259,16 +289,18 @@
 
          <!-- Card 3 -->
          <div class="col-12 col-md-6 col-xl-4">
-			<div class="card h-100">
+			<div class="card h-100 card-link-wrapper">
+        <!-- Invisible link layer -->
+        <a href="singleticket.html" class="card-clickable-link"></a>
             <img src="images/tickets-images/moonlight-call-without-text.jpg" class="card-img-top" alt="moonlight-call-photo">
             <div class="card-body d-flex flex-column justify-content-between">
               <div>
                 <h4 class="card-title">Moonlight Call</h4>
                 <p>10 June - 10 July 2025</p>
-                <p class="card-text">...</p>
+                <p class="card-text">Moonlight Call follows three individuals bound by fate as they journey through a world where emotions take shape, unlocking the power of untold visions along the way.</p>
                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
               </div>
-              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">
+              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" style="z-index: 2;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
                   viewBox="0 0 16 16">
                   <path
@@ -298,14 +330,18 @@
       <br>
       <div class="row">
         <div class="col-12 col-md-6">
-          <img src="images/blog-page-images/two_men.jpg" class="img-fluid" alt="template">
-          <a href="blog.html" class="no-link-style"><h5 class= "blogtitle">Queer Theater Fans Speak: Why Representation Matters On Stage</h5></a>
-         <p class= "date">29.04.2025</p>
+          <a href="blog.html" class="no-link-style">
+            <img src="images/blog-page-images/two_men.jpg" class="img-fluid" alt="template">
+            <h5 class= "blogtitle">Queer Theater Fans Speak: Why Representation Matters On Stage</h5></a>
+           <p class= "date">29.04.2025</p>
+          </a>
        </div>
        <div class="col-12 col-md-6">
-         <img src="images/blog-page-images/man_in_makeup.jpg" class="img-fluid" alt="template">
-         <a href="blog.html" class="no-link-style"><h5 class= "blogtitle">Inside the Spotlight: Interviews with Queer Theater Stars</h5></a>
-         <p class= "date">23.04.2025</p>
+        <a href="blog.html" class="no-link-style">
+          <img src="images/blog-page-images/man_in_makeup.jpg" class="img-fluid" alt="template">
+          <h5 class= "blogtitle">Inside the Spotlight: Interviews with Queer Theater Stars</h5></a>
+          <p class= "date">23.04.2025</p>
+        </a>
        </div>
       </div>
     </div>
@@ -315,7 +351,7 @@
 <div class="container">
   <div class="row align-items-center">
     <div class="col-9">
-      <a href="about.html" class="no-link-style"><h2>Serving Stage Realness!</h2>
+      <a href="about.html" class="no-link-style"><h2 style="padding-bottom: 18px;">Serving Stage Realness!</h2>
       </a>
     </div>
     <div class="col-3 text-end">

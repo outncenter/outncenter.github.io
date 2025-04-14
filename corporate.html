@@ -91,50 +91,103 @@
   <!--DO NOT START YOUR CONTENT HERE. PUT IT IN <MAIN> THAT IS FURTHER DOWN IN THE CODE-->
   <!-- start down-ScrollNavbar -->
   <nav class="scrollnavbar navbar shadow" id="scrollnavbar">
-    <div class="container-fluid">
-      <div class="justify-content-start">
+    <div class="container-fluid d-flex">
+      <!-- Left aligned logo -->
+     
+      <div class="d-flex justify-content-start">
+        <img src="images/onc_notext.svg" alt="Brand Logo" style="height: 30px;">
+      </div>
+
+      <a href="index.html"
+       class="navbar-brand outfit-semibold icon-style mx-auto"
+       style="position: absolute; left: 50%; transform: translateX(-50%);">
+      outncenter
+    </a>
+
+      <div class="justify-content-end">
         <button class="icon-style">
-          <a href="profile.html" class="text-decoration-none text-reset">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-person-circle" viewBox="0 0 16 16">
-              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-              <path fill-rule="evenodd"
-                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+          <a class="text-decoration-none text-reset" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
             </svg>
           </a>
-        </button>
+      </button>
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header search-margin" style="padding-bottom: 0px;">
+          <h5 class="offcanvas-title" id="offcanvasTopLabel">popular searches</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body search-margin">
+          <ul>
+            <li><a href="singleticket.html" class="no-link-style icon-style">Eclipse Hearts Musical</a></li>
+            <li><a href="profile.html" class="no-link-style icon-style">Subscription</a></li>
+            <li><a href="profile.html" class="no-link-style icon-style">10% Discount on tickets</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark outfit-medium" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
         <button class="icon-style">
           <a href="cart.html" class="text-decoration-none text-reset">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
-              viewBox="0 0 16 16">
-              <path
-                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
             </svg>
           </a>
         </button>
-      </div>
-      <div class="d-flex justfify-content-center">
-        <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style" href="index.html">outncenter</a>
-      </div>
-      <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
+        
+        <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
         aria-labelledby="offcanvasScrollNavbarLabel">
         <div class="offcanvas-header">
-          <h4 class="offcanvas-title outfit-medium" id="offcanvasScrollNavbarLabel">menu</h4>
-          <button type="button" class="btn-close close-button" data-bs-dismiss="offcanvas"></button>
+          <a href="index.html" class="offcanvas-title outfit-medium no-link-style" id="offcanvasScrollNavbarLabel"><h4>menu</h4></a>
+          <button type="button" class="btn-close side-x-margin close-button" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
-            <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
+            <li>
+              <button class="icon-style" style="padding-bottom: 18px;">
+                <a href="profile.html" class="text-decoration-none text-reset">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                    <path fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                  </svg>
+                  Log In
+                </a>
+              </button>
+            </li>
+            <li>
+              <button class="icon-style" style="padding-bottom: 15px;">
+                <a href="cart.html" class="text-decoration-none text-reset">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg>  View Cart
+                </a>
+              </button>
+            </li>
+            <hr>
             <li class="nav-item"><a class="nav-link" href="tickets.html">tickets</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
             <li class="nav-item"><a class="nav-link" href="corporate.html">corporate</a></li>
+            <br>
+            <li>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark outfit-medium" type="submit">Search</button>
+              </form>
+            </li>
           </ul>
         </div>
       </div>
+      </div>
+
     </div>
   </nav>
   <!--end down-scrollnavbar-->
@@ -142,31 +195,51 @@
   <!-- Carousel and its navigation-->
   <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
     <nav class="navbar bg-black" style="padding-left: 7%; padding-right: 7%;">
-      <div class="container-fluid">
-        <div class="justify-content-start">
+      <div class="container-fluid d-flex">
+        <!-- Left aligned logo -->
+       
+        <div class="d-flex justify-content-start">
+          <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 30px;">
+        </div>
+  
+        <a href="index.html"
+         class="navbar-brand outfit-semibold icon-style icon-white mx-auto"
+         style="position: absolute; left: 50%; transform: translateX(-50%);">
+        outncenter
+      </a>
+  
+        <div class="justify-content-end">
           <button class="icon-style icon-white">
-            <a href="profile.html" class="text-decoration-none text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                <path fill-rule="evenodd"
-                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+            <a class="text-decoration-none text-reset" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
               </svg>
             </a>
-          </button>
+        </button>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header search-margin" style="padding-bottom: 0px;">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">popular searches</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body search-margin">
+            <ul>
+              <li><a href="singleticket.html" class="no-link-style icon-style">Eclipse Hearts Musical</a></li>
+              <li><a href="profile.html" class="no-link-style icon-style">Subscription</a></li>
+              <li><a href="profile.html" class="no-link-style icon-style">10% Discount on tickets</a></li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark outfit-medium" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
           <button class="icon-style icon-white">
             <a href="cart.html" class="text-decoration-none text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
-                viewBox="0 0 16 16">
-                <path
-                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg>
             </a>
           </button>
-        </div>
-        <div class="d-flex justfify-content-center">
-          <a class="navbar-brand outfit-semibold brandname-nav-margin icon-style icon-white" href="index.html">outncenter</a>
-        </div>
         <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
           <span class="navbar-toggler-icon navbar-dark"></span>
