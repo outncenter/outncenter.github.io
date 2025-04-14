@@ -214,11 +214,11 @@ h2, h3, h4, h5 {
 }
 
 h2 {
-    font-size: 7vw;
+    font-size: 5vw;
 }
 
 h3 {
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 h4 {
@@ -247,17 +247,22 @@ h5 {
 
 /*closing button*/
 @media (max-width: 576px) {
-    .btn-close {
+    .side-x-margin {
         margin-right: 13% !important;
     }
 }
 
 @media (min-width: 768px) {
-    .btn-close {
+    .side-x-margin {
         padding-right: 65% !important;
     }
 }
 
+/* search bar css*/
+.search-margin {
+    margin-left: 8%;
+    margin-right: 8%;
+}
 
 /* TransNavbar stays transparent initially */
 #transNavbar {
