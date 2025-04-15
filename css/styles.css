@@ -12,6 +12,28 @@ html, body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+.background-rainbow {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #740318, #B93D22, #FDB92E, #B3298D, #5F2A88, #117F84);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 
 .main-about-page {
     margin-bottom: 50% !important;
