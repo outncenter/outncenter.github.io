@@ -209,30 +209,25 @@
 		<div class="text-end">
 		  <h4 class="mb-3">Final Total: €50</h4>
 			
-		<!-- Proceed to Checkout Button -->
-		<button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#redirectModal">
+		<!-- Trigger button -->
+		<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loadingModal">
 		  Proceed to Checkout
 		</button>
 
-		<!-- Bootstrap Modal -->
-		<div class="modal fade" id="redirectModal" tabindex="-1" aria-labelledby="redirectModalLabel" aria-hidden="true">
+		<!-- Modal -->
+		<div class="modal fade" id="loadingModal" tabindex="-1" aria-labelledby="loadingModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content text-center">
-			  <div class="modal-header">
-				<h5 class="modal-title" id="redirectModalLabel">Redirecting to Checkout</h5>
-			  </div>
+			<div class="modal-content text-center p-4">
 			  <div class="modal-body">
-				Please wait while we redirect you...
-				<div class="spinner-border text-success mt-3" role="status">
+				<div class="spinner-border text-primary mb-3" role="status">
 				  <span class="visually-hidden">Loading...</span>
 				</div>
+				<h5 class="modal-title" id="loadingModalLabel">Processing your checkout...</h5>
+				<p class="text-muted mt-2">Please wait a moment.</p>
 			  </div>
 			</div>
 		  </div>
 		</div>
-		</div>
-	  </div>
-
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!--end container for about-->
   </main>
