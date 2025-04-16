@@ -105,6 +105,17 @@ html, body {
     width: 100%;
 }
 
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+
+  .slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 
 /* Everything for the vision part on the about page*/
 .vision-about-page {
@@ -188,6 +199,8 @@ html, body {
 .heading-five-cards-meet-the-team {
 	font-size: 25px; 
 }
+
+
 
 /* CORPORATE page css starts here*/
 

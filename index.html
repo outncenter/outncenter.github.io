@@ -389,7 +389,7 @@
     <br>
   </main>
 
-  <div class="index-about-bg background-rainbow">
+  <div class="index-about-bg background-rainbow slide-up">
     <div class="row align-items-center">
       <div class="col-9">
         <a href="about.html" class="no-link-style">
@@ -548,7 +548,19 @@
 
   <!--your script starts here-->
   <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Optional: Stop observing after it becomes visible
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+  
+    document.querySelectorAll('.slide-up').forEach((el) => observer.observe(el));
   </script>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1Z508DZ7T"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

@@ -132,7 +132,7 @@
 
   <!-- Carousel and its navigation-->
   <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-    <nav class="navbar background-rainbow" style="padding-left: 7%; padding-right: 7%;">
+    <nav class="navbar" id="transNavbar">
       <div class="container-fluid d-flex">
         <!-- Left aligned logo -->
 
@@ -188,18 +188,26 @@
           </button>
         </div>
     </nav>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <div class="index-about-bg background-rainbow" style="color: whitesmoke; padding-bottom: 3%;">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 style="font-size: 500%; padding-top: 10%; padding-bottom: 4%;" class="outfit-semibold">Welcome To<br>outncenter</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
   <!--end of navigations-->
 
   <!--Main for your content and text starts here-->
 
-  <div class="index-about-bg background-rainbow" style="color: whitesmoke; padding-bottom: 3%;">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 style="font-size: 500%;" class="outfit-semibold">Welcome To<br>outncenter</h1>
-      </div>
-    </div>
-  </div>
+  
 
   <main>
     <!--Start of container for vision-->
@@ -213,31 +221,29 @@
     <br>
 
     <div class="row">
-      <h4>Who We Are</h4>
-      <br>
+      <h2 style="padding-bottom: 3%;">Who We Are</h2>
       <div class="text-center" style="background-color: whitesmoke;">
         <img src="images/onc_nl_bs3.svg" alt="logo" style="width: 50%;" class="breathe-effect">
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-8">
-            <h6 style="font-weight: 300; font-size: 130%; margin-top: 30px; padding-top: 30px; padding-bottom: 30px;;">We provide a safe, inclusive space where
+        <div class="row text-center">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <h6 style="font-weight: 300; font-size: 130%; margin-top: 10px; padding: 50px;">We provide a safe, inclusive space where
               users can engage in meaningful discussions about representation, storytelling, and more!</h6>
           </div>
-          <div class="col-2"></div>
+          <div class="col-1"></div>
         </div>
       </div>
     </div>
   </main>
 
-  <div class="index-about-bg" style="background-color: #FDB92E; padding-bottom: 3%;">
-    <div class="container">
+  <div class="index-about-bg slide-up" style="padding-bottom: 3%; background-color: #D0B3FA;">
       <div class="row">
         <div class="col-6">
           <div class="container"> <!-- Add container to control padding -->
             <a href="tickets.html" class="no-link-style">
-              <h4 style="color: whitesmoke;">Buy Tickets for Theatre Shows</h4>
+              <h4 style="color: white;">Buy Tickets for Theatre Shows</h4>
             </a>
             <br>
             <div class="row justify-content-start g-3">
@@ -325,7 +331,7 @@
         </div>
         <div class="col-6">
           <a href="blog.html" class="no-link-style">
-            <h4 style="color: whitesmoke;">Read Articles with LGBTQ+ Actors and Creators</h4>
+            <h4 style="color: white;">Read Articles with LGBTQ+ Actors and Creators</h4>
           </a>
           <br>
           <a href="blog.html" style="text-decoration: none; color: inherit;">
@@ -341,74 +347,66 @@
           
         </div>
       </div>
+  </div>
+
+  <div class="row index-about-bg text-center background-rainbow" style="color: whitesmoke; padding-top: 6%; padding-bottom: 5%;">
+    <div class="col-4">
+      <h4>Inclusivity</h4>
+      <p style="padding: 3%;" class="outfit-medium">
+        Whether you live for the spotlight or cheer from the seats, if you love LGBTQ+ theatre, you belong here.
+      </p>
+    </div>
+    <div class="col-4">
+      <h4>Authenticity</h4>
+      <p style="padding: 3%;" class="outfit-medium">
+        Bold, proud and authentic, we are committed to put LGBTQ+ voices in the spotlight.
+      </p>
+    </div>
+    <div class="col-4">
+      <h4>Learning</h4>
+      <p style="padding: 3%;" class="outfit-medium">
+        With every show, post and moment there’s something new to discover about theatre, identity and about each other.
+      </p>
     </div>
   </div>
 
   <div class="second-main-about">
-    <div class="row">
-      <div class="col-12 col-md-6 col-xl-4">
-        <h4>Our Values</h4>
-        <ul>
-          <li>Authenticity</li>
-          <li>Learning</li>
-          <li>Inclusivity</li>
-        </ul>
-      </div>
-    </div>
-  
+    <!--second main-->
+    <br>
       <h4>Leadership</h4>
-  
-      <br>
       <br>
       <div class="row">
-        <!--Start of first container for Meet the team-->
-        <div class="column-about-page-meet-the-team">
-          <div class="card">
-            <img src="images/portraits/portrait_freya.jpg" alt="Freya Willems" style="width:100%">
-              <div class="container-about-page-meet-the-team text-within-card-about-page">
-              <h5 class="text-center heading-five-cards-meet-the-team">Freya Willems</h5>
-              <p class="text-center">Creative Business</p>
-            </div>
-          </div>
+        <div class="col-3">
+          <img src="images/portraits/portrait_freya.jpg" alt="Freya Willems" style="width:100%">
+          <br>
+          <br>
+          <h5>Freya Willems</h5>
+          <p>Lead Web Developer & UI/UX Designer</p>
         </div>
-  
-        <!--End of first container for Meet the team-->
-  
-        <!--Start of second container for Meet the team-->
-        <div class="column-about-page-meet-the-team">
-          <div class="card">
-            <img src="images/portraits/portrait_daniel.jpg" alt="Dániel Horváth " style="width:100%">
-              <div class="container-about-page-meet-the-team text-within-card-about-page">
-              <h5 class="text-center heading-five-cards-meet-the-team">Dániel Horváth</h5>
-              <p class="text-center">Creative Business</p>
-            </div>
-          </div>
+        <div class="col-3">
+          <img src="images/portraits/portrait_daniel.jpg" alt="Dániel Horváth " style="width:100%">
+          <br>
+          <br>
+          <h5>Dániel Horváth</h5>
+          <p>Frontend Developer & UI/UX Designer</p>
         </div>
-        <!--End  of second container for Meet the team-->
-  
-        <!--Start of third container for Meet the team-->
-        <div class="column-about-page-meet-the-team">
-          <div class="card">
-            <img src="images/portraits/portrait_elena.jpg" alt="Elena Beganović" style="width:100%">
-              <div class="container-about-page-meet-the-team text-within-card-about-page">
-              <h5 class="text-center heading-five-cards-meet-the-team">Elena Beganović </h5>
-              <p class="text-center">Creative Business</p>
-            </div>
-          </div>
+        <div class="col-3">
+          <img src="images/portraits/portrait_elena.jpg" alt="Elena Beganović" style="width:100%">
+          <br>
+          <br>
+          <h5>Elena Beganović</h5>
+          <p>Brand Strategist & Copywriter</p>
         </div>
-        <!--End of third container for Meet the team-->
-  
-        <!--Start of fourth container for Meet the team-->
-        <div class="column-about-page-meet-the-team">
-          <div class="card">
-            <img src="images/portraits/portrait_mees.jpg" alt="Mees de Wilde" style="width:100%">
-              <div class="container-about-page-meet-the-team text-within-card-about-page">
-              <h5 class="text-center heading-five-cards-meet-the-team">Mees de Wilde </h5>
-              <p class="text-center">Creative Business</p>
-            </div>
-          </div>
+        <div class="col-3">
+          <img src="images/portraits/portrait_mees.jpg" alt="Mees de Wilde" style="width:100%">
+          <br>
+          <br>
+          <h5>Mees de Wilde</h5>
+          <p>Social Media Manager & Copywriter</p>
         </div>
       </div>
+      <br>
+      <br>
     </div>
   </div>
 
@@ -469,6 +467,17 @@
 
   <!--your script starts here-->
   <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Optional: Stop observing after it becomes visible
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+  
+    document.querySelectorAll('.slide-up').forEach((el) => observer.observe(el));
   </script>
   <!--your script ends here-->
 
