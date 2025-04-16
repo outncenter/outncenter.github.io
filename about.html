@@ -10,31 +10,39 @@
   <!--stylesheet for website layout-->
   <link href="css/styles.css" rel="stylesheet">
   <!--add your own styles.css for your main's layout. Use bootstrap grids!-->
+  <style>
+    .hover-shadow:hover {
+      box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.25);
+      transition: box-shadow 0.3s ease;
+    }
+  </style>
 </head>
 
 <body>
   <!--DO NOT START YOUR CONTENT HERE. PUT IT IN <MAIN> THAT IS FURTHER DOWN IN THE CODE-->
-    <nav class="scrollnavbar navbar shadow" id="scrollnavbar">
-      <div class="container-fluid d-flex">
-        <!-- Left aligned logo -->
-       
-        <div class="d-flex justify-content-start">
-          <img src="images/onc_notext.svg" alt="Brand Logo" style="height: 30px;">
-        </div>
-  
-        <a href="index.html"
-         class="navbar-brand outfit-semibold icon-style mx-auto"
-         style="position: absolute; left: 50%; transform: translateX(-50%);">
+  <nav class="scrollnavbar navbar shadow" id="scrollnavbar">
+    <div class="container-fluid d-flex">
+      <!-- Left aligned logo -->
+
+      <div class="d-flex justify-content-start">
+        <img src="images/onc_notext.svg" alt="Brand Logo" style="height: 30px;">
+      </div>
+
+      <a href="index.html" class="navbar-brand outfit-semibold icon-style mx-auto"
+        style="position: absolute; left: 50%; transform: translateX(-50%);">
         outncenter
       </a>
-  
-        <div class="justify-content-end">
-          <button class="icon-style">
-            <a class="text-decoration-none text-reset" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg>
-            </a>
+
+      <div class="justify-content-end">
+        <button class="icon-style">
+          <a class="text-decoration-none text-reset" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+          </a>
         </button>
         <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
           <div class="offcanvas-header search-margin" style="padding-bottom: 0px;">
@@ -53,22 +61,26 @@
             </form>
           </div>
         </div>
-          <button class="icon-style">
-            <a href="cart.html" class="text-decoration-none text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg>
-            </a>
-          </button>
-          
-          <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
+        <button class="icon-style">
+          <a href="cart.html" class="text-decoration-none text-reset">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </a>
+        </button>
+
+        <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
           aria-labelledby="offcanvasScrollNavbarLabel">
           <div class="offcanvas-header">
-            <a href="index.html" class="offcanvas-title outfit-medium no-link-style" id="offcanvasScrollNavbarLabel"><h4>menu</h4></a>
+            <a href="index.html" class="offcanvas-title outfit-medium no-link-style" id="offcanvasScrollNavbarLabel">
+              <h4>menu</h4>
+            </a>
             <button type="button" class="btn-close side-x-margin close-button" data-bs-dismiss="offcanvas"></button>
           </div>
           <div class="offcanvas-body">
@@ -89,9 +101,11 @@
               <li>
                 <button class="icon-style" style="padding-bottom: 15px;">
                   <a href="cart.html" class="text-decoration-none text-reset">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                    </svg>  View Cart
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-cart" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg> View Cart
                   </a>
                 </button>
               </li>
@@ -110,35 +124,37 @@
             </ul>
           </div>
         </div>
-        </div>
-  
       </div>
-    </nav>
-    <!--end down-scrollnavbar-->
-  
-    <!-- Carousel and its navigation-->
-    <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-      <nav class="navbar background-rainbow" id="transNavbar">
-        <div class="container-fluid d-flex">
-          <!-- Left aligned logo -->
-         
-          <div class="d-flex justify-content-start">
-            <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 30px;">
-          </div>
-    
-          <a href="index.html"
-           class="navbar-brand outfit-semibold icon-style icon-white mx-auto"
-           style="position: absolute; left: 50%; transform: translateX(-50%);">
+
+    </div>
+  </nav>
+  <!--end down-scrollnavbar-->
+
+  <!-- Carousel and its navigation-->
+  <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+    <nav class="navbar background-rainbow" style="padding-left: 7%; padding-right: 7%;">
+      <div class="container-fluid d-flex">
+        <!-- Left aligned logo -->
+
+        <div class="d-flex justify-content-start">
+          <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 30px;">
+        </div>
+
+        <a href="index.html" class="navbar-brand outfit-semibold icon-style icon-white mx-auto"
+          style="position: absolute; left: 50%; transform: translateX(-50%);">
           outncenter
         </a>
-    
-          <div class="justify-content-end">
-            <button class="icon-style icon-white">
-              <a class="text-decoration-none text-reset" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                </svg>
-              </a>
+
+        <div class="justify-content-end">
+          <button class="icon-style icon-white">
+            <a class="text-decoration-none text-reset" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+              </svg>
+            </a>
           </button>
           <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
             <div class="offcanvas-header search-margin" style="padding-bottom: 0px;">
@@ -157,198 +173,298 @@
               </form>
             </div>
           </div>
-            <button class="icon-style icon-white">
-              <a href="cart.html" class="text-decoration-none text-reset">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg>
-              </a>
-            </button>
+          <button class="icon-style icon-white">
+            <a href="cart.html" class="text-decoration-none text-reset">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+              </svg>
+            </a>
+          </button>
           <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
             <span class="navbar-toggler-icon navbar-dark"></span>
           </button>
         </div>
-      </nav>
+    </nav>
+  </div>
+  <!--end of navigations-->
 
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="images/blog-page-images/theater_play_actress.jpg" class="d-block w-100" alt="teamphoto">
+  <!--Main for your content and text starts here-->
+
+  <div class="index-about-bg background-rainbow" style="color: whitesmoke; padding-bottom: 3%;">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 style="font-size: 500%;" class="outfit-semibold">Welcome To<br>outncenter</h1>
       </div>
     </div>
   </div>
-<!--end of navigations-->
 
-  <!--Main for your content and text starts here-->
-  <main class="flex-grow-1">
-   <!--Container for about-->
-    <div class="container">
-     <div class="row">
-      <h2 class="about-font-size">We're outncenter</h2>
-     </div>
-    </div>
-   <!--End of container for about-->
-	<br>
-  <br>
-  <br>
-
+  <main>
     <!--Start of container for vision-->
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-12 col-md-6 col-xl-6">
-          <h3 class="vision-about-page">do you see the vision?</h3>
-          <p>In the world of theatre where LGBTQ+ characters are    often misrepresented, we believe in shining spotlight
-          on authentic storytelling. Because everyone at center stage deserves to be out and proud.</p>
-           </div>
-          <div class="col-12 col-md-6 col-xl-6 text-center">
-         <img src="images/logo-out-n-center/logo-vertical-out-n-center.jpeg" alt="outncenter" class="img-fluid logo-about-page">
-       </div>
+    <div class="row slide-in-left">
+      <h6 class="text-center" style="font-size: 140%; padding: 50px;">
+        In the world of theatre where LGBTQ+ characters are often <br>misrepresented, we believe in shining spotlight
+        on authentic storytelling.<br> Because everyone at center stage deserves to be out and proud.
+      </h6>
+    </div>
+    <br>
+    <br>
+
+    <div class="row">
+      <h4>Who We Are</h4>
+      <br>
+      <div class="text-center" style="background-color: whitesmoke;">
+        <img src="images/onc_nl_bs3.svg" alt="logo" style="width: 50%;" class="breathe-effect">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <h6 style="font-weight: 300; font-size: 130%; margin-top: 30px; padding-top: 30px; padding-bottom: 30px;;">We provide a safe, inclusive space where
+              users can engage in meaningful discussions about representation, storytelling, and more!</h6>
+          </div>
+          <div class="col-2"></div>
+        </div>
       </div>
     </div>
-    <br>
-    <br>
-	<!--End of container for Logo-->
+  </main>
 
-    <!-- Start of Mission & Values Section -->
+  <div class="index-about-bg" style="background-color: #FDB92E; padding-bottom: 3%;">
     <div class="container">
-        <div class="row">
-    <!-- Mission Section -->
-          <div class="col-12 col-md-6 col-xl-8">
-            <h3 class="mission-about-page">our mission</h3>
-              <p>We provide a safe, inclusive space where users can:</p>
-              <ul>
-               <li>Read articles</li>
-               <li>Watch interviews with LGBTQ+ actors and creators</li>
-               <li>Engage in meaningful discussions about representation, storytelling, and more!</li>
-              </ul>
-               <p>Whether you are passionate about Queer theatre or simply eager to learn more, our community welcomes
-              everyone who values diversity on stage.</p>
+      <div class="row">
+        <div class="col-6">
+          <div class="container"> <!-- Add container to control padding -->
+            <a href="tickets.html" class="no-link-style">
+              <h4 style="color: whitesmoke;">Buy Tickets for Theatre Shows</h4>
+            </a>
+            <br>
+            <div class="row justify-content-start g-3">
+              <div class="col-12" style="z-index: 3;">
+                <div class="card mb-3 h-100 position-relative shadow-sm hover-shadow">
+                  <a href="singleticket.html" class="stretched-link"></a>
+      
+                  <div class="row g-0 h-100 d-flex">
+                    <!-- Image column -->
+                    <div class="col-5">
+                      <img src="images/tickets-images/eclipse-hearts-without-text.jpg"
+                        class="img-fluid h-100 w-100 object-fit-cover" alt="eclipse-hearts-photo"
+                        style="border-radius: 5px 0 0 5px;">
+                    </div>
+      
+                    <!-- Text/content column -->
+                    <div class="col-7">
+                      <div class="card-body d-flex flex-column justify-content-between h-100" style="padding: 15px;">
+                        <div>
+                          <h5 class="card-title mb-1">Eclipse Hearts</h5>
+                          <p class="mb-1"><small>3 Apr - 3 May 2025</small></p>
+                          <p class="card-text small">
+                            A Sappho-inspired retelling of a writer's descent into obsession and heartache.
+                          </p>
+                          <p class="card-text"><small class="text-body-secondary">Duration: 1h 45m</small></p>
+                        </div>
+                        <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                          role="button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
             </div>
-    <!-- Values Section -->
-          <div class="col-12 col-md-6 col-xl-4">
-            <h3 class="values-about-page">our values</h3>
-            <ul>
-              <li>Authenticity</li>
-              <li>Learning</li>
-              <li>Inclusivity</li>
-            </ul>
+          </div>
+          <br>
+          <div class="container"> <!-- Add container to control padding -->
+            <div class="row justify-content-start g-3">
+              <div class="col-12" style="z-index: 3;">
+                <div class="card mb-3 h-100 position-relative shadow-sm hover-shadow">
+                  <a href="singleticket.html" class="stretched-link"></a>
+      
+                  <div class="row g-0 h-100 d-flex">
+                    <!-- Image column -->
+                    <div class="col-5">
+                      <img src="images/tickets-images/eclipse-hearts-without-text.jpg"
+                        class="img-fluid h-100 w-100 object-fit-cover" alt="eclipse-hearts-photo"
+                        style="border-radius: 5px 0 0 5px;">
+                    </div>
+      
+                    <!-- Text/content column -->
+                    <div class="col-7">
+                      <div class="card-body d-flex flex-column justify-content-between h-100" style="padding: 15px;">
+                        <div>
+                          <h5 class="card-title mb-1">Eclipse Hearts</h5>
+                          <p class="mb-1"><small>3 Apr - 3 May 2025</small></p>
+                          <p class="card-text small">
+                            A Sappho-inspired retelling of a writer's descent into obsession and heartache.
+                          </p>
+                          <p class="card-text"><small class="text-body-secondary">Duration: 1h 45m</small></p>
+                        </div>
+                        <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                          role="button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <a href="blog.html" class="no-link-style">
+            <h4 style="color: whitesmoke;">Read Articles with LGBTQ+ Actors and Creators</h4>
+          </a>
+          <br>
+          <a href="blog.html" style="text-decoration: none; color: inherit;">
+            <div style="background-color: whitesmoke; padding: 3%;" class="rounded">
+              <img src="images/blog-page-images/theater_play_actress.jpg" class="img-fluid" alt="template" style="padding-bottom: 2%;">
+              <h5 class="outfit-semibold">Must-See LGBTQ+ Shows Right Now</h5>
+              <p class="outfit-medium">A roundup of the latest and best gay-themed productions.</p>
+              <p>From groundbreaking dramas to heartwarming comedies, these standout LGBTQ+ productions are redefining
+                queer storytelling on stage and screen. <a href="#" class="no-link-style icon-style">more...</a></p>
+              <p class="date">02.05.2025</p>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="second-main-about">
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-4">
+        <h4>Our Values</h4>
+        <ul>
+          <li>Authenticity</li>
+          <li>Learning</li>
+          <li>Inclusivity</li>
+        </ul>
+      </div>
+    </div>
+  
+      <h4>Leadership</h4>
+  
+      <br>
+      <br>
+      <div class="row">
+        <!--Start of first container for Meet the team-->
+        <div class="column-about-page-meet-the-team">
+          <div class="card">
+            <img src="images/portraits/portrait_freya.jpg" alt="Freya Willems" style="width:100%">
+              <div class="container-about-page-meet-the-team text-within-card-about-page">
+              <h5 class="text-center heading-five-cards-meet-the-team">Freya Willems</h5>
+              <p class="text-center">Creative Business</p>
+            </div>
+          </div>
+        </div>
+  
+        <!--End of first container for Meet the team-->
+  
+        <!--Start of second container for Meet the team-->
+        <div class="column-about-page-meet-the-team">
+          <div class="card">
+            <img src="images/portraits/portrait_daniel.jpg" alt="Dániel Horváth " style="width:100%">
+              <div class="container-about-page-meet-the-team text-within-card-about-page">
+              <h5 class="text-center heading-five-cards-meet-the-team">Dániel Horváth</h5>
+              <p class="text-center">Creative Business</p>
+            </div>
+          </div>
+        </div>
+        <!--End  of second container for Meet the team-->
+  
+        <!--Start of third container for Meet the team-->
+        <div class="column-about-page-meet-the-team">
+          <div class="card">
+            <img src="images/portraits/portrait_elena.jpg" alt="Elena Beganović" style="width:100%">
+              <div class="container-about-page-meet-the-team text-within-card-about-page">
+              <h5 class="text-center heading-five-cards-meet-the-team">Elena Beganović </h5>
+              <p class="text-center">Creative Business</p>
+            </div>
+          </div>
+        </div>
+        <!--End of third container for Meet the team-->
+  
+        <!--Start of fourth container for Meet the team-->
+        <div class="column-about-page-meet-the-team">
+          <div class="card">
+            <img src="images/portraits/portrait_mees.jpg" alt="Mees de Wilde" style="width:100%">
+              <div class="container-about-page-meet-the-team text-within-card-about-page">
+              <h5 class="text-center heading-five-cards-meet-the-team">Mees de Wilde </h5>
+              <p class="text-center">Creative Business</p>
+            </div>
           </div>
         </div>
       </div>
-    <!-- End of Mission & Values Section -->
+    </div>
+  </div>
 
-    <!--Start of container for Meet the team-->
-     <br>
-     <br>
-     <div class="container">
-       <h2 class="meet-the-team-about-page ">meet the team</h2>
-       <br>
-  <br>
-		 <div class="row"> 
-    <!--Start of first container for Meet the team-->
-           <div class="column-about-page-meet-the-team">
-             <div class="card">
-               <img src="images/portraits/portrait_freya.jpg" alt="Freya Willems" style="width:100%">
-                 <div
-                 class="container-about-page-meet-the-team text-within-card-about-page">
-                 <h5 class="text-center heading-five-cards-meet-the-team">Freya Willems</h5>
-                <p class="text-center">Creative Business</p>
-              </div>
-             </div>
-           </div>
-           
-     <!--End of first container for Meet the team-->
- 
-     <!--Start of second container for Meet the team-->
-           <div class="column-about-page-meet-the-team">
-             <div class="card">
-               <img src="images/portraits/portrait_daniel.jpg" alt="Dániel Horváth " style="width:100%">
-                 <div
-                 class="container-about-page-meet-the-team text-within-card-about-page">
-                 <h5 class="text-center heading-five-cards-meet-the-team">Dániel Horváth</h5>
-                <p class="text-center">Creative Business</p>
-              </div>
-             </div>
-           </div>
-       <!--End  of second container for Meet the team-->
- 
-       <!--Start of third container for Meet the team-->
-           <div class="column-about-page-meet-the-team">
-             <div class="card">
-               <img src="images/portraits/portrait_elena.jpg" alt="Elena Beganović" style="width:100%">
-                 <div
-                 class="container-about-page-meet-the-team text-within-card-about-page">
-                 <h5 class="text-center heading-five-cards-meet-the-team">Elena Beganović </h5>
-                <p class="text-center">Creative Business</p>
-               </div>
-             </div>
-           </div>
-       <!--End of third container for Meet the team-->
- 
-       <!--Start of fourth container for Meet the team-->
-           <div class="column-about-page-meet-the-team">
-             <div class="card">
-               <img src="images/portraits/portrait_mees.jpg" alt="Mees de Wilde" style="width:100%">
-                 <div
-                 class="container-about-page-meet-the-team text-within-card-about-page">
-                 <h5 class="text-center heading-five-cards-meet-the-team">Mees de Wilde </h5>
-                <p class="text-center">Creative Business</p>
-                  </div>
-                </div>
-             </div>
-              </div>
-             </div>
-     <!--End of fourth container for Meet the team-->
-     <!--End of container for Meet the team-->
 
-     <!--you can delete the huge logo at the bottom if you want. its there to keep the page able to scroll for the footer-->
-  </main>
+  <!--End of fourth container for Meet the team-->
+  <!--End of container for Meet the team-->
+
+  <!--you can delete the huge logo at the bottom if you want. its there to keep the page able to scroll for the footer-->
+
   <!--main for your content stops here-->
 
 
- <!--footer navigation starts here-->
- <footer class="bg-blue text-white py-4">
-  <div class="container">
+  <!--footer navigation starts here-->
+  <footer class="bg-blue text-white py-4">
+    <div class="container">
       <div class="row">
-          <!-- Brand Logo & Name -->
-          <div class="col-md-4 text-center text-md-start">
-              <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 50px;">
-              <h5 class="mt-2">outncenter</h5>
-          </div>
+        <!-- Brand Logo & Name -->
+        <div class="col-md-4 text-center text-md-start">
+          <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 50px;">
+          <h5 class="mt-2">outncenter</h5>
+        </div>
 
-          <!-- Contact Information -->
-          <div class="col-md-4 text-center footer2">
-              <h5>Contact</h5>
-              <p><a href="mailto:outncenter@gmail.com" style="text-decoration: none;  color: white;">outncenter@gmail.com</a></p>
-              <p>Phone: +31 6 20 87 45 1</p>
-              <p>Address: 12 Grote Markt, Breda</p>
-          </div>
+        <!-- Contact Information -->
+        <div class="col-md-4 text-center footer2">
+          <h5>Contact</h5>
+          <p><a href="mailto:outncenter@gmail.com"
+              style="text-decoration: none;  color: white;">outncenter@gmail.com</a></p>
+          <p>Phone: +31 6 20 87 45 1</p>
+          <p>Address: 12 Grote Markt, Breda</p>
+        </div>
 
-          <!-- Explore (Navigation Links) -->
-          <div class="col-md-4 text-center text-md-end">
-              <h5>Explore</h5>
-              <ul class="list-unstyled footer2">
-                  <li><a href="index.html" style="text-decoration: none;  color: white;">Home Page</a></li>
-                  <li><a href="about.html" style="text-decoration: none;  color: white;">About</a></li>
-                  <li><a href="blog.html" style="text-decoration: none;  color: white;">Blog</a></li>
-                  <li><a href="profile.html" style="text-decoration: none;  color: white;">Profile</a></li>
-        <li><a href="corporate.html" style="text-decoration: none;  color: white;">Corporate</a></li>
-              </ul>
-          </div>
+        <!-- Explore (Navigation Links) -->
+        <div class="col-md-4 text-center text-md-end">
+          <h5>Explore</h5>
+          <ul class="list-unstyled footer2">
+            <li><a href="index.html" style="text-decoration: none;  color: white;">Home Page</a></li>
+            <li><a href="about.html" style="text-decoration: none;  color: white;">About</a></li>
+            <li><a href="blog.html" style="text-decoration: none;  color: white;">Blog</a></li>
+            <li><a href="profile.html" style="text-decoration: none;  color: white;">Profile</a></li>
+            <li><a href="corporate.html" style="text-decoration: none;  color: white;">Corporate</a></li>
+          </ul>
+        </div>
       </div>
-  <div class="text-center mt-3">
-          <a href="https://www.tiktok.com/@outncenter._?_t=ZN-8vDfVe41V8o&_r=1" target="_blank" class="text-white me-3">
-              <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
-          </a>
-          <a href="https://www.instagram.com/outncenter._?igsh=bTAydDhpemxuNXJs" target="_blank" class="text-white">
-              <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-          </a>
+      <div class="text-center mt-3">
+        <a href="https://www.tiktok.com/@outncenter._?_t=ZN-8vDfVe41V8o&_r=1" target="_blank" class="text-white me-3">
+          <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.instagram.com/outncenter._?igsh=bTAydDhpemxuNXJs" target="_blank" class="text-white">
+          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+        </a>
       </div>
       <hr class="my-3 border-light">
       <p class="text-center footer2 mb-0">© 2025 outncenter. All Rights Reserved.</p>
-  </div>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-</footer>
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  </footer>
   <!--footer ends here-->
 
   <!--your script starts here-->

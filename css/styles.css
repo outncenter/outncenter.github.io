@@ -41,6 +41,47 @@ html, body {
 
 /* ABOUT page css starts here*/
 
+.second-main-about {
+    margin-left: 8% !important;
+    margin-right: 8% !important;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+}
+
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+
+  @keyframes breathe {
+    0% {
+      transform: scale(1); /* normal size */
+      opacity: 0.8; /* optional, for fading effect */
+    }
+    50% {
+      transform: scale(1.07); /* slightly bigger */
+      opacity: 1; /* fully visible */
+    }
+    100% {
+      transform: scale(1); /* back to normal size */
+      opacity: 0.8; /* optional, for fading effect */
+    }
+  }
+  
+  .breathe-effect {
+    animation: breathe 4s ease-in-out infinite; /* Loops the breathing effect */
+  }
+
 .full-width-container {
   width: 100vw; /* Full viewport width */
   max-width: 1200px; /* Adjust based on your layout needs */
