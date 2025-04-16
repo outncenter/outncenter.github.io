@@ -10,25 +10,25 @@
   <!--stylesheet for website layout-->
   <link href="css/styles.css" rel="stylesheet">
   <!--add your own styles.css for your main's layout. Use bootstrap grids!-->
-	<style>
-  .card-link-wrapper {
-    position: relative;
-  }
+  <style>
+    .card-link-wrapper {
+      position: relative;
+    }
 
-  .card-clickable-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
+    .card-clickable-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
 
-  .icon-style {
-    z-index: 2;
-    position: relative;
-  }
-</style>
+    .icon-style {
+      z-index: 2;
+      position: relative;
+    }
+  </style>
 </head>
 
 <body>
@@ -37,128 +37,28 @@
   <nav class="scrollnavbar navbar shadow" id="scrollnavbar">
     <div class="container-fluid d-flex">
       <!-- Left aligned logo -->
-     
+
       <div class="d-flex justify-content-start">
-        <img src="images/onc_notext.svg" alt="Brand Logo" style="height: 30px;">
+        <a href="index.html" class="no-link-style">
+          <img src="images/onc_notext.svg" alt="Brand Logo" style="height: 30px;">
+        </a>
       </div>
 
-      <a href="index.html"
-       class="navbar-brand outfit-semibold icon-style mx-auto"
-       style="position: absolute; left: 50%; transform: translateX(-50%);">
-      outncenter
-    </a>
+      <a href="index.html" class="navbar-brand outfit-semibold icon-style mx-auto"
+        style="position: absolute; left: 50%; transform: translateX(-50%);">
+        outncenter
+      </a>
 
       <div class="justify-content-end">
         <button class="icon-style">
-          <a class="text-decoration-none text-reset" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          <a class="text-decoration-none text-reset" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
             </svg>
           </a>
-      </button>
-      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-        <div class="offcanvas-header search-margin" style="padding-bottom: 0px;">
-          <h5 class="offcanvas-title" id="offcanvasTopLabel">popular searches</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body search-margin">
-          <ul>
-            <li><a href="singleticket.html" class="no-link-style icon-style">Eclipse Hearts Musical</a></li>
-            <li><a href="profile.html" class="no-link-style icon-style">Subscription</a></li>
-            <li><a href="profile.html" class="no-link-style icon-style">10% Discount on tickets</a></li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark outfit-medium" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-        <button class="icon-style">
-          <a href="cart.html" class="text-decoration-none text-reset">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-            </svg>
-          </a>
-        </button>
-        
-        <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
-        aria-labelledby="offcanvasScrollNavbarLabel">
-        <div class="offcanvas-header">
-          <a href="index.html" class="offcanvas-title outfit-medium no-link-style" id="offcanvasScrollNavbarLabel"><h4>menu</h4></a>
-          <button type="button" class="btn-close side-x-margin close-button" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
-            <li>
-              <button class="icon-style" style="padding-bottom: 18px;">
-                <a href="profile.html" class="text-decoration-none text-reset">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                    <path fill-rule="evenodd"
-                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                  </svg>
-                  Log In
-                </a>
-              </button>
-            </li>
-            <li>
-              <button class="icon-style" style="padding-bottom: 15px;">
-                <a href="cart.html" class="text-decoration-none text-reset">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                  </svg>  View Cart
-                </a>
-              </button>
-            </li>
-            <hr>
-            <li class="nav-item"><a class="nav-link" href="tickets.html">tickets</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
-            <li class="nav-item"><a class="nav-link" href="corporate.html">corporate</a></li>
-            <br>
-            <li>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark outfit-medium" type="submit">Search</button>
-              </form>
-            </li>
-          </ul>
-        </div>
-      </div>
-      </div>
-
-    </div>
-  </nav>
-  <!--end down-scrollnavbar-->
-
-  <!-- Carousel and its navigation-->
-  <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-    <nav class="navbar background-rainbow" style="padding-left: 7%; padding-right: 7%;">
-      <div class="container-fluid d-flex">
-        <!-- Left aligned logo -->
-       
-        <div class="d-flex justify-content-start">
-          <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 30px;">
-        </div>
-  
-        <a href="index.html"
-         class="navbar-brand outfit-semibold icon-style icon-white mx-auto"
-         style="position: absolute; left: 50%; transform: translateX(-50%);">
-        outncenter
-      </a>
-  
-        <div class="justify-content-end">
-          <button class="icon-style icon-white">
-            <a class="text-decoration-none text-reset" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg>
-            </a>
         </button>
         <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
           <div class="offcanvas-header search-margin" style="padding-bottom: 0px;">
@@ -177,174 +77,343 @@
             </form>
           </div>
         </div>
+        <button class="icon-style">
+          <a href="cart.html" class="text-decoration-none text-reset">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </a>
+        </button>
+
+        <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrollNavbar"
+          aria-labelledby="offcanvasScrollNavbarLabel">
+          <div class="offcanvas-header">
+            <h4>menu</h4>
+            <button type="button" class="btn-close side-x-margin close-button" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
+              <li>
+                <button class="icon-style" style="padding-bottom: 18px;">
+                  <a href="profile.html" class="text-decoration-none text-reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-person-circle" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                      <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                    Log In
+                  </a>
+                </button>
+              </li>
+              <li>
+                <button class="icon-style" style="padding-bottom: 15px;">
+                  <a href="cart.html" class="text-decoration-none text-reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-cart" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg> View Cart
+                  </a>
+                </button>
+              </li>
+              <hr>
+              <li class="nav-item"><a class="nav-link" href="tickets.html">Tickets</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Spotlight</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">Who Are We</a></li>
+              <li class="nav-item"><a class="nav-link" href="corporate.html">Corporate</a></li>
+              <br>
+              <li>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark outfit-medium" type="submit">Search</button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!--end down-scrollnavbar-->
+
+  <!-- Carousel and its navigation-->
+  <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+    <nav class="navbar" id="transNavbar">
+      <div class="container-fluid d-flex">
+        <!-- Left aligned logo -->
+
+        <div class="d-flex justify-content-start">
+          <a href="index.html" class="no-link-style">
+            <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 30px;">
+          </a>
+        </div>
+
+        <a href="index.html" class="navbar-brand outfit-semibold icon-style icon-white mx-auto"
+          style="position: absolute; left: 50%; transform: translateX(-50%);">
+          outncenter
+        </a>
+
+        <div class="justify-content-end">
           <button class="icon-style icon-white">
-            <a href="cart.html" class="text-decoration-none text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            <a class="text-decoration-none text-reset" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
               </svg>
             </a>
           </button>
-        <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
-          <span class="navbar-toggler-icon navbar-dark"></span>
-        </button>
-      </div>
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header search-margin" style="padding-bottom: 0px;">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">popular searches</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body search-margin">
+              <ul>
+                <li><a href="singleticket.html" class="no-link-style icon-style">Eclipse Hearts Musical</a></li>
+                <li><a href="profile.html" class="no-link-style icon-style">Subscription</a></li>
+                <li><a href="profile.html" class="no-link-style icon-style">10% Discount on tickets</a></li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark outfit-medium" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+          <button class="icon-style icon-white">
+            <a href="cart.html" class="text-decoration-none text-reset">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+              </svg>
+            </a>
+          </button>
+          <button class="navbar-toggler icon-style" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrollNavbar" aria-controls="offcanvasScrollNavbar">
+            <span class="navbar-toggler-icon navbar-dark"></span>
+          </button>
+        </div>
     </nav>
-<!--end of navigations-->
 
-<!--main for your content and text starts here-->
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <div class="index-about-bg background-rainbow"
+          style="color: whitesmoke; padding-bottom: 2px !important; padding-top: 46px !important;">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="scroll-wrapper">
+                <div class="scroll-content">
+                  <div class="scroll-text">
+                    <a href="profile.html" class="no-link-style">
+                      <i>
+                        <span>
+                          <strong>Subscribe!</strong> Get <strong>Premium Articles</strong> & <strong>10% Off</strong>
+                          All Theatre Tickets!
+                          For just <strong>2.99</strong> euros! &nbsp;&nbsp;&nbsp;
+                        </span>
+                        <span>
+                          <strong>Subscribe!</strong> Get <strong>Premium Articles</strong> & <strong>10% Off</strong>
+                          All Theatre Tickets!
+                          For just <strong>2.99</strong> euros! &nbsp;&nbsp;&nbsp;
+                        </span>
+                        <span>
+                          <strong>Subscribe!</strong> Get <strong>Premium Articles</strong> & <strong>10% Off</strong>
+                          All Theatre Tickets!
+                          For just <strong>2.99</strong> euros! &nbsp;&nbsp;&nbsp;
+                        </span>
+                        <span>
+                          <strong>Subscribe!</strong> Get <strong>Premium Articles</strong> & <strong>10% Off</strong>
+                          All Theatre Tickets!
+                          For just <strong>2.99</strong> euros! &nbsp;&nbsp;&nbsp;
+                        </span>
+                        <span>
+                          <strong>Subscribe!</strong> Get <strong>Premium Articles</strong> & <strong>10% Off</strong>
+                          All Theatre Tickets!
+                          For just <strong>2.99</strong> euros! &nbsp;&nbsp;&nbsp;
+                        </span>
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!--end of navigations-->
+
+  <!--main for your content and text starts here-->
   <main>
     <div class="container">
       <div class="row align-items-center">
         <div class="col-8">
-          <a href="tickets.html" class="no-link-style"><h3>Queer Theatre Events</h3></a>
+          <a href="tickets.html" class="no-link-style">
+            <h3>Queer Theatre Events</h3>
+          </a>
         </div>
         <div class="col-4 text-end">
-		  <div class="dropdown">
-			<button class="btn btn-outline-dark dropdown-toggle outfit-medium" type="button" id="multiFilterDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 2vw;">Filter</button>
-			<div class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="multiFilterDropdown" style="min-width: 250px;">
-			  <div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="filter1">
-				<label class="form-check-label" for="filter1">Tragedy</label>
-			  </div>
-			  <div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="filter2">
-				<label class="form-check-label" for="filter2">Comedy</label>
-			  </div>
-			  <div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="filter3">
-				<label class="form-check-label" for="filter3">Drama</label>
-			  </div>
-			  <div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="filter4">
-				<label class="form-check-label" for="filter4">Musical Theater</label>
-			  </div>
-			  <hr>
-			  <button class="btn btn-dark btn-sm w-100 mt-2">Apply Filters</button>
-			</div>
-		  </div>
-		</div>
+          <div class="dropdown">
+            <button class="btn btn-outline-dark dropdown-toggle outfit-medium" type="button" id="multiFilterDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 2vw;">Filter</button>
+            <div class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="multiFilterDropdown"
+              style="min-width: 250px;">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="filter1">
+                <label class="form-check-label" for="filter1">Tragedy</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="filter2">
+                <label class="form-check-label" for="filter2">Comedy</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="filter3">
+                <label class="form-check-label" for="filter3">Drama</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="filter4">
+                <label class="form-check-label" for="filter4">Musical Theater</label>
+              </div>
+              <hr>
+              <button class="btn btn-dark btn-sm w-100 mt-2">Apply Filters</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-   <br>
+    <br>
 
-      <!-- Card 1 -->
-       
-      <div class="container">
-        <div class="card mb-3 card-link-wrapper">
-		  <!-- Invisible link layer -->
-		  <a href="singleticket.html" class="card-clickable-link"></a>
+    <!-- Card 1 -->
 
-		  <div class="row g-0 d-flex">
-			<div class="col-md-4">
-			  <img src="images/tickets-images/eclipse-hearts-without-text.jpg" class="card-img-top" alt="eclipse-hearts-photo">
-			</div>
-			<div class="col-md-8">
-			  <div class="card-body d-flex flex-column justify-content-between">
-				<div>
-				  <h4 class="card-title">Eclipse Hearts</h4>
-				  <p>3 Apr - 3 May 2025</p>
-				  <p class="card-text">A Sappho inspired retelling. As her passion for a younger muse intensifies, the line between art and obsession begins to blur. Set in modern times, Eclipse Hearts follows a driven writer whose orderly life unravels in the wake of unreturned love.</p>
-				  <p class="card-text"><small class="text-body-secondary">Duration: 1 hour 45 minutes (no intermission)</small></p>
-				</div>
-        <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" style="z-index: 2;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
-            viewBox="0 0 16 16">
-            <path
-              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-          </svg>
-        </div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-      </div>
-	  
-	  <!-- Card 2 -->
-       
-      <div class="container">
-        <div class="card mb-3 card-link-wrapper">
-		  <!-- Invisible link layer -->
-		  <a href="singleticket.html" class="card-clickable-link"></a>
+    <div class="container">
+      <div class="card mb-3 card-link-wrapper">
+        <!-- Invisible link layer -->
+        <a href="singleticket.html" class="card-clickable-link"></a>
 
-		  <div class="row g-0 d-flex">
-			<div class="col-md-4">
-			  <img src="images/tickets-images/romeo-and-romeo-without-text.jpg" class="card-img-top" alt="eclipse-hearts-photo">
-			</div>
-			<div class="col-md-8">
-			  <div class="card-body d-flex flex-column justify-content-between">
-				<div>
-				  <h4 class="card-title">Romeo and Romeo</h4>
-				  <p>6 May - 6 June 2025</p>
-				  <p class="card-text">Romeo and Romeo follows two young men torn between love and family loyalty in a world divided by conflict. Their journey challenges the boundaries of tradition and the power of forbidden love.
-          </p>
-				  <p class="card-text"><small class="text-body-secondary">Duration: 1 hour 30 minutes (no intermission)</small></p>
-				</div>
-				<div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" style="z-index: 2;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
-            viewBox="0 0 16 16">
-            <path
-              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-          </svg>
-        </div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-      </div>
-	  
-	  <!-- Card 3 -->
-       
-      <div class="container">
-        <div class="card mb-3 card-link-wrapper">
-		  <!-- Invisible link layer -->
-		  <a href="singleticket.html" class="card-clickable-link"></a>
+        <div class="row g-0 h-100 d-flex">
+          <!-- Image column -->
+          <div class="col-md-4">
+            <img src="images/tickets-images/eclipse-hearts-without-text.jpg" class="w-100 h-100"
+              style="object-fit: cover; border-radius: 5px 0 0 5px;" alt="eclipse-hearts-photo">
+          </div>
 
-		  <div class="row g-0 d-flex">
-			<div class="col-md-4">
-			  <img src="images/tickets-images/moonlight-call-without-text.jpg" class="card-img-top" alt="eclipse-hearts-photo">
-			</div>
-			<div class="col-md-8">
-			  <div class="card-body d-flex flex-column justify-content-between">
-				<div>
-				  <h4 class="card-title">Moonlight Call</h4>
-				  <p>10 June - 10 July 2025</p>
-				  <p class="card-text">Moonlight Call follows three individuals bound by fate as they journey through a world where emotions take shape, unlocking the power of untold visions along the way.</p>
-				  <p class="card-text"><small class="text-body-secondary">Duration: 2 hours 15 minutes (no intermission)</small></p>
-				</div>
-				<div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" style="z-index: 2;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
-            viewBox="0 0 16 16">
-            <path
-              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-          </svg>
-        </div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-      </div>
-	  
-      <!-- Card 4 -->
-	  
-      <div class="container">
-        <div class="card mb-3 card-link-wrapper">
-		  <!-- Invisible link layer -->
-		  <a href="singleticket.html" class="card-clickable-link"></a>
-          <div class="row g-0 d-flex">
-            <div class="col-md-4">
-              <img src="images/tickets-images/midnight.jpg" class="card-img-top" alt="eclipse-hearts-photo">
+          <!-- Text/content column -->
+          <div class="col-md-8">
+            <div class="card-body d-flex flex-column justify-content-between h-100">
+              <div>
+                <h4 class="card-title">Eclipse Hearts</h4>
+                <p>3 Apr - 3 May 2025</p>
+                <p class="card-text">
+                  A Sappho inspired retelling. As her passion for a younger muse intensifies, the
+                  line between art and obsession begins to blur. Set in modern times, <em>Eclipse Hearts</em> follows a
+                  driven
+                  writer whose orderly life unravels in the wake of unreturned love.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">Duration: 1 hour 45 minutes (no intermission)</small>
+                </p>
+              </div>
+
+              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                role="button" style="z-index: 2;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+
+    <div class="container">
+      <div class="card mb-3 card-link-wrapper">
+        <!-- Invisible link layer -->
+        <a href="singleticket.html" class="card-clickable-link"></a>
+
+        <div class="row g-0 h-100">
+          <!-- Image column -->
+          <div class="col-md-4">
+            <img src="images/tickets-images/romeo-and-romeo-without-text.jpg" class="w-100 h-100"
+              style="object-fit: cover; border-radius: 5px 0 0 5px;" alt="romeo-romeo-photo">
+          </div>
+
+          <!-- Text/content column -->
+          <div class="col-md-8">
+            <div class="card-body d-flex flex-column justify-content-between h-100">
+              <div>
+                <h4 class="card-title">Romeo and Romeo</h4>
+                <p>6 May - 6 June 2025</p>
+                <p class="card-text">
+                  Romeo and Romeo follows two young men torn between love and family loyalty in a
+                  world divided by conflict.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">Duration: 1 hour 30 minutes (no intermission)</small>
+                </p>
+              </div>
+
+              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                role="button" style="z-index: 2;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="container">
+        <div class="card mb-3 card-link-wrapper">
+          <!-- Invisible link layer -->
+          <a href="singleticket.html" class="card-clickable-link"></a>
+
+          <div class="row g-0 h-100">
+            <!-- Image column -->
+            <div class="col-md-4">
+              <img src="images/tickets-images/moonlight-call-without-text.jpg" class="w-100 h-100"
+                style="object-fit: cover; border-radius: 5px 0 0 5px;" alt="moonlight-call-photo">
+            </div>
+
+            <!-- Text/content column -->
             <div class="col-md-8">
-              <div class="card-body d-flex flex-column justify-content-between">
+              <div class="card-body d-flex flex-column justify-content-between h-100">
                 <div>
-                  <h4 class="card-title">Midnight in the Violet Garden</h4>
-                  <p>25 May 2025 - 25 May 2026</p>
-                  <p class="card-text">In a surreal dreamscape where time bends and flowers whisper, a lonely astronomer encounters a mysterious child who may hold the key to her forgotten future. A poetic, visually rich play about longing and letting go.
+                  <h4 class="card-title">Moonlight Call</h4>
+                  <p>10 June - 10 July 2025</p>
+                  <p class="card-text">
+                    Moonlight Call follows three individuals bound by fate as they journey through a
+                    world where emotions take shape, unlocking the power of untold visions along the way.
                   </p>
-                  <p class="card-text"><small class="text-body-secondary">Duration: 1 hour 20 minutes (no intermission)</small></p>
+                  <p class="card-text">
+                    <small class="text-body-secondary">Duration: 2 hours 15 minutes (no intermission)</small>
+                  </p>
                 </div>
-                <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" style="z-index: 2;">
+
+                <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  role="button" style="z-index: 2;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
                     viewBox="0 0 16 16">
                     <path
@@ -356,181 +425,273 @@
           </div>
         </div>
       </div>
-    
-    <!--more cards here-->
-    <div class="container">
-      <div class="card mb-3 card-link-wrapper">
-		  <!-- Invisible link layer -->
-		  <a href="singleticket.html" class="card-clickable-link"></a>
-        <div class="row g-0 d-flex">
-          <div class="col-md-4">
-            <img src="images/tickets-images/piano.jpg" class="card-img-top" alt="eclipse-hearts-photo">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <div>
-                <h4 class="card-title">Clockwork Silence</h4>
-                <p>30 June - 30 August 2025</p>
-                <p class="card-text">In a town where music is banned, two teenage boys—quiet pianist Leo and bold newcomer Max—start a secret orchestra in an old clocktower. As rebellion brews, so does a quiet romance that challenges everything they’ve been told.
-                </p>
-                <p class="card-text"><small class="text-body-secondary">Duration: 2 hours (with intermission)</small></p>
-              </div>
-              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" style="z-index: 2;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                </svg>
+
+      <div class="container">
+        <div class="card mb-3 card-link-wrapper">
+          <!-- Invisible link layer -->
+          <a href="singleticket.html" class="card-clickable-link"></a>
+
+          <div class="row g-0 h-100">
+            <!-- Image column -->
+            <div class="col-md-4">
+              <img src="images/tickets-images/midnight.jpg" class="w-100 h-100"
+                style="object-fit: cover; border-radius: 5px 0 0 5px;" alt="midnight-photo">
+            </div>
+
+            <!-- Text/content column -->
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column justify-content-between h-100">
+                <div>
+                  <h4 class="card-title">Midnight in the Violet Garden</h4>
+                  <p>25 May 2025 - 25 May 2026</p>
+                  <p class="card-text">
+                    In a surreal dreamscape where time bends and flowers whisper, a lonely astronomer
+                    encounters a mysterious child who may hold the key to her forgotten future. A poetic, visually rich
+                    play about longing and letting go.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary">Duration: 1 hour 20 minutes (no intermission)</small>
+                  </p>
+                </div>
+
+                <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  role="button" style="z-index: 2;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="card mb-3 card-link-wrapper">
-		  <!-- Invisible link layer -->
-		  <a href="singleticket.html" class="card-clickable-link"></a>
-        <div class="row g-0 d-flex">
-          <div class="col-md-4">
-            <img src="images/tickets-images/letter.jpg" class="card-img-top" alt="eclipse-hearts-photo">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <div>
-                <h4 class="card-title">Letters from the Smokehouse</h4>
-                <p>20 March - 01 Sep 2025</p>
-                <p class="card-text">During WWII, Mira finds hidden love letters between her grandmother and a woman named Anne. As she unravels her family’s queer past, she begins to question her own feelings for her best friend, Clara.
-                </p>
-                <p class="card-text"><small class="text-body-secondary">Duration: 1 hour 35 minutes (no intermission)</small></p>
-              </div>
-              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" style="z-index: 2;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                </svg>
+
+
+
+      <!--more cards here-->
+      <div class="container">
+        <div class="card mb-3 card-link-wrapper">
+          <!-- Invisible link layer -->
+          <a href="singleticket.html" class="card-clickable-link"></a>
+
+          <div class="row g-0 h-100">
+            <!-- Image column -->
+            <div class="col-md-4">
+              <img src="images/tickets-images/piano.jpg" class="w-100 h-100"
+                style="object-fit: cover; border-radius: 5px 0 0 5px;" alt="clockwork-silence-photo">
+            </div>
+
+            <!-- Text/content column -->
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column justify-content-between h-100">
+                <div>
+                  <h4 class="card-title">Clockwork Silence</h4>
+                  <p>30 June - 30 August 2025</p>
+                  <p class="card-text">
+                    In a town where music is banned, two teenage boys—quiet pianist Leo and bold
+                    newcomer Max—start a secret orchestra in an old clocktower. As rebellion brews, so does a quiet
+                    romance that challenges everything they’ve been told.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary">Duration: 2 hours (with intermission)</small>
+                  </p>
+                </div>
+
+                <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  role="button" style="z-index: 2;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="card mb-3 card-link-wrapper">
-		  <!-- Invisible link layer -->
-		  <a href="singleticket.html" class="card-clickable-link"></a>
-        <div class="row g-0 d-flex">
-          <div class="col-md-4">
-            <img src="images/tickets-images/last_curtain.jpg" class="card-img-top" alt="eclipse-hearts-photo">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <div>
-                <h4 class="card-title">The Last Curtain</h4>
-                <p>15 July - 15 Oct 2025</p>
-                <p class="card-text">A retired actress returns to the stage for one final performance—only to discover that the theater holds secrets from her past. A haunting drama about ambition, memory, and the ghosts we leave behind.
-                </p>
-                <p class="card-text"><small class="text-body-secondary">Duration: 1 hour 50 minutes (with intermission)</small></p>
-              </div>
-              <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" style="z-index: 2;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                </svg>
+
+      <div class="container">
+        <div class="card mb-3 card-link-wrapper">
+          <!-- Invisible link layer -->
+          <a href="singleticket.html" class="card-clickable-link"></a>
+
+          <div class="row g-0 h-100">
+            <!-- Image column -->
+            <div class="col-md-4">
+              <img src="images/tickets-images/letter.jpg" class="w-100 h-100"
+                style="object-fit: cover; border-radius: 5px 0 0 5px;" alt="letters-from-smokehouse-photo">
+            </div>
+
+            <!-- Text/content column -->
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column justify-content-between h-100">
+                <div>
+                  <h4 class="card-title">Letters from the Smokehouse</h4>
+                  <p>20 March - 01 Sep 2025</p>
+                  <p class="card-text">
+                    During WWII, Mira finds hidden love letters between her grandmother and a woman
+                    named Anne. As she unravels her family’s queer past, she begins to question her own feelings for her
+                    best friend, Clara.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary">Duration: 1 hour 35 minutes (no intermission)</small>
+                  </p>
+                </div>
+
+                <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  role="button" style="z-index: 2;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <br>
 
-    <!--end container for about-->
+
+      <div class="container">
+        <div class="card mb-3 card-link-wrapper">
+          <!-- Invisible link layer -->
+          <a href="singleticket.html" class="card-clickable-link"></a>
+
+          <div class="row g-0 h-100">
+            <!-- Image column -->
+            <div class="col-md-4">
+              <img src="images/tickets-images/last_curtain.jpg" class="w-100 h-100"
+                style="object-fit: cover; border-radius: 5px 0 0 5px;" alt="last-curtain-photo">
+            </div>
+
+            <!-- Text/content column -->
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column justify-content-between h-100">
+                <div>
+                  <h4 class="card-title">The Last Curtain</h4>
+                  <p>15 July - 15 Oct 2025</p>
+                  <p class="card-text">
+                    A retired actress returns to the stage for one final performance—only to discover
+                    that the theater holds secrets from her past. A haunting drama about ambition, memory, and the
+                    ghosts
+                    we leave behind.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary">Duration: 1 hour 50 minutes (with intermission)</small>
+                  </p>
+                </div>
+
+                <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  role="button" style="z-index: 2;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <!--end container for about-->
   </main>
   <!--main for your content stops here-->
-<!---pop-up-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title fs-5 position-absolute top-0 start-50 translate-middle-x" style="margin-top: 9px;" id="exampleModalLabel">Log In</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div>
-            <p class="outfit-medium">Login required to save Tickets to Favourites.</p>
-          </div>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Username/Email</label>
-            <input type="text" class="form-control" id="recipient-name" placeholder="Enter your username/email" aria-label="Enter your username-email">
-          </div>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Password</label>
-            <input type="text" class="form-control" id="recipient-name" placeholder="Enter your password" aria-label="Enter your password">
-          </div>
-          <div>
-            <button type="button" class="btn btn-dark position-absolute bottom-0 start-50 translate-middle-x" style="margin-bottom: 50px;">Log In</button>
-          </div>
-          <br>
-          <br>
-          <br>
-          <div>
-            <p class="position-absolute bottom-0 start-50 translate-middle-x">no account yet? <a href="profile.html" class="no-link-style icon-style">Create your profile</a></p>
-          </div>
-        </form>
+  <!---pop-up-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title fs-5 position-absolute top-0 start-50 translate-middle-x" style="margin-top: 9px;"
+            id="exampleModalLabel">Log In</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div>
+              <p class="outfit-medium">Login required to save Tickets to Favourites.</p>
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Username/Email</label>
+              <input type="text" class="form-control" id="recipient-name" placeholder="Enter your username/email"
+                aria-label="Enter your username-email">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Password</label>
+              <input type="text" class="form-control" id="recipient-name" placeholder="Enter your password"
+                aria-label="Enter your password">
+            </div>
+            
+            <!-- Update to a normal button with margin to avoid high positioning -->
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-dark mb-3" style="width: 200px;">Log In</button>
+            </div>
+          
+            <div class="position-relative d-flex justify-content-center" style="margin-top: 20px;">
+              <p class="m-0">
+                no account yet? 
+                <a href="profile.html" class="no-link-style icon-style">Create your profile</a>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!---end pop-up-->
+  <!---end pop-up-->
   <!--footer navigation starts here-->
   <footer class="bg-blue text-white py-4">
     <div class="container">
-        <div class="row">
-            <!-- Brand Logo & Name -->
-            <div class="col-md-4 text-center text-md-start">
-                <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 50px;">
-                <h5 class="mt-2">outncenter</h5>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="col-md-4 text-center footer2">
-                <h5>Contact</h5>
-                <p><a href="mailto:outncenter@gmail.com" style="text-decoration: none;  color: white;">outncenter@gmail.com</a></p>
-                <p>Phone: +31 6 20 87 45 1</p>
-                <p>Address: 12 Grote Markt, Breda</p>
-            </div>
-
-            <!-- Explore (Navigation Links) -->
-            <div class="col-md-4 text-center text-md-end">
-                <h5>Explore</h5>
-                <ul class="list-unstyled footer2">
-                    <li><a href="index.html" style="text-decoration: none;  color: white;">Home Page</a></li>
-                    <li><a href="about.html" style="text-decoration: none;  color: white;">About</a></li>
-                    <li><a href="blog.html" style="text-decoration: none;  color: white;">Blog</a></li>
-                    <li><a href="profile.html" style="text-decoration: none;  color: white;">Profile</a></li>
-					<li><a href="corporate.html" style="text-decoration: none;  color: white;">Corporate</a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <!-- Brand Logo & Name -->
+        <div class="col-md-4 text-center text-md-start">
+          <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 50px;">
+          <h5 class="mt-2">outncenter</h5>
         </div>
-		<div class="text-center mt-3">
-            <a href="https://www.tiktok.com/@outncenter._?_t=ZN-8vDfVe41V8o&_r=1" target="_blank" class="text-white me-3">
-                <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
-            </a>
-            <a href="https://www.instagram.com/outncenter._?igsh=bTAydDhpemxuNXJs" target="_blank" class="text-white">
-                <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-            </a>
+
+        <!-- Contact Information -->
+        <div class="col-md-4 text-center footer2">
+          <h5>Contact</h5>
+          <p><a href="mailto:outncenter@gmail.com"
+              style="text-decoration: none;  color: white;">outncenter@gmail.com</a></p>
+          <p>Phone: +31 6 20 87 45 1</p>
+          <p>Address: 12 Grote Markt, Breda</p>
         </div>
-        <hr class="my-3 border-light">
-        <p class="text-center footer2 mb-0">© 2025 outncenter. All Rights Reserved.</p>
+
+        <!-- Explore (Navigation Links) -->
+        <div class="col-md-4 text-center text-md-end">
+          <h5>Explore</h5>
+          <ul class="list-unstyled footer2">
+            <li><a href="index.html" style="text-decoration: none;  color: white;">Home Page</a></li>
+            <li><a href="about.html" style="text-decoration: none;  color: white;">About</a></li>
+            <li><a href="blog.html" style="text-decoration: none;  color: white;">Blog</a></li>
+            <li><a href="profile.html" style="text-decoration: none;  color: white;">Profile</a></li>
+            <li><a href="corporate.html" style="text-decoration: none;  color: white;">Corporate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <a href="https://www.tiktok.com/@outncenter._?_t=ZN-8vDfVe41V8o&_r=1" target="_blank" class="text-white me-3">
+          <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.instagram.com/outncenter._?igsh=bTAydDhpemxuNXJs" target="_blank" class="text-white">
+          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
+      <hr class="my-3 border-light">
+      <p class="text-center footer2 mb-0">© 2025 outncenter. All Rights Reserved.</p>
     </div>
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-</footer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  </footer>
   <!--footer ends here-->
 
   <!--your script starts here-->

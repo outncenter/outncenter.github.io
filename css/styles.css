@@ -22,6 +22,13 @@ html, body {
     animation: gradientAnimation 10s ease infinite;
   }
 
+.modal-rainbow {
+    background: linear-gradient(45deg, #740318, #B93D22, #FDB92E, #B3298D, #5F2A88, #117F84);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite;
+    
+}
+
   @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;
@@ -32,6 +39,46 @@ html, body {
     100% {
       background-position: 0% 50%;
     }
+  }
+
+
+  
+  .scroll-wrapper {
+    position: relative;
+    overflow: hidden;
+    color: whitesmoke;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    white-space: nowrap;
+  }
+  
+  .scroll-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll-left 15s linear infinite;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .scroll-wrapper:hover .scroll-content {
+    animation-play-state: paused;
   }
 
 
