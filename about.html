@@ -10,6 +10,12 @@
   <!--stylesheet for website layout-->
   <link href="css/styles.css" rel="stylesheet">
   <!--add your own styles.css for your main's layout. Use bootstrap grids!-->
+  <style>
+    .hover-shadow:hover {
+      box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.25);
+      transition: box-shadow 0.3s ease;
+    }
+  </style>
 </head>
 
 <body>
@@ -197,10 +203,10 @@
 
   <main>
     <!--Start of container for vision-->
-    <div class="row">
-      <h6 class="text-center" style="font-size: 140%;">
+    <div class="row slide-in-left">
+      <h6 class="text-center" style="font-size: 140%; padding: 50px;">
         In the world of theatre where LGBTQ+ characters are often <br>misrepresented, we believe in shining spotlight
-            on authentic storytelling.<br> Because everyone at center stage deserves to be out and proud.
+        on authentic storytelling.<br> Because everyone at center stage deserves to be out and proud.
       </h6>
     </div>
     <br>
@@ -210,46 +216,148 @@
       <h4>Who We Are</h4>
       <br>
       <div class="text-center" style="background-color: whitesmoke;">
-        <img src="images/onc_nl_bs3.svg" alt="logo" style="width: 50%;" class="text-center">
+        <img src="images/onc_nl_bs3.svg" alt="logo" style="width: 50%;" class="breathe-effect">
       </div>
-      <h6 style="font-weight: 300; font-size: 130%; margin-top: 30px;">We provide a safe, inclusive space where users can engage in meaningful discussions about representation, storytelling, and more!</h6>
-      <ul>
-        <li>Browse Theatre Tickets</li>
-        <li>Read articles with LGBTQ+ actors and creators</li>
-      </ul>
-      <p>Whether you are passionate about Queer theatre or simply eager to learn more, our community welcomes
-        everyone who values diversity on stage.</p>
-    </div>
-    </main>
-
-    <div class="index-about-bg" style="color: whitesmoke; background-color: black; padding-bottom: 3%;">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h4>Our Values</h4>
-          <ul>
-            <li>Authenticity</li>
-            <li>Learning</li>
-            <li>Inclusivity</li>
-          </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <h6 style="font-weight: 300; font-size: 130%; margin-top: 30px; padding-top: 30px; padding-bottom: 30px;;">We provide a safe, inclusive space where
+              users can engage in meaningful discussions about representation, storytelling, and more!</h6>
+          </div>
+          <div class="col-2"></div>
         </div>
       </div>
     </div>
+  </main>
 
+  <div class="index-about-bg" style="background-color: #FDB92E; padding-bottom: 3%;">
+    <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 col-xl-4">
-          <h4>Our Values</h4>
-          <ul>
-            <li>Authenticity</li>
-            <li>Learning</li>
-            <li>Inclusivity</li>
-          </ul>
+        <div class="col-6">
+          <div class="container"> <!-- Add container to control padding -->
+            <a href="tickets.html" class="no-link-style">
+              <h4 style="color: whitesmoke;">Buy Tickets for Theatre Shows</h4>
+            </a>
+            <br>
+            <div class="row justify-content-start g-3">
+              <div class="col-12" style="z-index: 3;">
+                <div class="card mb-3 h-100 position-relative shadow-sm hover-shadow">
+                  <a href="singleticket.html" class="stretched-link"></a>
+      
+                  <div class="row g-0 h-100 d-flex">
+                    <!-- Image column -->
+                    <div class="col-5">
+                      <img src="images/tickets-images/eclipse-hearts-without-text.jpg"
+                        class="img-fluid h-100 w-100 object-fit-cover" alt="eclipse-hearts-photo"
+                        style="border-radius: 5px 0 0 5px;">
+                    </div>
+      
+                    <!-- Text/content column -->
+                    <div class="col-7">
+                      <div class="card-body d-flex flex-column justify-content-between h-100" style="padding: 15px;">
+                        <div>
+                          <h5 class="card-title mb-1">Eclipse Hearts</h5>
+                          <p class="mb-1"><small>3 Apr - 3 May 2025</small></p>
+                          <p class="card-text small">
+                            A Sappho-inspired retelling of a writer's descent into obsession and heartache.
+                          </p>
+                          <p class="card-text"><small class="text-body-secondary">Duration: 1h 45m</small></p>
+                        </div>
+                        <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                          role="button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="container"> <!-- Add container to control padding -->
+            <div class="row justify-content-start g-3">
+              <div class="col-12" style="z-index: 3;">
+                <div class="card mb-3 h-100 position-relative shadow-sm hover-shadow">
+                  <a href="singleticket.html" class="stretched-link"></a>
+      
+                  <div class="row g-0 h-100 d-flex">
+                    <!-- Image column -->
+                    <div class="col-5">
+                      <img src="images/tickets-images/eclipse-hearts-without-text.jpg"
+                        class="img-fluid h-100 w-100 object-fit-cover" alt="eclipse-hearts-photo"
+                        style="border-radius: 5px 0 0 5px;">
+                    </div>
+      
+                    <!-- Text/content column -->
+                    <div class="col-7">
+                      <div class="card-body d-flex flex-column justify-content-between h-100" style="padding: 15px;">
+                        <div>
+                          <h5 class="card-title mb-1">Eclipse Hearts</h5>
+                          <p class="mb-1"><small>3 Apr - 3 May 2025</small></p>
+                          <p class="card-text small">
+                            A Sappho-inspired retelling of a writer's descent into obsession and heartache.
+                          </p>
+                          <p class="card-text"><small class="text-body-secondary">Duration: 1h 45m</small></p>
+                        </div>
+                        <div class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                          role="button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <a href="blog.html" class="no-link-style">
+            <h4 style="color: whitesmoke;">Read Articles with LGBTQ+ Actors and Creators</h4>
+          </a>
+          <br>
+          <a href="blog.html" style="text-decoration: none; color: inherit;">
+            <div style="background-color: whitesmoke; padding: 3%;" class="rounded">
+              <img src="images/blog-page-images/theater_play_actress.jpg" class="img-fluid" alt="template" style="padding-bottom: 2%;">
+              <h5 class="outfit-semibold">Must-See LGBTQ+ Shows Right Now</h5>
+              <p class="outfit-medium">A roundup of the latest and best gay-themed productions.</p>
+              <p>From groundbreaking dramas to heartwarming comedies, these standout LGBTQ+ productions are redefining
+                queer storytelling on stage and screen. <a href="#" class="no-link-style icon-style">more...</a></p>
+              <p class="date">02.05.2025</p>
+            </div>
+          </a>
+          
         </div>
       </div>
     </div>
+  </div>
 
-    <div>
+  <div class="second-main-about">
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-4">
+        <h4>Our Values</h4>
+        <ul>
+          <li>Authenticity</li>
+          <li>Learning</li>
+          <li>Inclusivity</li>
+        </ul>
+      </div>
+    </div>
+  
       <h4>Leadership</h4>
-
+  
       <br>
       <br>
       <div class="row">
@@ -263,9 +371,9 @@
             </div>
           </div>
         </div>
-
+  
         <!--End of first container for Meet the team-->
-
+  
         <!--Start of second container for Meet the team-->
         <div class="column-about-page-meet-the-team">
           <div class="card">
@@ -277,7 +385,7 @@
           </div>
         </div>
         <!--End  of second container for Meet the team-->
-
+  
         <!--Start of third container for Meet the team-->
         <div class="column-about-page-meet-the-team">
           <div class="card">
@@ -289,7 +397,7 @@
           </div>
         </div>
         <!--End of third container for Meet the team-->
-
+  
         <!--Start of fourth container for Meet the team-->
         <div class="column-about-page-meet-the-team">
           <div class="card">
@@ -302,11 +410,14 @@
         </div>
       </div>
     </div>
-    <!--End of fourth container for Meet the team-->
-    <!--End of container for Meet the team-->
+  </div>
 
-    <!--you can delete the huge logo at the bottom if you want. its there to keep the page able to scroll for the footer-->
-  
+
+  <!--End of fourth container for Meet the team-->
+  <!--End of container for Meet the team-->
+
+  <!--you can delete the huge logo at the bottom if you want. its there to keep the page able to scroll for the footer-->
+
   <!--main for your content stops here-->
 
 
