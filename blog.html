@@ -21,7 +21,7 @@
 
       <div class="d-flex justify-content-start">
         <a href="index.html" class="no-link-style">
-          <img src="images/onc_notext.svg" alt="Brand Logo" style="height: 30px;">
+          <img src="images/logo-out-n-center/onc_notext.svg" alt="Brand Logo" style="height: 30px;">
         </a>
       </div>
 
@@ -131,7 +131,7 @@
 
         <div class="d-flex justify-content-start">
           <a href="index.html" class="no-link-style">
-            <img src="images/onc_notext2.svg" alt="Brand Logo" style="height: 30px;">
+            <img src="images/logo-out-n-center/onc_notext2.svg" alt="Brand Logo" style="height: 30px;">
           </a>
         </div>
 
@@ -270,7 +270,8 @@
           <h4 class="outfit-semibold">Must-See LGBTQ+ Shows Right Now</h4>
           <p class="outfit-medium">A roundup of the latest and best gay-themed productions.</p>
           <p>From groundbreaking dramas to heartwarming comedies, these standout LGBTQ+ productions are redefining
-            queer storytelling on stage and screen. <a href="#" class="no-link-style icon-style">more...</a></p>
+            queer storytelling on stage and screen. <i data-bs-toggle="modal" data-bs-target="#heartModal" role="button">more...</i>
+          </p>
           <p class="date">02.05.2025</p>
         </div>
       </div>
@@ -368,10 +369,47 @@
   </footer>
   <!--footer ends here-->
 
-  <!--your script starts here-->
-  <script>
-  </script>
-  <!--your script ends here-->
+  <div class="modal fade" id="heartModal" tabindex="-1" aria-labelledby="heartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title fs-5 position-absolute top-0 start-50 translate-middle-x" style="margin-top: 9px;"
+            id="heartModalLabel">Log In</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div>
+              <p class="outfit-medium">Login required to read articles.</p>
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Username/Email</label>
+              <input type="text" class="form-control" id="recipient-name" placeholder="Enter your username/email"
+                aria-label="Enter your username-email">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Password</label>
+              <input type="text" class="form-control" id="recipient-password" placeholder="Enter your password"
+                aria-label="Enter your password">
+            </div>
+            
+            <!-- Update to a normal button with margin to avoid high positioning -->
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-dark mb-3" style="width: 200px;">Log In</button>
+            </div>
+          
+            <div class="position-relative d-flex justify-content-center" style="margin-top: 20px;">
+              <p class="m-0">
+                no account yet? 
+                <a href="profile.html" class="no-link-style icon-style">Create your profile</a>
+              </p>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--script for navigation starts here-->
   <script>
